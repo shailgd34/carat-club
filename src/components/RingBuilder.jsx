@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import SizeGuideModal from './SizeGuideModal';
 export default function RingBuilder() {
+  const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
   const shapes = [
     { id: 'round', name: 'Round', icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><circle cx="12" cy="12" r="8" strokeDasharray="2 2" /></svg> },
     { id: 'oval', name: 'Oval', icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><ellipse cx="12" cy="12" rx="6" ry="9" strokeDasharray="2 2" /></svg> },
@@ -171,10 +172,10 @@ export default function RingBuilder() {
                   </select>
                   <svg className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#2B2728]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                 </div>
-                <a href="#" className="text-[11px] text-[#2B2728] underline underline-offset-4 decoration-[#E5E5E5] hover:decoration-[#2B2728] transition-colors flex items-center gap-2 font-medium">
+                <button onClick={(e) => { e.preventDefault(); setIsSizeGuideOpen(true); }} className="text-[11px] text-[#2B2728] underline underline-offset-4 decoration-[#E5E5E5] hover:decoration-[#2B2728] transition-colors flex items-center gap-2 font-medium">
                   What's my size?
                   <svg className="w-5 h-5 text-[#A0A0A0]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="6" width="20" height="12" rx="2" /><path d="M6 6v12M10 6v6M14 6v12M18 6v6" /></svg>
-                </a>
+                </button>
               </div>
             </div>
 
@@ -186,6 +187,7 @@ export default function RingBuilder() {
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}} />
+      <SizeGuideModal isOpen={isSizeGuideOpen} onClose={() => setIsSizeGuideOpen(false)} />
     </section>
   );
 }
