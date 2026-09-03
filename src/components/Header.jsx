@@ -261,7 +261,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
               ))
             ) : (
               <>
-                <Link to="/custom-jewellery" className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden block">
+                <Link to="/ring-builder-guide" className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden block">
                   <div className="relative z-10 mb-4">
                     <h3 className="text-[13px] font-sans font-semibold tracking-widest text-[#2B2728] uppercase mb-3">RING BUILDER</h3>
                     <p className="text-[#666] text-sm font-light">Create your perfect ring<br />in 3D</p>

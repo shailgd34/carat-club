@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function RingBuilder() {
   const shapes = [
@@ -76,9 +77,9 @@ export default function RingBuilder() {
                 <button className="whitespace-nowrap bg-[#1a1a1a] text-white text-[11px] tracking-widest uppercase font-semibold px-8 py-5 flex items-center gap-3 hover:bg-[#2B2728] transition-all hover:-translate-y-0.5 hover:shadow-xl rounded-sm">
                   START BUILDING NOW <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </button>
-                <button className="whitespace-nowrap text-[11px] text-[#ff5474] tracking-widest uppercase font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
+                <Link to="/ring-builder-guide" className="whitespace-nowrap text-[11px] text-[#ff5474] tracking-widest uppercase font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
                   HOW IT WORKS <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </button>
+                </Link>
               </div>
             </div>
 

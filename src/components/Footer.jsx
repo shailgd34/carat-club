@@ -55,7 +55,8 @@ export default function Footer() {
               <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Lab-Grown vs Natural</Link></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Metal Guide</a></li>
               <li><Link to="/custom-jewellery" className="hover:text-white hover:translate-x-1 inline-block transition-all">Custom Jewellery</Link></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Jewellery Care</a></li>
+              <li><Link to="/ring-builder-guide" className="hover:text-white hover:translate-x-1 inline-block transition-all">How Ring Builder Works</Link></li>
+
             </ul>
           </div>
 

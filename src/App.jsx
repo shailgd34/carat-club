@@ -33,6 +33,7 @@ import TermsPage from './pages/Legal/TermsPage';
 import PrivacyPolicyPage from './pages/Legal/PrivacyPolicyPage';
 import SitemapPage from './pages/Legal/SitemapPage';
 import ReviewsPage from './pages/ReviewsPage';
+import RingBuilderInfoPage from './pages/RingBuilderInfoPage';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -80,6 +81,7 @@ function App() {
         <Route path="/sitemap" element={<SitemapPage />} />
         
         <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/ring-builder-guide" element={<RingBuilderInfoPage />} />
       </Routes>
 
       {!hideGlobalUI && <Footer />}
