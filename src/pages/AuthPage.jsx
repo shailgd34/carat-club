@@ -14,24 +14,23 @@ export default function AuthPage() {
       {/* Cinematic Full-Screen Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/herobanner.png"
+          src="/images/authbg.png"
           alt="Luxury Background"
           className="w-full h-full object-cover scale-105"
         />
-        {/* Elegant Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2B2728]/80 via-[#2B2728]/40 to-transparent"></div>
+
       </div>
 
       {/* Floating Glassmorphism Card */}
-      <div className="relative z-10 w-full max-w-[480px] bg-white/90 backdrop-blur-2xl rounded-sm shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-white/60 overflow-hidden">
+      <div className="relative z-10 w-full max-w-[480px] bg-white/100 backdrop-blur-xl rounded-sm shadow-[0_30px_60px_rgba(0,0,0,0.3)] border border-white/40 overflow-hidden">
 
         {/* Dynamic Top Progress/Accent Line */}
         <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-[#ff5474] to-transparent opacity-80"></div>
 
-        <div className="p-10 sm:px-14 sm:py-12">
+        <div className="p-8 sm:px-10 sm:py-8">
 
           {/* Brand Header */}
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-6">
             <Link to="/" className="flex flex-col items-center group">
               <img src="/images/logoLight.png" alt="Logo" className="h-[40px] object-contain invert mb-3 group-hover:opacity-80 transition-opacity" />
               <span className="font-serif text-[34px] font-medium text-[#2B2728] leading-none mb-2 tracking-tight group-hover:text-[#ff5474] transition-colors duration-500">
@@ -43,7 +42,7 @@ export default function AuthPage() {
 
           {/* Toggle Nav - Only show for login/signup */}
           {(view === 'login' || view === 'signup') && (
-            <div className="flex justify-center gap-12 mb-8">
+            <div className="flex justify-center gap-8 mb-6">
               <button
                 onClick={() => setView('login')}
                 className={`text-[13px] font-bold tracking-widest uppercase transition-all duration-500 relative pb-3 ${view === 'login' ? 'text-[#2B2728]' : 'text-[#777] hover:text-[#444]'}`}
@@ -62,7 +61,7 @@ export default function AuthPage() {
           )}
 
           {/* Header Text */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-6">
             <h1 className="font-serif text-[30px] text-[#2B2728] mb-3 leading-tight italic">
               {view === 'login' && 'Welcome Back'}
               {view === 'signup' && 'Begin Your Journey'}
@@ -80,10 +79,10 @@ export default function AuthPage() {
           </div>
 
           {/* Form */}
-          <form className="space-y-7" onSubmit={(e) => { 
-            e.preventDefault(); 
-            if (view === 'forgot') setView('otp'); 
-            else if (view === 'otp') setView('reset'); 
+          <form className="space-y-5" onSubmit={(e) => {
+            e.preventDefault();
+            if (view === 'forgot') setView('otp');
+            else if (view === 'otp') setView('reset');
             else if (view === 'reset') setIsSuccess(true);
             else if (view === 'login') navigate('/account');
           }}>

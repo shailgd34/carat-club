@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CustomJewellery() {
   return (
@@ -30,9 +31,9 @@ export default function CustomJewellery() {
             Send us a photo or sketch of your dream ring, and our master jewelers will bring it to life with unparalleled craftsmanship.
           </p>
 
-          <button className="whitespace-nowrap bg-gradient-to-r from-[#2B2728] to-[#1a1819] text-white text-[11px] uppercase tracking-widest font-semibold px-10 py-5 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
+          <Link to="/custom-jewellery" className="whitespace-nowrap bg-gradient-to-r from-[#2B2728] to-[#1a1819] text-white text-[11px] uppercase tracking-widest font-semibold px-10 py-5 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
             SUBMIT YOUR DESIGN <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-          </button>
+          </Link>
         </div>
 
         {/* Right Steps */}
