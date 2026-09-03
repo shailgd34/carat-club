@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Deals() {
   const scrollRef = useRef(null);
@@ -42,11 +43,11 @@ export default function Deals() {
   };
 
   const deals = [
-    { name: "Oval Solitaire\nEngagement Ring", orig: "AUD $3,980", curr: "AUD $2,985", img: "/images/style_solitaire.jpg", discount: "25% OFF" },
-    { name: "Emerald Cut\nHidden Halo Ring", orig: "AUD $4,850", curr: "AUD $3,395", img: "/images/style_halo.jpg", discount: "30% OFF" },
-    { name: "Pear Halo\nEngagement Ring", orig: "AUD $4,280", curr: "AUD $3,210", img: "/images/hero_ring.jpg", discount: "25% OFF" },
-    { name: "Three Stone\nEngagement Ring", orig: "AUD $5,250", curr: "AUD $4,200", img: "/images/style_threestone.jpg", discount: "20% OFF" },
-    { name: "Cushion Cut\nVintage Ring", orig: "AUD $4,500", curr: "AUD $3,150", img: "/images/style_vintage.jpg", discount: "30% OFF" }
+    { id: '1', name: "Oval Solitaire\nEngagement Ring", orig: "AUD $3,980", curr: "AUD $2,985", img: "/images/style_solitaire.jpg", discount: "25% OFF" },
+    { id: '2', name: "Emerald Cut\nHidden Halo Ring", orig: "AUD $4,850", curr: "AUD $3,395", img: "/images/style_halo.jpg", discount: "30% OFF" },
+    { id: '3', name: "Pear Halo\nEngagement Ring", orig: "AUD $4,280", curr: "AUD $3,210", img: "/images/hero_ring.jpg", discount: "25% OFF" },
+    { id: '4', name: "Three Stone\nEngagement Ring", orig: "AUD $5,250", curr: "AUD $4,200", img: "/images/style_threestone.jpg", discount: "20% OFF" },
+    { id: '5', name: "Cushion Cut\nVintage Ring", orig: "AUD $4,500", curr: "AUD $3,150", img: "/images/style_vintage.jpg", discount: "30% OFF" }
   ];
 
   return (
@@ -150,9 +151,9 @@ export default function Deals() {
                     <span className="text-[13px] font-bold text-[#ff5474]">{deal.curr}</span>
                   </div>
 
-                  <button className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#2B2728] text-[11px] tracking-widest uppercase font-bold py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
+                  <Link to={`/product/${deal.id}`} className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#2B2728] text-[11px] tracking-widest uppercase font-bold py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
                     SHOP NOW <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

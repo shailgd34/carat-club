@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Star, CheckCircle, X } from 'lucide-react';
 
 export default function CheckoutPage() {
   const [activeSection, setActiveSection] = useState('shipping');
+  const [paymentStructure, setPaymentStructure] = useState('full');
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0);
 
   return (
     <div className="min-h-screen bg-brand-ivory font-sans text-brand-charcoal flex flex-col lg:flex-row selection:bg-brand-gold selection:text-white">
@@ -12,8 +17,14 @@ export default function CheckoutPage() {
         <div className="w-full max-w-[540px]">
           
           {/* Header */}
-          <Link to="/" className="block mb-10 lg:mb-14">
-            <span className="font-serif text-[24px] tracking-widest text-brand-charcoal uppercase">Carat Club</span>
+          <Link to="/" className="block mb-10 lg:mb-14 flex flex-col items-start">
+            <div className="flex items-center gap-4">
+              <img src="/images/logoLight.png" alt="Logo" className="h-[40px] lg:h-[45px] object-contain invert" />
+              <div className="flex flex-col">
+                <span className="font-serif text-[24px] tracking-widest text-brand-charcoal uppercase leading-none">Carat Club</span>
+                <span className="text-[7px] tracking-[0.3em] text-[#ff5474] uppercase mt-1 font-bold">DIAMONDS &amp; FINE JEWELLERY</span>
+              </div>
+            </div>
           </Link>
 
           {/* Breadcrumbs */}
@@ -25,7 +36,7 @@ export default function CheckoutPage() {
             <span className={activeSection === 'payment' ? 'text-brand-charcoal' : 'text-brand-taupe'}>Payment</span>
           </div>
 
-          <form className="space-y-12">
+          <form className="space-y-12" onSubmit={(e) => { e.preventDefault(); setIsSuccess(true); }}>
             {/* Contact Info */}
             <section>
               <h2 className="font-serif text-[20px] text-brand-charcoal mb-6">Contact</h2>
@@ -101,7 +112,33 @@ export default function CheckoutPage() {
             {/* Payment Section */}
             <section>
               <div className="flex items-center justify-between mb-6">
-                <h2 className="font-serif text-[20px] text-brand-charcoal">Payment</h2>
+                <h2 className="font-serif text-[20px] text-brand-charcoal">Payment Structure</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                <div 
+                  className={`border rounded-sm p-5 cursor-pointer transition-all ${paymentStructure === 'full' ? 'border-brand-charcoal bg-white shadow-sm' : 'border-brand-light-border bg-transparent opacity-70 hover:opacity-100'}`}
+                  onClick={() => setPaymentStructure('full')}
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-bold text-[11px] uppercase tracking-widest text-brand-charcoal">Pay in Full</span>
+                    <div className={`w-3.5 h-3.5 rounded-full border ${paymentStructure === 'full' ? 'border-[4px] border-brand-charcoal bg-white' : 'border-brand-light-border'}`}></div>
+                  </div>
+                  <p className="text-[11px] text-brand-taupe leading-relaxed">Pay 100% of the total order amount today.</p>
+                </div>
+                <div 
+                  className={`border rounded-sm p-5 cursor-pointer transition-all ${paymentStructure === 'deposit' ? 'border-brand-charcoal bg-white shadow-sm' : 'border-brand-light-border bg-transparent opacity-70 hover:opacity-100'}`}
+                  onClick={() => setPaymentStructure('deposit')}
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-bold text-[11px] uppercase tracking-widest text-brand-charcoal">30% Deposit</span>
+                    <div className={`w-3.5 h-3.5 rounded-full border ${paymentStructure === 'deposit' ? 'border-[4px] border-brand-charcoal bg-white' : 'border-brand-light-border'}`}></div>
+                  </div>
+                  <p className="text-[11px] text-brand-taupe leading-relaxed">Pay 30% today, balance due prior to delivery.</p>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="font-serif text-[20px] text-brand-charcoal">Payment Method</h2>
                 <span className="text-[10px] uppercase tracking-widest text-brand-taupe flex items-center gap-1">
                   <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                   Secure
@@ -148,11 +185,11 @@ export default function CheckoutPage() {
               </div>
             </section>
 
-            <button type="button" className="w-full bg-brand-charcoal text-white text-[12px] font-bold tracking-[0.2em] uppercase py-5 text-center hover:bg-brand-gold transition-colors duration-500 block relative group overflow-hidden mt-10 rounded-sm shadow-[0_10px_30px_-15px_rgba(43,39,40,0.5)]">
+            <button type="submit" className="w-full bg-brand-charcoal text-white text-[12px] font-bold tracking-[0.2em] uppercase py-5 text-center hover:bg-brand-gold transition-colors duration-500 block relative group overflow-hidden mt-10 rounded-sm shadow-[0_10px_30px_-15px_rgba(43,39,40,0.5)]">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 Pay Now
                 <span className="w-1 h-1 bg-white/50 rounded-full"></span>
-                AUD $2,890
+                AUD {paymentStructure === 'full' ? '$2,890' : '$867'}
               </span>
               <div className="absolute inset-0 bg-brand-gold transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
             </button>
@@ -200,17 +237,81 @@ export default function CheckoutPage() {
           </div>
 
           <div className="border-t border-brand-light-border pt-6">
-            <div className="flex justify-between items-end">
+            <div className="flex justify-between items-end mb-4">
               <span className="text-[14px] text-brand-charcoal font-bold uppercase tracking-widest">Total</span>
               <div className="flex items-baseline gap-2">
                 <span className="text-[10px] text-brand-taupe uppercase tracking-widest font-bold">AUD</span>
                 <span className="font-serif text-[28px] text-brand-charcoal leading-none">$2,890</span>
               </div>
             </div>
+            
+            {paymentStructure === 'deposit' && (
+              <div className="bg-brand-ivory/50 border border-brand-light-border p-5 mt-6 rounded-sm">
+                <div className="flex justify-between items-center text-[12px] mb-3">
+                  <span className="text-brand-charcoal font-bold tracking-[0.15em] uppercase">Due Now (30%)</span>
+                  <span className="font-serif text-[20px] text-brand-charcoal">$867</span>
+                </div>
+                <div className="flex justify-between items-center text-[11px]">
+                  <span className="text-brand-taupe">Due on Delivery (70%)</span>
+                  <span className="text-brand-taupe font-serif text-[14px]">$2,023</span>
+                </div>
+              </div>
+            )}
           </div>
 
         </div>
       </div>
+      {/* Order Success & Rate Us Modal */}
+      {isSuccess && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+          <div className="bg-white shadow-2xl w-full max-w-lg relative z-10 animate-fade-in-up">
+            <Link to="/" className="absolute top-6 right-6 text-gray-400 hover:text-brand-charcoal transition-colors">
+              <X size={24} />
+            </Link>
+            
+            <div className="p-10 text-center">
+              <div className="mx-auto w-20 h-20 bg-[#FAF8F5] flex items-center justify-center rounded-full mb-6 text-[#25D366] border border-[#25D366]/20">
+                <CheckCircle size={40} />
+              </div>
+              <h2 className="font-serif text-3xl text-brand-charcoal mb-2">Order Confirmed</h2>
+              <p className="text-sm text-brand-taupe mb-8 max-w-[300px] mx-auto">
+                Thank you for choosing Carat Club. Your bespoke order #CC-202689 is now being processed.
+              </p>
+
+              <div className="border-t border-brand-light-border pt-8 mt-2">
+                <h3 className="font-serif text-xl text-brand-charcoal mb-2">Rate Your Experience</h3>
+                <p className="text-[12px] text-brand-taupe mb-6">How was your shopping experience with us today?</p>
+                
+                <div className="flex justify-center gap-2 mb-6">
+                  {[1,2,3,4,5].map(star => (
+                    <button 
+                      key={star}
+                      type="button"
+                      onMouseEnter={() => setHoverRating(star)}
+                      onMouseLeave={() => setHoverRating(0)}
+                      onClick={() => setRating(star)}
+                      className="transition-transform hover:scale-110"
+                    >
+                      <Star size={36} fill={(hoverRating || rating) >= star ? "#D4AF37" : "none"} stroke={(hoverRating || rating) >= star ? "#D4AF37" : "#C4C4C4"} strokeWidth={1} />
+                    </button>
+                  ))}
+                </div>
+
+                <Link to="/reviews" className="inline-block border border-brand-charcoal text-brand-charcoal text-[11px] font-bold tracking-widest uppercase px-6 py-3 hover:bg-brand-charcoal hover:text-white transition-colors">
+                  Write a Full Review
+                </Link>
+              </div>
+              
+              <div className="mt-8">
+                <Link to="/" className="text-[11px] font-bold tracking-widest uppercase text-brand-taupe hover:text-brand-charcoal underline">
+                  Return to Home
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );

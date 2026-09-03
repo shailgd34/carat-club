@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function CountryModal() {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function CountryModal({ isOpen, setIsOpen }) {
   useEffect(() => {
     // Only show if not previously selected
     const hasSelected = localStorage.getItem('caratclub_country');
@@ -11,7 +9,7 @@ export default function CountryModal() {
       const timer = setTimeout(() => setIsOpen(true), 1500);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [setIsOpen]);
 
   const selectCountry = (country) => {
     localStorage.setItem('caratclub_country', country);

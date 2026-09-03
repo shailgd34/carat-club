@@ -19,12 +19,12 @@ export default function Footer() {
               <h4 className="text-[13px] font-bold tracking-[0.2em] uppercase text-white">CUSTOMER CARE</h4>
             </div>
             <ul className="space-y-4 text-[13px] font-medium text-gray-400">
-              <li><Link to="/customer-care#contact" className="hover:text-white hover:translate-x-1 inline-block transition-all">Contact Us</Link></li>
-              <li><Link to="/customer-care#track-order" className="hover:text-white hover:translate-x-1 inline-block transition-all">Track Your Order</Link></li>
-              <li><Link to="/customer-care#shipping" className="hover:text-white hover:translate-x-1 inline-block transition-all">Shipping & Delivery</Link></li>
-              <li><Link to="/customer-care#returns" className="hover:text-white hover:translate-x-1 inline-block transition-all">Returns & Exchanges</Link></li>
-              <li><Link to="/customer-care#consultation" className="hover:text-white hover:translate-x-1 inline-block transition-all">Book an Appointment</Link></li>
-              <li><Link to="/customer-care#faqs" className="hover:text-white hover:translate-x-1 inline-block transition-all">FAQs</Link></li>
+              <li><Link to="/customer-care/contact" className="hover:text-white hover:translate-x-1 inline-block transition-all">Contact Us</Link></li>
+              <li><Link to="/customer-care/track-order" className="hover:text-white hover:translate-x-1 inline-block transition-all">Track Your Order</Link></li>
+              <li><Link to="/customer-care/shipping" className="hover:text-white hover:translate-x-1 inline-block transition-all">Shipping & Delivery</Link></li>
+              <li><Link to="/customer-care/returns" className="hover:text-white hover:translate-x-1 inline-block transition-all">Returns & Exchanges</Link></li>
+              <li><Link to="/customer-care/consultation" className="hover:text-white hover:translate-x-1 inline-block transition-all">Book an Appointment</Link></li>
+              <li><Link to="/customer-care/faqs" className="hover:text-white hover:translate-x-1 inline-block transition-all">FAQs</Link></li>
             </ul>
           </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
             <ul className="space-y-4 text-[13px] font-medium text-gray-400">
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Price Promise</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">30% Deposit Option</a></li>
+              <li><Link to="/deposit-delivery" className="hover:text-white hover:translate-x-1 inline-block transition-all">30% Deposit Option</Link></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Personal Hand Delivery</a></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Free Ring Resizing</a></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Lifetime Care</a></li>
@@ -51,7 +51,8 @@ export default function Footer() {
             <ul className="space-y-4 text-[13px] font-medium text-gray-400">
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Ring Size Guide</a></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Diamond Buying Guide</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Lab-Grown vs Natural</a></li>
+              <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Shop Loose Diamonds</Link></li>
+              <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Lab-Grown vs Natural</Link></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Metal Guide</a></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Jewellery Care</a></li>
             </ul>
@@ -64,11 +65,11 @@ export default function Footer() {
             </div>
             <ul className="space-y-4 text-[13px] font-medium text-gray-400">
               <li><Link to="/about" className="hover:text-white hover:translate-x-1 inline-block transition-all">About Carat Club</Link></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Customer Reviews</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Refund Policy</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Sitemap</a></li>
+              <li><Link to="/reviews" className="hover:text-white hover:translate-x-1 inline-block transition-all">Customer Reviews</Link></li>
+              <li><Link to="/terms" className="hover:text-white hover:translate-x-1 inline-block transition-all">Terms & Conditions</Link></li>
+              <li><Link to="/privacy" className="hover:text-white hover:translate-x-1 inline-block transition-all">Privacy Policy</Link></li>
+              <li><Link to="/customer-care/returns" className="hover:text-white hover:translate-x-1 inline-block transition-all">Refund Policy</Link></li>
+              <li><Link to="/sitemap" className="hover:text-white hover:translate-x-1 inline-block transition-all">Sitemap</Link></li>
             </ul>
           </div>
 

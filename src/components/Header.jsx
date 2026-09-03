@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Header({ setIsCartOpen }) {
+export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const engagementLinks = {
@@ -180,9 +180,9 @@ export default function Header({ setIsCartOpen }) {
             {/* Product Grid */}
             <div className="w-[80%] flex gap-4">
               {data.products.map((product, i) => (
-                <div key={i} className="flex-1 bg-[#FAF8F5] border border-transparent p-6 flex flex-col group/prod cursor-pointer hover:border-[#E5E5E5] hover:bg-white hover:shadow-sm transition-all duration-300 relative text-center">
+                <Link to={`/product/${i + 1}`} key={i} className="flex-1 bg-[#FAF8F5] border border-transparent p-6 flex flex-col group/prod cursor-pointer hover:border-[#E5E5E5] hover:bg-white hover:shadow-sm transition-all duration-300 relative text-center block">
                   {/* Heart Icon */}
-                  <div className="absolute top-4 right-4 z-10 text-gray-300 hover:text-[#ff5474] transition-colors">
+                  <div className="absolute top-4 right-4 z-10 text-gray-300 hover:text-[#ff5474] transition-colors" onClick={(e) => e.preventDefault()}>
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
                   </div>
 
@@ -212,7 +212,7 @@ export default function Header({ setIsCartOpen }) {
                       VIEW DETAILS <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function Header({ setIsCartOpen }) {
           <div className="flex-1 flex gap-6">
             {data.products ? (
               data.products.map((product, i) => (
-                <div key={i} className="flex-1 bg-white border border-[#E5E5E5] p-4 flex flex-col group/prod cursor-pointer hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:border-[#ff5474]/30 transition-all duration-300">
+                <Link to={`/product/${i + 1}`} key={i} className="flex-1 bg-white border border-[#E5E5E5] p-4 flex flex-col group/prod cursor-pointer hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:border-[#ff5474]/30 transition-all duration-300 block">
                   <div className="relative mb-4 overflow-hidden bg-[#F9F9F9] flex items-center justify-center">
                     <span className="absolute top-3 left-3 bg-[#ff5474] text-white text-[9px] font-bold tracking-wider px-2 py-1 z-10 shadow-sm">{product.badge}</span>
                     <img src={product.image} alt={product.name} className="w-full h-[180px] object-cover mix-blend-multiply group-hover/prod:scale-105 transition-transform duration-700" />
@@ -257,11 +257,11 @@ export default function Header({ setIsCartOpen }) {
                     <span className="text-[#ff5474] font-semibold text-[13px]">{product.price}</span>
                     <span className="text-gray-400 text-[11px] line-through">{product.originalPrice}</span>
                   </div>
-                </div>
+                </Link>
               ))
             ) : (
               <>
-                <div className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden">
+                <Link to="/custom-jewellery" className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden block">
                   <div className="relative z-10 mb-4">
                     <h3 className="text-[13px] font-sans font-semibold tracking-widest text-[#2B2728] uppercase mb-3">RING BUILDER</h3>
                     <p className="text-[#666] text-sm font-light">Create your perfect ring<br />in 3D</p>
@@ -272,9 +272,9 @@ export default function Header({ setIsCartOpen }) {
                   <div className="text-[10px] tracking-widest text-[#ff5474] font-semibold flex items-center gap-2 border-b border-[#ff5474] pb-1 w-max relative z-10">
                     START BUILDING <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                   </div>
-                </div>
+                </Link>
 
-                <div className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden">
+                <Link to="/about" className="flex-1 bg-[#F5F2EC] p-8 relative flex flex-col group/card cursor-pointer overflow-hidden block">
                   <div className="relative z-10 mb-4">
                     <h3 className="text-[13px] font-sans font-semibold tracking-widest text-[#2B2728] uppercase mb-3 leading-relaxed">SIGNATURE VS<br />CUSTOM PROCESS</h3>
                     <p className="text-[#666] text-sm font-light">See how we bring your<br />dream ring to life</p>
@@ -285,7 +285,7 @@ export default function Header({ setIsCartOpen }) {
                   <div className="absolute bottom-8 left-8 text-[10px] tracking-widest text-[#ff5474] font-semibold flex items-center gap-2 border-b border-[#ff5474] pb-1 w-max z-10 bg-[#F5F2EC]/80 px-2 py-1 backdrop-blur-sm ">
                     DISCOVER PROCESS <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                   </div>
-                </div>
+                </Link>
               </>
             )}
           </div>
@@ -312,11 +312,11 @@ export default function Header({ setIsCartOpen }) {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-2 border-l border-gray-600 pl-4 opacity-90">
+          <button onClick={() => setIsCountryModalOpen?.(true)} className="flex items-center gap-2 border-l border-gray-600 pl-4 opacity-90 hover:text-[#ff5474] transition-colors cursor-pointer">
             <img src="https://flagcdn.com/w20/au.png" alt="AUD" className="w-3.5 h-3.5 object-cover rounded-full" />
             <span>Australia (AUD)</span>
             <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-          </div>
+          </button>
         </div>
       </div>
 
