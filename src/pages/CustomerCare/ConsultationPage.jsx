@@ -6,7 +6,7 @@ export default function ConsultationPage() {
       {/* Consultation Content - Split Screen */}
       <section className="max-w-[1400px] mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 shadow-2xl bg-white overflow-hidden">
-          
+
           <div className="relative h-[400px] lg:h-auto">
             <img src="/images/about/about_designer_1788328440939.jpg" alt="Designer consultation" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-brand-charcoal/30"></div>
@@ -18,11 +18,11 @@ export default function ConsultationPage() {
           </div>
 
           <div className="p-10 lg:p-16">
-            <h1 className="font-serif text-[42px] text-brand-charcoal mb-4">Book a Consultation</h1>
+            <h1 className="font-serif text-[42px] text-brand-charcoal mb-4">SHop Diamond</h1>
             <p className="text-[15px] text-brand-taupe font-light mb-10 leading-relaxed">
               Schedule a complimentary 45-minute session with a master diamond expert. We'll guide you through diamond selection, ring settings, and the bespoke design process.
             </p>
-            
+
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -62,7 +62,7 @@ export default function ConsultationPage() {
               </button>
             </form>
           </div>
-          
+
         </div>
       </section>
     </div>

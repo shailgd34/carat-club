@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Search, Info, Grid, List, Heart, X, ChevronDown } from 'lucide-react';
+import { Search, Info, Grid, List, Heart, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import { ShoppingCart } from 'lucide-react';
+import AdvancedSlider from '../components/AdvancedSlider';
 
 const diamondShapes = [
   { name: 'Round', image: '/images/diamond/Round.png' },
@@ -39,6 +40,28 @@ export default function LooseDiamondsPage() {
   const [activeClarity, setActiveClarity] = useState('VS2');
   const [activeCut, setActiveCut] = useState('EXCELLENT');
   const [activePolish, setActivePolish] = useState('EXCELLENT');
+  const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
+
+  // Filter States
+  const [caratRange, setCaratRange] = useState([0.14, 55.23]);
+  const [priceRange, setPriceRange] = useState([41, 635333]);
+  const [colorRange, setColorRange] = useState([0, 7]); // K to D
+  const [clarityRange, setClarityRange] = useState([0, 7]); // SI2 to FL
+  const [cutRange, setCutRange] = useState([0, 4]); // Fair to Ideal
+  const [labCert, setLabCert] = useState('IGI');
+
+  // Advanced Filter States
+  const [lwRatio, setLwRatio] = useState([0, 3.93]);
+  const [depth, setDepth] = useState([0, 97.4]);
+  const [table, setTable] = useState([0, 199]);
+  const [length, setLength] = useState([0, 33.54]);
+  const [width, setWidth] = useState([0.14, 55.23]);
+  const [height, setHeight] = useState([0, 80.8]);
+  const [polishRange, setPolishRange] = useState([0, 2]); // Good, Very Good, Excellent
+  const [symmetryRange, setSymmetryRange] = useState([0, 2]); 
+  const [fluorescenceRange, setFluorescenceRange] = useState([0, 2]); // None, Faint/Medium, Strong/Very Strong
+  const [crownAngle, setCrownAngle] = useState([0, 47.4]);
+  const [girdleThickness, setGirdleThickness] = useState([0, 2]); // Thin-Medium, Very Thin, Thick-Very Thick
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] pt-8 pb-8 font-sans">
@@ -100,127 +123,79 @@ export default function LooseDiamondsPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
-            {/* Carat Slider (Mock) */}
-            <div>
-              <div className="flex justify-between items-center mb-4">
-                <div className="text-[11px] uppercase tracking-wider font-bold">CARAT</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-xs w-8 text-center">0.30</span>
-                <div className="flex-1 relative h-1 bg-gray-200 rounded">
-                  <div className="absolute left-0 right-[20%] h-full bg-[#ff5474] rounded"></div>
-                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#ff5474] border-2 border-white cursor-pointer shadow"></div>
-                  <div className="absolute right-[20%] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#ff5474] border-2 border-white cursor-pointer shadow"></div>
-                </div>
-                <span className="text-xs w-8 text-center">5.00+</span>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-8">
+            <AdvancedSlider 
+              label="Color" 
+              options={['K', 'J', 'I', 'H', 'G', 'F', 'E', 'D']} 
+              value={colorRange} 
+              onChange={setColorRange} 
+            />
+            <AdvancedSlider 
+              label="Clarity" 
+              options={['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL']} 
+              value={clarityRange} 
+              onChange={setClarityRange} 
+            />
+            <AdvancedSlider 
+              label="Carat" 
+              min={0.14} max={55.23} step={0.01} 
+              value={caratRange} 
+              onChange={setCaratRange} 
+            />
+            <AdvancedSlider 
+              label="Price" 
+              min={41} max={635333} step={1} unit="$"
+              value={priceRange} 
+              onChange={setPriceRange} 
+            />
 
-            {/* Price Slider (Mock) */}
             <div>
-              <div className="flex justify-between items-center mb-4">
-                <div className="text-[11px] uppercase tracking-wider font-bold">PRICE (AUD)</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="text-xs w-10 text-center">$500</span>
-                <div className="flex-1 relative h-1 bg-gray-200 rounded">
-                  <div className="absolute left-[5%] right-[10%] h-full bg-[#ff5474] rounded"></div>
-                  <div className="absolute left-[5%] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#ff5474] border-2 border-white cursor-pointer shadow"></div>
-                  <div className="absolute right-[10%] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#ff5474] border-2 border-white cursor-pointer shadow"></div>
-                </div>
-                <span className="text-xs w-16 text-center">$50,000+</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
-            {/* Color */}
-            <div>
-              <div className="text-[11px] uppercase tracking-wider font-bold mb-3">COLOR</div>
-              <div className="flex border border-brand-light-border rounded overflow-hidden">
-                {['D', 'E', 'F', 'G', 'H', 'I', 'J'].map(c => (
+              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize tracking-wide mb-3 flex items-center gap-1.5">Lab Certifications <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                {['IGI', 'GIA', 'GCAL', 'GSI', 'HRD'].map(cert => (
                   <button
-                    key={c}
-                    onClick={() => setActiveColor(c)}
-                    className={`flex-1 py-2 text-xs text-center border-r border-brand-light-border last:border-0 ${activeColor === c ? 'text-[#ff5474] font-bold bg-pink-50/30' : 'text-brand-charcoal hover:bg-gray-50'}`}
+                    key={cert}
+                    onClick={() => setLabCert(cert)}
+                    className={`flex-1 text-[10px] sm:text-[11px] font-bold tracking-wide uppercase border-r border-[#E5E5E5] last:border-0 transition-colors ${labCert === cert ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
                   >
-                    {c}
+                    {cert}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* Clarity */}
-            <div>
-              <div className="text-[11px] uppercase tracking-wider font-bold mb-3">CLARITY</div>
-              <div className="flex border border-brand-light-border rounded overflow-hidden">
-                {['FL', 'IF', 'VVS1', 'VVS2', 'VS1', 'VS2', 'SI1', 'I1'].map(c => (
-                  <button
-                    key={c}
-                    onClick={() => setActiveClarity(c)}
-                    className={`flex-1 py-2 text-[10px] sm:text-xs text-center border-r border-brand-light-border last:border-0 ${activeClarity === c ? 'text-[#ff5474] font-bold bg-pink-50/30' : 'text-brand-charcoal hover:bg-gray-50'}`}
-                  >
-                    {c}
-                  </button>
-                ))}
-              </div>
-            </div>
+            <AdvancedSlider 
+              label="Cut" 
+              options={['Fair', 'Good', 'Very Good', 'Excellent', 'Ideal']} 
+              value={cutRange} 
+              onChange={setCutRange} 
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
-            {/* Cut */}
-            <div>
-              <div className="text-[11px] uppercase tracking-wider font-bold mb-3">CUT</div>
-              <div className="flex border border-brand-light-border rounded overflow-hidden">
-                {['EXCELLENT', 'VERY GOOD', 'GOOD', 'FAIR'].map(c => (
-                  <button
-                    key={c}
-                    onClick={() => setActiveCut(c)}
-                    className={`flex-1 py-2 text-[10px] text-center border-r border-brand-light-border last:border-0 ${activeCut === c ? 'text-[#ff5474] font-bold bg-pink-50/30' : 'text-brand-charcoal hover:bg-gray-50'}`}
-                  >
-                    {c}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Polish */}
-            <div>
-              <div className="text-[11px] uppercase tracking-wider font-bold mb-3">POLISH</div>
-              <div className="flex border border-brand-light-border rounded overflow-hidden">
-                {['EXCELLENT', 'VERY GOOD', 'GOOD', 'FAIR'].map(c => (
-                  <button
-                    key={c}
-                    onClick={() => setActivePolish(c)}
-                    className={`flex-1 py-2 text-[10px] text-center border-r border-brand-light-border last:border-0 ${activePolish === c ? 'text-[#ff5474] font-bold bg-pink-50/30' : 'text-brand-charcoal hover:bg-gray-50'}`}
-                  >
-                    {c}
-                  </button>
-                ))}
-              </div>
-            </div>
+          <div className="border-t border-[#E5E5E5] pt-6 mb-2">
+            <button 
+              onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
+              className="mx-auto flex items-center gap-2 text-[12px] font-bold text-[#1a3b3a] hover:text-[#ff5474] transition-colors"
+            >
+              Advanced Filters {showAdvancedFilters ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+            </button>
           </div>
 
-          {/* Advanced Dropdowns */}
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-            {[
-              { label: 'FLUORESCENCE', val: 'Any' },
-              { label: 'LAB', val: 'Any' },
-              { label: 'CERTIFICATION', val: 'IGI' },
-              { label: 'TABLE %', val: 'Any' },
-              { label: 'DEPTH %', val: 'Any' },
-              { label: 'L/W RATIO', val: 'Any' }
-            ].map(filter => (
-              <div key={filter.label}>
-                <div className="text-[10px] uppercase tracking-wider font-bold mb-2">{filter.label}</div>
-                <div className="border border-brand-light-border rounded px-3 py-2 flex justify-between items-center cursor-pointer text-xs">
-                  <span>{filter.val}</span>
-                  <ChevronDown className="w-4 h-4 text-gray-400" />
-                </div>
-              </div>
-            ))}
-          </div>
+          {showAdvancedFilters && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mt-6">
+              <AdvancedSlider label="L/W Ratio" min={0} max={3.93} step={0.01} value={lwRatio} onChange={setLwRatio} />
+              <AdvancedSlider label="Depth" min={0} max={97.4} step={0.1} unit="%" value={depth} onChange={setDepth} />
+              <AdvancedSlider label="Table" min={0} max={199} step={1} unit="%" value={table} onChange={setTable} />
+              <AdvancedSlider label="Length" min={0} max={33.54} step={0.01} unit=" mm" value={length} onChange={setLength} />
+              <AdvancedSlider label="Width" min={0.14} max={55.23} step={0.01} unit=" mm" value={width} onChange={setWidth} />
+              <AdvancedSlider label="Height" min={0} max={80.8} step={0.1} unit=" mm" value={height} onChange={setHeight} />
+              <AdvancedSlider label="Polish" options={['Good', 'Very Good', 'Excellent']} value={polishRange} onChange={setPolishRange} />
+              <AdvancedSlider label="Symmetry" options={['Good', 'Very Good', 'Excellent']} value={symmetryRange} onChange={setSymmetryRange} />
+              <AdvancedSlider label="Fluorescence" options={['None', 'Faint/Medium', 'Strong/Very Strong']} value={fluorescenceRange} onChange={setFluorescenceRange} />
+              <AdvancedSlider label="Crown Angle" min={0} max={47.4} step={0.1} unit="°" value={crownAngle} onChange={setCrownAngle} />
+              <AdvancedSlider label="Girdle Thickness" options={['Thin-Medium', 'Very Thin', 'Thick-Very Thick']} value={girdleThickness} onChange={setGirdleThickness} />
+            </div>
+          )}
 
         </div>
 

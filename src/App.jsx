@@ -7,7 +7,7 @@ import BackToTop from './components/BackToTop';
 import CountryModal from './components/CountryModal';
 import SlideInCard from './components/SlideInCard';
 import CartDrawer from './components/CartDrawer';
-import NewsletterModal from './components/NewsletterModal';
+
 import HomePage from './pages/HomePage';
 import SolitairePage from './pages/SolitairePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
@@ -34,6 +34,7 @@ import PrivacyPolicyPage from './pages/Legal/PrivacyPolicyPage';
 import SitemapPage from './pages/Legal/SitemapPage';
 import ReviewsPage from './pages/ReviewsPage';
 import RingBuilderInfoPage from './pages/RingBuilderInfoPage';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -48,6 +49,7 @@ function App() {
   return (
     <div className="app-carat-club relative">
       {!hideGlobalUI && <Header setIsCartOpen={setIsCartOpen} setIsCountryModalOpen={setIsCountryModalOpen} />}
+      {!hideGlobalUI && <WhatsAppWidget />}
       
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -89,7 +91,6 @@ function App() {
       {!hideGlobalUI && <BackToTop />}
       {!hideGlobalUI && <SlideInCard />}
       <CountryModal isOpen={isCountryModalOpen} setIsOpen={setIsCountryModalOpen} />
-      <NewsletterModal />
       <CartDrawer isOpen={isCartOpen} setIsOpen={setIsCartOpen} />
     </div>
   );

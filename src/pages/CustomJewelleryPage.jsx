@@ -17,13 +17,13 @@ export default function CustomJewelleryPage() {
   }, []);
 
   return (
-    <div className="bg-[#FAF8F5] min-h-screen font-sans text-[#2B2728]">
+    <div className="bg-[#FAF8F5] min-h-screen font-sans text-[#101010]">
 
       {/* 2. BREADCRUMB */}
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-6 text-[10px] uppercase tracking-widest text-[#666]">
         <Link to="/" className="hover:text-[#ff5474] transition-colors">Home</Link>
         <span className="mx-2">/</span>
-        <span className="text-[#2B2728] font-semibold">Custom Jewellery</span>
+        <span className="text-[#101010] font-semibold">Custom Jewellery</span>
       </div>
 
       {/* 3. HERO — BESPOKE / EDITORIAL */}
@@ -32,7 +32,7 @@ export default function CustomJewelleryPage() {
           {/* Left Text */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center pr-0 lg:pr-16 xl:pr-24 py-12 lg:py-0">
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-6 block">Custom Jewellery</span>
-            <h1 className="font-serif text-[48px] md:text-[64px] lg:text-[72px] leading-[1.05] tracking-tight mb-4 text-[#2B2728]">
+            <h1 className="font-serif text-[48px] md:text-[64px] lg:text-[72px] leading-[1.05] tracking-tight mb-4 text-[#101010]">
               DESIGNED BY YOU.<br />CRAFTED BY US.
             </h1>
             <h2 className="font-serif italic text-[24px] text-[#ff5474] mb-8">One-of-a-kind, just like your love.</h2>
@@ -41,30 +41,30 @@ export default function CustomJewelleryPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <button className="bg-[#2B2728] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#ff5474] transition-colors duration-300 flex items-center justify-center gap-2">
+              <button className="bg-[#101010] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#ff5474] transition-colors duration-300 flex items-center justify-center gap-2">
                 START YOUR DESIGN <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
               </button>
-              <button className="bg-transparent border border-[#2B2728] text-[#2B2728] text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#F5F2EC] transition-colors duration-300 flex items-center justify-center gap-2">
-                BOOK A CONSULTATION <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
+              <button className="bg-transparent border border-[#101010] text-[#101010] text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#F5F2EC] transition-colors duration-300 flex items-center justify-center gap-2">
+                SHop Diamond <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
               </button>
             </div>
 
             {/* Trust Points */}
             <div className="grid grid-cols-2 gap-y-6 gap-x-8 pt-8 border-t border-[#EBEBEB]">
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2B2728]">Expert Designers</h4>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Expert Designers</h4>
                 <p className="text-[12px] text-[#666]">One-on-one guidance</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2B2728]">Premium Quality</h4>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Premium Quality</h4>
                 <p className="text-[12px] text-[#666]">IGI Certified Diamonds</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2B2728]">Made Just For You</h4>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Made Just For You</h4>
                 <p className="text-[12px] text-[#666]">A unique piece</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2B2728]">Delivered With Care</h4>
+                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Delivered With Care</h4>
                 <p className="text-[12px] text-[#666]">Personal hand delivery</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function CustomJewelleryPage() {
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-[1200px] mx-auto px-6 lg:px-12 text-center">
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-6 block">The Carat Club Difference</span>
-          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight mb-8 text-[#2B2728]">
+          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight mb-8 text-[#101010]">
             Your Idea. Your Story. Your Jewellery.
           </h2>
           <p className="text-[17px] leading-relaxed text-[#555] max-w-2xl mx-auto mb-16">
@@ -98,7 +98,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#2B2728]">PERSONALISED</h3>
+              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">PERSONALISED</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Designed around you</p>
             </div>
             {/* Card 2 */}
@@ -106,7 +106,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M6 3h12l4 6-10 13L2 9Z" /><path d="M11 3v21" /><path d="M22 9L2 9" /><path d="M6 3L11 9" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#2B2728]">EXPERT CRAFTSMANSHIP</h3>
+              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">EXPERT CRAFTSMANSHIP</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Made with precision</p>
             </div>
             {/* Card 3 */}
@@ -114,7 +114,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#2B2728]">COMPLETELY UNIQUE</h3>
+              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">COMPLETELY UNIQUE</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Created exclusively for you</p>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function CustomJewelleryPage() {
       <section className="py-24 lg:py-32 overflow-hidden bg-[#FAF8F5]">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 text-center mb-24">
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-6 block">The Custom Journey</span>
-          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight text-[#2B2728]">
+          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight text-[#101010]">
             FROM IDEA TO HEIRLOOM
           </h2>
         </div>
@@ -153,7 +153,7 @@ export default function CustomJewelleryPage() {
                 </div>
                 <div className="flex flex-col items-center">
                   <span className="text-[10px] font-bold text-[#ff5474] tracking-[0.2em] mb-3 opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">STEP {step.num}</span>
-                  <h4 className="text-[13px] font-bold uppercase tracking-widest text-[#2B2728] mb-3 transition-colors duration-300 group-hover/step:text-[#ff5474]">{step.title}</h4>
+                  <h4 className="text-[13px] font-bold uppercase tracking-widest text-[#101010] mb-3 transition-colors duration-300 group-hover/step:text-[#ff5474]">{step.title}</h4>
                   <p className="text-[13px] text-[#666] leading-relaxed max-w-[200px]">{step.text}</p>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default function CustomJewelleryPage() {
             </div>
             <div className="w-full lg:w-1/2 p-10 lg:p-20 flex flex-col justify-center bg-white border-l border-[#EBEBEB]">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-4 block">Have an idea?</span>
-              <h2 className="font-serif text-[32px] lg:text-[40px] leading-tight tracking-tight mb-6 text-[#2B2728]">
+              <h2 className="font-serif text-[32px] lg:text-[40px] leading-tight tracking-tight mb-6 text-[#101010]">
                 SHOW US WHAT YOU'RE DREAMING OF.
               </h2>
               <p className="text-[14px] leading-relaxed text-[#666] mb-10">
@@ -185,7 +185,7 @@ export default function CustomJewelleryPage() {
               {/* Upload Box */}
               <div className="border-2 border-dashed border-[#DCDCDC] hover:border-[#ff5474] transition-colors bg-[#FAF8F5] p-10 text-center flex flex-col items-center justify-center cursor-pointer mb-6 group">
                 <svg className="text-[#999] group-hover:text-[#ff5474] mb-4 transition-colors" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 16l-4-4-4 4" /><path d="M12 12v9" /><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3" /><path d="M16 16l-4-4-4 4" /></svg>
-                <p className="text-[13px] font-bold uppercase tracking-widest text-[#2B2728] mb-2">Drag & Drop Your Image Here</p>
+                <p className="text-[13px] font-bold uppercase tracking-widest text-[#101010] mb-2">Drag & Drop Your Image Here</p>
                 <p className="text-[12px] text-[#ff5474] font-semibold mb-3">or Browse Files</p>
                 <p className="text-[11px] text-[#999]">JPG, PNG or PDF — Max 10MB</p>
               </div>
@@ -217,7 +217,7 @@ export default function CustomJewelleryPage() {
             </div>
             <div className="w-full lg:w-[45%]">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-6 block">Designed Around You</span>
-              <h2 className="font-serif text-[42px] lg:text-[52px] leading-none tracking-tight mb-8 text-[#2B2728]">
+              <h2 className="font-serif text-[42px] lg:text-[52px] leading-none tracking-tight mb-8 text-[#101010]">
                 ENDLESS POSSIBILITIES
               </h2>
               <p className="text-[15px] leading-relaxed text-[#666] mb-12">
@@ -236,12 +236,12 @@ export default function CustomJewelleryPage() {
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-4">
                     <svg className="text-[#ff5474] shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
-                    <span className="text-[14px] text-[#2B2728] font-medium">{item}</span>
+                    <span className="text-[14px] text-[#101010] font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className="bg-transparent border-b border-[#2B2728] text-[#2B2728] text-[11px] font-bold tracking-[0.2em] uppercase pb-2 hover:text-[#ff5474] hover:border-[#ff5474] transition-colors flex items-center gap-2 w-max">
+              <button className="bg-transparent border-b border-[#101010] text-[#101010] text-[11px] font-bold tracking-[0.2em] uppercase pb-2 hover:text-[#ff5474] hover:border-[#ff5474] transition-colors flex items-center gap-2 w-max">
                 EXPLORE CUSTOM DESIGN <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
               </button>
             </div>
@@ -253,23 +253,23 @@ export default function CustomJewelleryPage() {
       <section className="bg-[#FDF5F6] py-24">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-[32px] md:text-[40px] text-[#2B2728]">WHY CREATE WITH CARAT CLUB?</h2>
+            <h2 className="font-serif text-[32px] md:text-[40px] text-[#101010]">WHY CREATE WITH CARAT CLUB?</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center divide-y sm:divide-y-0 sm:divide-x divide-[#EBEBEB]">
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#2B2728] mb-3">ONE-ON-ONE GUIDANCE</h3>
+              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">ONE-ON-ONE GUIDANCE</h3>
               <p className="text-[13px] text-[#666]">Work directly with jewellery experts.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#2B2728] mb-3">TRANSPARENT PRICING</h3>
+              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">TRANSPARENT PRICING</h3>
               <p className="text-[13px] text-[#666]">Clear pricing throughout your journey.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#2B2728] mb-3">IGI CERTIFIED DIAMONDS</h3>
+              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">IGI CERTIFIED DIAMONDS</h3>
               <p className="text-[13px] text-[#666]">Quality and authenticity you can trust.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#2B2728] mb-3">PERSONAL HAND DELIVERY</h3>
+              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">PERSONAL HAND DELIVERY</h3>
               <p className="text-[13px] text-[#666]">Available within 100km of Gold Coast & Auckland.</p>
             </div>
           </div>
@@ -279,7 +279,7 @@ export default function CustomJewelleryPage() {
       {/* 9. INSPIRATION GALLERY */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 text-center mb-20">
-          <h2 className="font-serif text-[42px] lg:text-[52px] leading-none tracking-tight text-[#2B2728] mb-6">
+          <h2 className="font-serif text-[42px] lg:text-[52px] leading-none tracking-tight text-[#101010] mb-6">
             EXPLORE OUR CUSTOM CREATIONS
           </h2>
           <p className="text-[16px] text-[#666] font-serif italic max-w-xl mx-auto">
@@ -292,7 +292,7 @@ export default function CustomJewelleryPage() {
 
           <button
             onClick={() => scrollGallery('left')}
-            className="absolute left-1 lg:left-4 xl:left-8 top-[35%] z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl border border-[#EBEBEB] text-[#2B2728] hover:bg-[#2B2728] hover:text-white hover:scale-110 transition-all opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
+            className="absolute left-1 lg:left-4 xl:left-8 top-[35%] z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl border border-[#EBEBEB] text-[#101010] hover:bg-[#101010] hover:text-white hover:scale-110 transition-all opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
             aria-label="Scroll Left"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M15 18l-6-6 6-6" /></svg>
@@ -300,7 +300,7 @@ export default function CustomJewelleryPage() {
 
           <button
             onClick={() => scrollGallery('right')}
-            className="absolute right-1 lg:right-4 xl:right-8 top-[35%] z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl border border-[#EBEBEB] text-[#2B2728] hover:bg-[#2B2728] hover:text-white hover:scale-110 transition-all opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
+            className="absolute right-1 lg:right-4 xl:right-8 top-[35%] z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xl border border-[#EBEBEB] text-[#101010] hover:bg-[#101010] hover:text-white hover:scale-110 transition-all opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
             aria-label="Scroll Right"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9 18l6-6-6-6" /></svg>
@@ -324,13 +324,13 @@ export default function CustomJewelleryPage() {
 
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <span className="bg-white/90 text-[#2B2728] text-[10px] font-bold uppercase tracking-widest py-3 px-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="bg-white/90 text-[#101010] text-[10px] font-bold uppercase tracking-widest py-3 px-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       View Details
                     </span>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-[14px] font-bold uppercase tracking-[0.2em] text-[#2B2728] mb-2">{item.title}</h3>
+                  <h3 className="text-[14px] font-bold uppercase tracking-[0.2em] text-[#101010] mb-2">{item.title}</h3>
                   <p className="text-[15px] text-[#666] font-serif italic">{item.desc}</p>
                 </div>
               </div>
@@ -366,7 +366,7 @@ export default function CustomJewelleryPage() {
 
             {/* Play Button */}
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full border border-white/20 bg-black/30 backdrop-blur-md flex items-center justify-center group-hover:bg-white group-hover:text-[#2B2728] transition-all duration-500 mb-6 shadow-[0_0_40px_rgba(226,125,144,0.1)]">
+              <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full border border-white/20 bg-black/30 backdrop-blur-md flex items-center justify-center group-hover:bg-white group-hover:text-[#101010] transition-all duration-500 mb-6 shadow-[0_0_40px_rgba(226,125,144,0.1)]">
                 <svg className="ml-2 w-8 h-8 lg:w-10 lg:h-10" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3" /></svg>
               </div>
               <span className="text-[11px] font-bold tracking-[0.3em] uppercase text-white group-hover:text-[#ff5474] transition-colors duration-500">Watch The Film</span>
@@ -411,18 +411,18 @@ export default function CustomJewelleryPage() {
       <section className="bg-[#FDF5F6] py-24 lg:py-32 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#ff5474] mb-6 block">Your Dream Starts Here</span>
-          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight mb-6 text-[#2B2728]">
+          <h2 className="font-serif text-[42px] lg:text-[56px] leading-[1.1] tracking-tight mb-6 text-[#101010]">
             READY TO BRING YOUR DREAM TO LIFE?
           </h2>
           <p className="text-[15px] leading-relaxed text-[#666] mb-12">
             Tell us what you're imagining. We'll help turn your idea into something extraordinary.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#2B2728] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#ff5474] transition-colors flex items-center justify-center gap-2">
+            <button className="bg-[#101010] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-[#ff5474] transition-colors flex items-center justify-center gap-2">
               START YOUR DESIGN <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
             </button>
-            <button className="bg-transparent border border-[#2B2728] text-[#2B2728] text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-white transition-colors flex items-center justify-center gap-2">
-              BOOK A CONSULTATION <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
+            <button className="bg-transparent border border-[#101010] text-[#101010] text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-8 hover:bg-white transition-colors flex items-center justify-center gap-2">
+              SHop Diamond <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg>
             </button>
           </div>
         </div>

@@ -80,7 +80,7 @@ export default function ProductDetailsPage() {
           </div>
 
           <div className="flex justify-between items-start mb-2">
-            <h1 className="font-serif text-[42px] text-[#2B2728] leading-[1.1]">Classic Solitaire<br />Round Brilliant</h1>
+            <h1 className="font-serif text-[42px] text-[#101010] leading-[1.1]">Classic Solitaire<br />Round Brilliant</h1>
             <div className="flex gap-2 mt-2">
               <button className="w-9 h-9 rounded-full border border-[#EBEBEB] flex items-center justify-center text-[#666] hover:border-[#ff5474] hover:text-[#ff5474] transition-colors bg-white shadow-sm">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" /></svg>
@@ -94,7 +94,7 @@ export default function ProductDetailsPage() {
           <p className="text-[13px] text-[#666] mb-6 font-medium">Timeless beauty. Iconic brilliance.</p>
 
           <div className="mb-2">
-            <span className="font-bold text-[#2B2728] text-xl">AUD $2,890</span>
+            <span className="font-bold text-[#101010] text-xl">AUD $2,890</span>
           </div>
 
           <div className="flex items-center gap-2 mb-6">
@@ -108,7 +108,7 @@ export default function ProductDetailsPage() {
             <div className="flex text-[#ff5474]">
               {[1, 2, 3, 4, 5].map(s => <svg key={s} className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
             </div>
-            <span className="text-[11px] text-[#2B2728] font-bold">4.9 <a href="#" className="underline font-normal text-[#666] hover:text-[#ff5474]">(128 reviews)</a></span>
+            <span className="text-[11px] text-[#101010] font-bold">4.9 <a href="#" className="underline font-normal text-[#666] hover:text-[#ff5474]">(128 reviews)</a></span>
             <span className="text-[11px] text-[#EBEBEB]">|</span>
             <a href="#" className="text-[11px] text-[#666] underline hover:text-[#ff5474]">Write a review</a>
           </div>
@@ -117,7 +117,7 @@ export default function ProductDetailsPage() {
           <div className="mb-8">
             <div className="flex justify-between items-end mb-3">
               <div>
-                <h4 className="text-[12px] font-bold tracking-widest text-[#2B2728] mb-1">1. DIAMOND</h4>
+                <h4 className="text-[12px] font-bold tracking-widest text-[#101010] mb-1">1. DIAMOND</h4>
                 <p className="text-[13px] text-[#666]"><span className="text-[#ff5474]">1.20 CT</span> | Round | Excellent Cut | F Color | VS1 Clarity</p>
               </div>
               <a href="#" className="text-[11px] font-bold tracking-widest text-[#ff5474] underline hover:text-[#D46278]">Change</a>
@@ -129,8 +129,8 @@ export default function ProductDetailsPage() {
                   key={ct}
                   onClick={() => setActiveCarat(ct)}
                   className={`w-[60px] py-2 text-[11px] font-bold tracking-widest border transition-colors ${activeCarat === ct
-                      ? 'border-[#ff5474] text-[#ff5474] bg-white'
-                      : 'border-[#EBEBEB] text-[#666] hover:border-[#CCC] bg-white'
+                    ? 'border-[#ff5474] text-[#ff5474] bg-white'
+                    : 'border-[#EBEBEB] text-[#666] hover:border-[#CCC] bg-white'
                     }`}
                 >
                   {ct}
@@ -157,7 +157,7 @@ export default function ProductDetailsPage() {
           <div className="mb-8">
             <div className="flex justify-between items-end mb-3">
               <div>
-                <h4 className="text-[12px] font-bold tracking-widest text-[#2B2728] mb-1">2. METAL</h4>
+                <h4 className="text-[12px] font-bold tracking-widest text-[#101010] mb-1">2. METAL</h4>
                 <p className="text-[13px] text-[#666]">{activeMetal}</p>
               </div>
               <a href="#" className="text-[11px] font-bold tracking-widest text-[#ff5474] underline hover:text-[#D46278]">Change</a>
@@ -188,14 +188,14 @@ export default function ProductDetailsPage() {
               <svg className="w-6 h-6 text-[#999]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><circle cx="12" cy="12" r="8" /><path d="M12 4v2" /></svg>
             </div>
             <div className="flex-1 relative">
-              <select className="w-full border-b border-[#EBEBEB] py-3 text-[14px] font-bold text-[#2B2728] outline-none appearance-none cursor-pointer">
+              <select className="w-full border-b border-[#EBEBEB] py-3 text-[14px] font-bold text-[#101010] outline-none appearance-none cursor-pointer">
                 <option>AU / UK - M 1/2</option>
                 <option>AU / UK - N</option>
                 <option>AU / UK - N 1/2</option>
               </select>
               <svg className="w-4 h-4 absolute right-0 top-1/2 -translate-y-1/2 text-[#999] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
             </div>
-            <button 
+            <button
               onClick={(e) => { e.preventDefault(); setIsSizeGuideOpen(true); }}
               className="text-[11px] font-bold tracking-widest text-[#ff5474] underline flex items-center gap-1 whitespace-nowrap hover:text-[#D46278]"
             >
@@ -205,7 +205,7 @@ export default function ProductDetailsPage() {
 
           {/* CTA Buttons */}
           <div className="flex gap-4 mb-8">
-            <button className="flex-1 bg-gradient-to-r from-[#ff5474] to-[#D46278] text-white text-[12px] font-bold tracking-widest uppercase py-4 shadow-[0_4px_15px_rgba(226,125,144,0.3)] hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-shadow">
+            <button className="flex-1 bg-[#ff5474] text-white text-[12px] font-bold tracking-widest uppercase py-4 shadow-[0_4px_15px_rgba(226,125,144,0.3)] hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-shadow">
               ADD TO CART
             </button>
             <button className="flex-1 border border-[#ff5474] text-[#ff5474] bg-white text-[12px] font-bold tracking-widest uppercase py-4 hover:bg-[#FDF5F6] transition-colors">
@@ -243,7 +243,7 @@ export default function ProductDetailsPage() {
             {['RING DETAILS', 'DIAMOND DETAILS', 'SETTING DETAILS', 'DELIVERY & RETURNS', 'PAYMENT OPTIONS'].map((tab, i) => (
               <button
                 key={tab}
-                className={`py-6 border-b-[3px] transition-colors ${i === 0 ? 'border-[#ff5474] text-[#ff5474]' : 'border-transparent hover:text-[#2B2728]'}`}
+                className={`py-6 border-b-[3px] transition-colors ${i === 0 ? 'border-[#ff5474] text-[#ff5474]' : 'border-transparent hover:text-[#101010]'}`}
               >
                 {tab}
               </button>
@@ -255,7 +255,7 @@ export default function ProductDetailsPage() {
 
             {/* Specs Table */}
             <div className="w-full lg:w-1/3">
-              <p className="text-[14px] text-[#2B2728] mb-6 leading-relaxed">A <strong className="font-bold">timeless</strong> solitaire designed to let your diamond shine.</p>
+              <p className="text-[14px] text-[#101010] mb-6 leading-relaxed">A <strong className="font-bold">timeless</strong> solitaire designed to let your diamond shine.</p>
               <div className="flex flex-col text-[13px]">
                 <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Style</span><span className="w-1/2 text-[#666]">Solitaire</span></div>
                 <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Setting</span><span className="w-1/2 text-[#666]">6 Prong</span></div>
@@ -281,7 +281,7 @@ export default function ProductDetailsPage() {
 
             {/* Why Carat Club */}
             <div className="w-full lg:w-1/3 bg-[#FDF5F6] p-8 relative overflow-hidden">
-              <h4 className="font-bold text-[13px] tracking-widest text-[#2B2728] mb-8">WHY CARAT CLUB?</h4>
+              <h4 className="font-bold text-[13px] tracking-widest text-[#101010] mb-8">WHY CARAT CLUB?</h4>
               <ul className="flex flex-col gap-6 text-[13px] text-[#666] relative z-10 font-medium">
                 {['Direct from our trusted network', 'Handcrafted with precision', 'IGI Certified Diamonds', 'Lifetime Care & Warranty', '30% Deposit & Hand Delivery'].map(item => (
                   <li key={item} className="flex items-center gap-3">
@@ -303,7 +303,7 @@ export default function ProductDetailsPage() {
       {/* Complete The Look */}
       <section className="bg-white py-16 border-t border-[#EBEBEB]">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
-          <h2 className="font-serif text-2xl text-center text-[#2B2728] mb-10 uppercase tracking-widest">COMPLETE THE LOOK</h2>
+          <h2 className="font-serif text-2xl text-center text-[#101010] mb-10 uppercase tracking-widest">COMPLETE THE LOOK</h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -318,9 +318,9 @@ export default function ProductDetailsPage() {
                   <div className="h-[120px] flex items-center justify-center mb-6">
                     <img src={ring.img} alt={ring.name} className="h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <h4 className="font-bold text-[13px] text-[#2B2728] text-center mb-1">{ring.name}</h4>
+                  <h4 className="font-bold text-[13px] text-[#101010] text-center mb-1">{ring.name}</h4>
                   <p className="text-[12px] text-[#666] text-center mb-3">{ring.desc}</p>
-                  <p className="font-bold text-[13px] text-[#2B2728] text-center">AUD ${ring.price}</p>
+                  <p className="font-bold text-[13px] text-[#101010] text-center">AUD ${ring.price}</p>
                 </div>
               ))}
             </div>
@@ -342,12 +342,12 @@ export default function ProductDetailsPage() {
 
           {/* Customer Reviews */}
           <div className="w-full lg:w-[60%] flex flex-col gap-6">
-            <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">CUSTOMER REVIEWS</h4>
+            <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">CUSTOMER REVIEWS</h4>
             <div className="bg-white p-8 border border-[#EBEBEB] flex flex-col md:flex-row gap-12 items-center">
 
               {/* Aggregate */}
               <div className="flex flex-col items-center">
-                <span className="text-6xl font-serif text-[#2B2728] mb-2">4.9</span>
+                <span className="text-6xl font-serif text-[#101010] mb-2">4.9</span>
                 <div className="flex text-[#ff5474] mb-2">
                   {[1, 2, 3, 4, 5].map(s => <svg key={s} className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
                 </div>
@@ -379,7 +379,7 @@ export default function ProductDetailsPage() {
                     <img src="/images/custom_sketch.jpg" alt="User" className="w-full h-full object-cover" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[10px] font-bold text-[#2B2728]">Sophie L.</span>
+                    <span className="text-[10px] font-bold text-[#101010]">Sophie L.</span>
                     <span className="text-[9px] text-[#999] flex items-center gap-1"><svg className="w-3 h-3 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" /></svg> Verified Buyer</span>
                   </div>
                 </div>
@@ -393,7 +393,7 @@ export default function ProductDetailsPage() {
 
           {/* Need Help Choosing */}
           <div className="w-full lg:w-[40%] bg-[#FDF5F6] p-10 relative overflow-hidden flex flex-col justify-center">
-            <h4 className="font-bold text-[14px] tracking-widest text-[#2B2728] mb-4 relative z-10">NEED HELP CHOOSING?</h4>
+            <h4 className="font-bold text-[14px] tracking-widest text-[#101010] mb-4 relative z-10">NEED HELP CHOOSING?</h4>
             <p className="text-[14px] text-[#666] mb-6 relative z-10 max-w-[220px] leading-relaxed">Our diamond experts are here to help you find the perfect ring.</p>
             <ul className="flex flex-col gap-4 text-[13px] text-[#333] font-medium relative z-10 mb-8">
               <li className="flex items-center gap-3"><svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg> Free expert consultation</li>

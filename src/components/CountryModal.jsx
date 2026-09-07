@@ -21,7 +21,7 @@ export default function CountryModal({ isOpen, setIsOpen }) {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
       <div className="bg-white w-full max-w-lg p-10 lg:p-14 relative shadow-2xl animate-[fadeIn_0.5s_ease-out]">
-        <h2 className="font-serif text-3xl text-center text-[#2B2728] mb-4">
+        <h2 className="font-serif text-3xl text-center text-[#101010] mb-4">
           Welcome to Carat Club
         </h2>
         <p className="text-center text-[#666] text-sm mb-10 tracking-wide">
@@ -35,7 +35,7 @@ export default function CountryModal({ isOpen, setIsOpen }) {
           >
             <div className="flex items-center gap-4">
               <img src="https://flagcdn.com/w40/au.png" alt="Australia" className="w-6 h-auto shadow-sm" />
-              <span className="text-[13px] font-bold tracking-widest text-[#2B2728] uppercase">Australia</span>
+              <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase">Australia</span>
             </div>
             <span className="text-[#ff5474] text-xs font-bold tracking-widest">AUD</span>
           </button>
@@ -46,7 +46,7 @@ export default function CountryModal({ isOpen, setIsOpen }) {
           >
             <div className="flex items-center gap-4">
               <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand" className="w-6 h-auto shadow-sm" />
-              <span className="text-[13px] font-bold tracking-widest text-[#2B2728] uppercase">New Zealand</span>
+              <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase">New Zealand</span>
             </div>
             <span className="text-[#ff5474] text-xs font-bold tracking-widest">NZD</span>
           </button>

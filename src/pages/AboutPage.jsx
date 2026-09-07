@@ -72,7 +72,7 @@ export default function AboutPage() {
       {/* 2. THE MISSION & AWARDS - Grid Layout */}
       <section className="py-24 lg:py-32 bg-white relative border-b border-brand-light-border">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-8 relative z-10">
-          
+
           {/* Header & Quote */}
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-24">
             <div className="lg:w-1/2">
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </Link>
             </div>
-            
+
             <div className="lg:w-1/2 lg:pt-12">
               <p className="text-[20px] lg:text-[24px] text-brand-charcoal leading-relaxed mb-6 font-serif italic border-l-2 border-brand-gold pl-8">
                 "We set out to strip away the intimidating atmosphere and opaque pricing of traditional retail, replacing it with warmth, education, and uncompromising quality."
@@ -107,7 +107,7 @@ export default function AboutPage() {
               { title: "Warmth & Education", desc: "Our expert gemologists are here to guide you, offering honest advice in a relaxed, pressure-free environment." }
             ].map((pillar, i) => (
               <div key={i} className="flex flex-col border-t border-brand-light-border pt-8 group">
-                <span className="text-brand-gold font-serif italic text-xl mb-4">0{i+1}.</span>
+                <span className="text-brand-gold font-serif italic text-xl mb-4">0{i + 1}.</span>
                 <h4 className="text-[13px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">{pillar.title}</h4>
                 <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">{pillar.desc}</p>
               </div>
@@ -116,28 +116,28 @@ export default function AboutPage() {
 
           {/* Awards Style Strip */}
           <div className="bg-[#FAF8F5] p-12 lg:p-16 border border-brand-light-border/60 relative overflow-hidden">
-             {/* Decorative Background Icon */}
-             <svg className="absolute -right-12 -top-12 w-64 h-64 text-brand-gold/5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 15c-3.866 0-7-3.134-7-7V3h14v5c0 3.866-3.134 7-7 7z"/><path d="M12 15v7"/><path d="M8 22h8"/><path d="M5 5c-1.657 0-3 1.343-3 3s1.343 3 3 3h2"/><path d="M19 5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-2"/></svg>
-             
-             <div className="text-center mb-10 relative z-10">
-               <span className="block text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold mb-2">Industry Recognition</span>
-               <h3 className="font-serif text-[24px] text-brand-charcoal">A Tradition of Excellence</h3>
-             </div>
-             
-             <div className="flex flex-col md:flex-row justify-center items-center gap-12 lg:gap-24 relative z-10">
-               {[
-                 { year: "2024", title: "Best Luxury Jeweller", org: "Wedding Awards AU" },
-                 { year: "2023", title: "Excellence in Design", org: "Fine Jewellery Guild" },
-                 { year: "2025", title: "Sustainable Sourcing", org: "Ethical Gem Society" }
-               ].map((award, i) => (
-                 <div key={i} className="flex flex-col items-center text-center max-w-[200px] group">
-                   <svg className="w-12 h-12 text-brand-gold/60 mb-4 group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 15c-3.866 0-7-3.134-7-7V3h14v5c0 3.866-3.134 7-7 7z"/><path d="M12 15v7"/><path d="M8 22h8"/><path d="M5 5c-1.657 0-3 1.343-3 3s1.343 3 3 3h2"/><path d="M19 5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-2"/></svg>
-                   <span className="text-[10px] font-bold tracking-widest text-brand-charcoal mb-2">{award.year}</span>
-                   <h5 className="font-serif italic text-[16px] text-brand-charcoal mb-1">{award.title}</h5>
-                   <p className="text-[11px] uppercase tracking-widest text-brand-taupe">{award.org}</p>
-                 </div>
-               ))}
-             </div>
+            {/* Decorative Background Icon */}
+            <svg className="absolute -right-12 -top-12 w-64 h-64 text-brand-gold/5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 15c-3.866 0-7-3.134-7-7V3h14v5c0 3.866-3.134 7-7 7z" /><path d="M12 15v7" /><path d="M8 22h8" /><path d="M5 5c-1.657 0-3 1.343-3 3s1.343 3 3 3h2" /><path d="M19 5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-2" /></svg>
+
+            <div className="text-center mb-10 relative z-10">
+              <span className="block text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold mb-2">Industry Recognition</span>
+              <h3 className="font-serif text-[24px] text-brand-charcoal">A Tradition of Excellence</h3>
+            </div>
+
+            <div className="flex flex-col md:flex-row justify-center items-center gap-12 lg:gap-24 relative z-10">
+              {[
+                { year: "2024", title: "Best Luxury Jeweller", org: "Wedding Awards AU" },
+                { year: "2023", title: "Excellence in Design", org: "Fine Jewellery Guild" },
+                { year: "2025", title: "Sustainable Sourcing", org: "Ethical Gem Society" }
+              ].map((award, i) => (
+                <div key={i} className="flex flex-col items-center text-center max-w-[200px] group">
+                  <svg className="w-12 h-12 text-brand-gold/60 mb-4 group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 15c-3.866 0-7-3.134-7-7V3h14v5c0 3.866-3.134 7-7 7z" /><path d="M12 15v7" /><path d="M8 22h8" /><path d="M5 5c-1.657 0-3 1.343-3 3s1.343 3 3 3h2" /><path d="M19 5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-2" /></svg>
+                  <span className="text-[10px] font-bold tracking-widest text-brand-charcoal mb-2">{award.year}</span>
+                  <h5 className="font-serif italic text-[16px] text-brand-charcoal mb-1">{award.title}</h5>
+                  <p className="text-[11px] uppercase tracking-widest text-brand-taupe">{award.org}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>
@@ -322,7 +322,7 @@ export default function AboutPage() {
               Explore Collections
             </Link>
             <Link to="/contact" className="w-full sm:w-auto bg-transparent border border-white/30 text-white text-[11px] font-bold tracking-[0.2em] uppercase py-4 px-10 text-center hover:bg-white hover:text-brand-charcoal transition-colors duration-500">
-              Book a Consultation
+              SHop Diamond
             </Link>
           </div>
         </div>

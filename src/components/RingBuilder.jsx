@@ -40,7 +40,7 @@ export default function RingBuilder() {
             {/* Info Column */}
             <div className="md:w-[300px] flex-shrink-0 z-10 relative">
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-[10px] uppercase tracking-widest text-[#ff5474] font-bold">DESIGN YOUR PERFECT RING</span>
+                <span className="text-[10px] capitalize tracking-wide text-[#ff5474] font-bold">Design Your Perfect Ring</span>
               </div>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-[1px] bg-[#ff5474]"></div>
@@ -49,9 +49,9 @@ export default function RingBuilder() {
                 </svg>
               </div>
 
-              <h2 className="text-4xl lg:text-5xl font-serif text-[#2B2728] mb-12 leading-tight tracking-wide">3D RING<br />BUILDER</h2>
+              <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] mb-12 leading-tight tracking-wide capitalize">3D Ring<br />Builder</h2>
 
-              <ul className="space-y-6 mb-12 text-[13px] text-[#2B2728] font-medium">
+              <ul className="space-y-6 mb-12 text-[16px] text-[#101010] font-medium">
                 <li className="flex items-center gap-4">
                   <svg className="w-5 h-5 text-[#ff5474] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
                   Choose your style
@@ -75,11 +75,11 @@ export default function RingBuilder() {
               </ul>
 
               <div className="flex flex-col gap-6 items-start">
-                <button className="whitespace-nowrap bg-[#1a1a1a] text-white text-[11px] tracking-widest uppercase font-semibold px-8 py-5 flex items-center gap-3 hover:bg-[#2B2728] transition-all hover:-translate-y-0.5 hover:shadow-xl rounded-sm">
-                  START BUILDING NOW <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                <button className="whitespace-nowrap bg-[#1a1a1a] text-white text-[11px] tracking-wide capitalize font-semibold px-8 py-5 flex items-center gap-3 hover:bg-[#101010] transition-all hover:-translate-y-0.5 hover:shadow-xl rounded-sm">
+                  Start Building Now <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </button>
-                <Link to="/ring-builder-guide" className="whitespace-nowrap text-[11px] text-[#ff5474] tracking-widest uppercase font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
-                  HOW IT WORKS <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                <Link to="/ring-builder-guide" className="whitespace-nowrap text-[11px] text-[#ff5474] tracking-wide capitalize font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
+                  How It Works <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </Link>
               </div>
             </div>
@@ -103,8 +103,8 @@ export default function RingBuilder() {
                     <path d="M0,10 Q50,20 100,10" fill="none" stroke="currentColor" strokeWidth="1" />
                   </svg>
                   <div className="mt-4 text-center">
-                    <span className="text-[22px] font-medium text-[#2B2728] block mb-1">360&deg;</span>
-                    <span className="text-[10px] text-[#666] tracking-widest uppercase font-semibold">Drag to rotate</span>
+                    <span className="text-[22px] font-medium text-[#101010] block mb-1">360&deg;</span>
+                    <span className="text-[10px] text-[#666] tracking-wide capitalize font-semibold">Drag To Rotate</span>
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function RingBuilder() {
           <div className="w-full lg:w-[480px] flex-shrink-0 bg-white p-8 lg:p-12 border-t lg:border-t-0 lg:border-l border-[#E5E5E5] flex flex-col gap-10 relative z-20">
 
             <div className="border-b border-[#E5E5E5] pb-8">
-              <h4 className="text-[10px] uppercase tracking-widest font-bold mb-6 text-[#2B2728]">1. SELECT SHAPE</h4>
+              <h4 className="text-[10px] capitalize tracking-wide font-bold mb-6 text-[#101010]">1. Select Shape</h4>
               <div className="flex gap-3 overflow-x-auto pb-2 hide-scrollbar">
                 {shapes.map(s => (
                   <button
@@ -124,21 +124,21 @@ export default function RingBuilder() {
                     onClick={() => setShape(s.id)}
                     className={`w-[60px] h-[75px] flex-shrink-0 flex flex-col items-center justify-center gap-2 border transition-all rounded-sm ${shape === s.id ? 'border-[#ff5474] border-2 bg-white' : 'border-[#E5E5E5] text-[#A0A0A0] hover:border-[#ff5474] hover:text-[#ff5474]'}`}
                   >
-                    <div className={`w-7 h-7 ${shape === s.id ? 'text-[#2B2728]' : ''}`}>{s.icon}</div>
-                    <span className={`text-[9px] font-semibold ${shape === s.id ? 'text-[#2B2728]' : ''}`}>{s.name}</span>
+                    <div className={`w-7 h-7 ${shape === s.id ? 'text-[#101010]' : ''}`}>{s.icon}</div>
+                    <span className={`text-[9px] font-semibold ${shape === s.id ? 'text-[#101010]' : ''}`}>{s.name}</span>
                   </button>
                 ))}
               </div>
             </div>
 
             <div className="border-b border-[#E5E5E5] pb-8">
-              <h4 className="text-[10px] uppercase tracking-widest font-bold mb-6 text-[#2B2728]">2. SELECT CARAT</h4>
+              <h4 className="text-[10px] capitalize tracking-wide font-bold mb-6 text-[#101010]">2. Select Carat</h4>
               <div className="flex flex-wrap gap-2">
                 {carats.map(c => (
                   <button
                     key={c}
                     onClick={() => c !== 'ct' && setCarat(c)}
-                    className={`h-[42px] px-4 flex items-center justify-center border text-[11px] font-medium transition-all rounded-sm ${c === 'ct' ? 'border-transparent text-[#2B2728] cursor-default' : carat === c ? 'border-[#ff5474] border-2 bg-white text-[#2B2728]' : 'border-[#E5E5E5] text-[#666] hover:border-[#ff5474] hover:text-[#ff5474]'}`}
+                    className={`h-[42px] px-4 flex items-center justify-center border text-[11px] font-medium transition-all rounded-sm ${c === 'ct' ? 'border-transparent text-[#101010] cursor-default' : carat === c ? 'border-[#ff5474] border-2 bg-white text-[#101010]' : 'border-[#E5E5E5] text-[#666] hover:border-[#ff5474] hover:text-[#ff5474]'}`}
                   >
                     {c}
                   </button>
@@ -147,7 +147,7 @@ export default function RingBuilder() {
             </div>
 
             <div className="border-b border-[#E5E5E5] pb-8">
-              <h4 className="text-[10px] uppercase tracking-widest font-bold mb-6 text-[#2B2728]">3. SELECT METAL</h4>
+              <h4 className="text-[10px] capitalize tracking-wide font-bold mb-6 text-[#101010]">3. Select Metal</h4>
               <div className="flex flex-wrap gap-5">
                 {metals.map(m => (
                   <div key={m.id} className="flex flex-col items-center gap-3">
@@ -155,24 +155,24 @@ export default function RingBuilder() {
                       onClick={() => setMetal(m.id)}
                       className={`w-9 h-9 rounded-full shadow-inner ring-2 ring-offset-2 transition-all ${m.bg} ${metal === m.id ? 'ring-[#ff5474]' : 'ring-transparent border border-gray-200'}`}
                     ></button>
-                    <span className="text-[9px] uppercase tracking-widest text-[#2B2728] font-medium">{m.name}</span>
+                    <span className="text-[9px] capitalize tracking-wide text-[#101010] font-medium">{m.name}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h4 className="text-[10px] uppercase tracking-widest font-bold mb-6 text-[#2B2728]">4. RING SIZE</h4>
+              <h4 className="text-[10px] capitalize tracking-wide font-bold mb-6 text-[#101010]">4. Ring Size</h4>
               <div className="flex flex-col sm:flex-row sm:items-center gap-6">
                 <div className="relative flex-1 max-w-[200px]">
-                  <select className="w-full appearance-none border border-[#E5E5E5] py-3 px-4 text-[13px] font-medium text-[#2B2728] bg-[#FAF8F5] focus:outline-none focus:border-[#ff5474] rounded-sm">
+                  <select className="w-full appearance-none border border-[#E5E5E5] py-3 px-4 text-[13px] font-medium text-[#101010] bg-[#FAF8F5] focus:outline-none focus:border-[#ff5474] rounded-sm">
                     <option>AU / US / 5</option>
                     <option>AU / US / 5.5</option>
                     <option>AU / US / 6</option>
                   </select>
-                  <svg className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#2B2728]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  <svg className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#101010]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                 </div>
-                <button onClick={(e) => { e.preventDefault(); setIsSizeGuideOpen(true); }} className="text-[11px] text-[#2B2728] underline underline-offset-4 decoration-[#E5E5E5] hover:decoration-[#2B2728] transition-colors flex items-center gap-2 font-medium">
+                <button onClick={(e) => { e.preventDefault(); setIsSizeGuideOpen(true); }} className="text-[11px] text-[#101010] underline underline-offset-4 decoration-[#E5E5E5] hover:decoration-[#101010] transition-colors flex items-center gap-2 font-medium">
                   What's my size?
                   <svg className="w-5 h-5 text-[#A0A0A0]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="6" width="20" height="12" rx="2" /><path d="M6 6v12M10 6v6M14 6v12M18 6v6" /></svg>
                 </button>

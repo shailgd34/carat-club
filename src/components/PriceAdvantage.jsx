@@ -36,7 +36,7 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
               </div>
               <div>
-                <div className="text-[#2B2728] font-bold text-[18px] tracking-wide">-40%</div>
+                <div className="text-[#101010] font-bold text-[18px] tracking-wide">-40%</div>
                 <div className="text-gray-500 text-[10px] font-bold tracking-widest uppercase">vs Traditional Retail</div>
               </div>
             </div>
@@ -47,18 +47,18 @@ export default function PriceAdvantage() {
         {/* Right Typography Area */}
         <div className="lg:w-[50%] w-full relative z-20 order-1 lg:order-2">
 
-          <div className="flex items-center gap-4 mb-10">
-            <span className="text-[11px] uppercase tracking-[0.4em] text-[#ff5474] font-bold">THE DIRECT ADVANTAGE</span>
-            <div className="w-16 h-[1px] bg-[#ff5474]"></div>
+          <div className="flex items-center gap-4 mb-8">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-[#ff5474] font-bold">THE DIRECT ADVANTAGE</span>
+            <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl xl:text-[52px] leading-[1.2] text-[#2B2728] font-light mb-5 capitalize">
-            <span className="block">We cut out the middlemen.</span>
+          <h2 className="text-4xl lg:text-5xl xl:text-[52px] leading-[1.1] text-[#101010] font-serif font-medium mb-3">
+            <span className="block">We Cut Out The Middlemen.</span>
           </h2>
 
           <div className="relative inline-block mb-10">
-            <span className="text-4xl lg:text-5xl xl:text-[54px] font-serif text-[#ff5474] italic font-light tracking-wide relative z-10 capitalize">
-              You keep the savings.
+            <span className="text-4xl lg:text-5xl xl:text-[54px] font-serif text-[#ff5474] italic font-light relative z-10">
+              You Keep The Savings.
             </span>
             <div className="absolute bottom-2 left-0 w-full h-[30%] bg-[#ff5474]/10 -z-10 -skew-x-12"></div>
           </div>
@@ -74,7 +74,7 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
               </div>
               <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-semibold tracking-[0.1em] text-[#2B2728] mb-1.5 capitalize">Direct Sourcing</div>
+                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">Direct Sourcing</div>
                 <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Better prices, directly to you.</div>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
               </div>
               <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-semibold tracking-[0.1em] text-[#2B2728] mb-1.5 capitalize">No Markups</div>
+                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">No Markups</div>
                 <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">You save up to 40% more.</div>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
               </div>
               <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-semibold tracking-[0.1em] text-[#2B2728] mb-1.5 capitalize">IGI Certified</div>
+                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">IGI Certified</div>
                 <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Diamonds you can fully trust.</div>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
               </div>
               <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-semibold tracking-[0.1em] text-[#2B2728] mb-1.5 capitalize">Ethical</div>
+                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">Ethical</div>
                 <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Better for the entire planet.</div>
               </div>
             </div>

@@ -17,11 +17,11 @@ export default function Reviews() {
 
         <div className="mb-14 flex flex-col items-center">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#ff5474] font-bold">CLIENT TESTIMONIALS</span>
+            <span className="text-[10px] capitalize tracking-[0.2em] text-[#ff5474] font-bold">Client Testimonials</span>
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#2B2728] tracking-wide">
-            STORIES OF <span className="italic font-light">BRILLIANCE</span>
+          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] tracking-wide capitalize">
+            Stories Of <span className="italic font-light">Brilliance</span>
           </h2>
         </div>
 
@@ -29,8 +29,8 @@ export default function Reviews() {
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 bg-[#FAF8F5] px-6 sm:px-8 py-3.5 rounded-full border border-[#E5E5E5]">
             <div className="flex items-center gap-3">
               <div className="flex text-[#ff5474] text-[13px] tracking-widest">★★★★★</div>
-              <span className="text-sm font-bold text-[#2B2728]">4.9</span>
-              <span className="hidden sm:inline text-xs text-[#A0A0A0] font-medium tracking-wide uppercase">FROM 2,300+ REVIEWS</span>
+              <span className="text-sm font-bold text-[#101010]">4.9</span>
+              <span className="hidden sm:inline text-xs text-[#A0A0A0] font-medium tracking-wide capitalize">From 2,300+ Reviews</span>
             </div>
 
             <div className="hidden sm:block w-[1px] h-4 bg-[#E5E5E5]"></div>
@@ -43,12 +43,12 @@ export default function Reviews() {
                   <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
                   <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                 </svg>
-                <span className="text-xs font-bold text-[#2B2728]">4.9</span>
+                <span className="text-xs font-bold text-[#101010]">4.9</span>
               </div>
               <div className="w-[1px] h-4 bg-[#E5E5E5]"></div>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold text-[#00b67a] tracking-wider">★ Trustpilot</span>
-                <span className="text-xs font-bold text-[#2B2728]">4.9</span>
+                <span className="text-xs font-bold text-[#101010]">4.9</span>
               </div>
             </div>
           </div>
@@ -62,10 +62,10 @@ export default function Reviews() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
                 <div className="flex text-[#ff5474] text-sm mb-6">★★★★★</div>
-                <p className="text-sm lg:text-[15px] text-[#2B2728] font-medium leading-relaxed mb-8 italic">"{r.text}"</p>
+                <p className="text-sm lg:text-[15px] text-[#101010] font-medium leading-relaxed mb-8 italic">"{r.text}"</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <div className="w-8 h-[1px] bg-[#ff5474]"></div>
-                  <div className="text-[11px] font-bold tracking-widest uppercase text-[#2B2728]">{r.name}</div>
+                  <div className="text-[11px] font-bold tracking-wide capitalize text-[#101010]">{r.name}</div>
                   <svg className="w-4 h-4 text-green-500 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 </div>
               </div>

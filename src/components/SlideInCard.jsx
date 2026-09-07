@@ -33,7 +33,7 @@ export default function SlideInCard() {
           setShow(false);
           setTimeout(() => setHasDismissed(true), 700); // wait for animation to finish
         }}
-        className="absolute top-4 right-4 text-[#A0A0A0] hover:text-[#2B2728] transition-colors"
+        className="absolute top-4 right-4 text-[#A0A0A0] hover:text-[#101010] transition-colors"
       >
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
       </button>
@@ -45,7 +45,7 @@ export default function SlideInCard() {
         <span className="text-[10px] uppercase tracking-widest text-[#ff5474] font-bold">Only 30% Upfront</span>
       </div>
 
-      <h4 className="font-serif text-[17px] text-[#2B2728] mb-3 leading-tight pr-4">
+      <h4 className="font-serif text-[17px] text-[#101010] mb-3 leading-tight pr-4">
         Not ready to pay the full amount online?
       </h4>
 
@@ -53,7 +53,7 @@ export default function SlideInCard() {
         Eligible customers can begin with a 30% deposit and pay the balance upon local hand delivery or collection.
       </p>
 
-      <a href="#" className="inline-block border-b border-[#2B2728] text-[#2B2728] text-[10px] uppercase font-bold tracking-[0.2em] pb-1 hover:text-[#ff5474] hover:border-[#ff5474] transition-colors">
+      <a href="#" className="inline-block border-b border-[#101010] text-[#101010] text-[10px] uppercase font-bold tracking-[0.2em] pb-1 hover:text-[#ff5474] hover:border-[#ff5474] transition-colors">
         Learn More
       </a>
     </div>

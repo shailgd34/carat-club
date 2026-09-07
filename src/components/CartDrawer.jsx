@@ -17,7 +17,7 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
 
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-[#E5E5E5]">
-          <h2 className="font-serif text-[20px] text-[#2B2728] uppercase tracking-widest">Your Cart (1)</h2>
+          <h2 className="font-serif text-[20px] text-[#101010] uppercase tracking-widest">Your Cart (1)</h2>
           <button
             onClick={() => setIsOpen(false)}
             className="text-[#999] hover:text-[#ff5474] transition-colors"
@@ -34,7 +34,7 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
             </div>
             <div className="flex flex-col flex-1">
               <div className="flex justify-between items-start mb-1">
-                <h3 className="font-bold text-[13px] text-[#2B2728] pr-4 leading-tight">Classic Solitaire Round Brilliant</h3>
+                <h3 className="font-bold text-[13px] text-[#101010] pr-4 leading-tight">Classic Solitaire Round Brilliant</h3>
                 <button className="text-[#999] hover:text-red-500 transition-colors">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" /></svg>
                 </button>
@@ -44,11 +44,11 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
               <div className="flex items-center justify-between mt-auto">
                 {/* Quantity */}
                 <div className="flex items-center border border-[#EBEBEB] bg-white">
-                  <button className="w-8 h-8 flex items-center justify-center text-[#999] hover:text-[#2B2728]">-</button>
-                  <span className="w-6 text-center text-[12px] font-medium text-[#2B2728]">1</span>
-                  <button className="w-8 h-8 flex items-center justify-center text-[#999] hover:text-[#2B2728]">+</button>
+                  <button className="w-8 h-8 flex items-center justify-center text-[#999] hover:text-[#101010]">-</button>
+                  <span className="w-6 text-center text-[12px] font-medium text-[#101010]">1</span>
+                  <button className="w-8 h-8 flex items-center justify-center text-[#999] hover:text-[#101010]">+</button>
                 </div>
-                <span className="font-bold text-[13px] text-[#2B2728]">AUD $2,890</span>
+                <span className="font-bold text-[13px] text-[#101010]">AUD $2,890</span>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
         {/* Footer */}
         <div className="border-t border-[#E5E5E5] p-6 bg-[#FAF8F5]">
           <div className="flex justify-between items-center mb-4">
-            <span className="text-[14px] font-bold text-[#2B2728] uppercase tracking-widest">Subtotal</span>
+            <span className="text-[14px] font-bold text-[#101010] uppercase tracking-widest">Subtotal</span>
             <span className="font-bold text-[18px] text-[#ff5474]">AUD $2,890</span>
           </div>
           <p className="text-[11px] text-[#666] mb-6 text-center">Taxes and shipping calculated at checkout.</p>
@@ -71,7 +71,7 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
           <Link
             to="/cart"
             onClick={() => setIsOpen(false)}
-            className="w-full bg-white border border-[#EBEBEB] text-[#2B2728] text-[11px] font-bold tracking-widest uppercase py-3.5 text-center hover:bg-gray-50 transition-colors block"
+            className="w-full bg-white border border-[#EBEBEB] text-[#101010] text-[11px] font-bold tracking-widest uppercase py-3.5 text-center hover:bg-gray-50 transition-colors block"
           >
             VIEW FULL CART
           </Link>

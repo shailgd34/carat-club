@@ -20,19 +20,19 @@ export default function CustomJewellery() {
         {/* Left Content */}
         <div className="text-center lg:text-left flex flex-col items-center lg:items-start lg:pl-12 xl:pl-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#ff5474] font-bold">BESPOKE DESIGN</span>
+            <span className="text-[10px] capitalize tracking-[0.2em] text-[#ff5474] font-bold">Bespoke Design</span>
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#2B2728] mb-6 leading-tight">
-            CAN’T FIND EXACTLY <br className="hidden lg:block" /> WHAT YOU WANT?
+          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] mb-6 leading-tight capitalize">
+            Can’t Find Exactly <br className="hidden lg:block" /> What You Want?
           </h2>
           <p className="text-sm text-[#666] mb-10 max-w-md font-medium leading-relaxed">
             Send us a photo or sketch of your dream ring, and our master jewelers will bring it to life with unparalleled craftsmanship.
           </p>
 
-          <Link to="/custom-jewellery" className="whitespace-nowrap bg-gradient-to-r from-[#2B2728] to-[#1a1819] text-white text-[11px] uppercase tracking-widest font-semibold px-10 py-5 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
-            SUBMIT YOUR DESIGN <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          <Link to="/custom-jewellery" className="whitespace-nowrap bg-[#101010] text-white text-[11px] capitalize tracking-wide font-semibold px-10 py-5 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
+            Submit Your Design <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>
         </div>
 
@@ -47,7 +47,7 @@ export default function CustomJewellery() {
                 <polyline points="21 15 16 10 5 21" />
               </svg>
             </div>
-            <div className="text-[11px] font-bold text-[#2B2728] tracking-widest mb-2 uppercase leading-snug">Upload a photo<br />or sketch</div>
+            <div className="text-[11px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">Upload A Photo<br />Or Sketch</div>
             <div className="text-[11px] text-[#A0A0A0] font-medium">Share your vision with us.</div>
           </div>
 
@@ -57,7 +57,7 @@ export default function CustomJewellery() {
                 <path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
               </svg>
             </div>
-            <div className="text-[11px] font-bold text-[#2B2728] tracking-widest mb-2 uppercase leading-snug">Experts design<br />for you</div>
+            <div className="text-[11px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">Experts Design<br />For You</div>
             <div className="text-[11px] text-[#A0A0A0] font-medium">We create a precise 3D model.</div>
           </div>
 
@@ -67,7 +67,7 @@ export default function CustomJewellery() {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
             </div>
-            <div className="text-[11px] font-bold text-[#2B2728] tracking-widest mb-2 uppercase leading-snug">We craft your<br />dream piece</div>
+            <div className="text-[11px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">We Craft Your<br />Dream Piece</div>
             <div className="text-[11px] text-[#A0A0A0] font-medium">Delivered securely to your door.</div>
           </div>
 

@@ -43,7 +43,7 @@ export default function SolitairePage() {
             <span className="text-[#ff5474]">Solitaire</span>
           </div>
           <div className="max-w-xl">
-            <h1 className="text-5xl lg:text-6xl font-serif text-[#2B2728] mb-4 uppercase">SOLITAIRE</h1>
+            <h1 className="text-5xl lg:text-6xl font-serif text-[#101010] mb-4 uppercase">SOLITAIRE</h1>
             <p className="text-2xl font-serif text-[#ff5474] italic mb-6">Timeless. Classic. Forever.</p>
             <p className="text-[#666] font-medium leading-relaxed max-w-md">
               The purest expression of love. Our solitaire rings showcase a single, stunning diamond that lets brilliance take center stage.
@@ -63,8 +63,8 @@ export default function SolitairePage() {
                   <div
                     onClick={() => setActiveStyle(s.name)}
                     className={`flex flex-col items-center justify-center p-4 cursor-pointer w-[190px] h-[160px] relative transition-colors ${isActive
-                        ? 'border border-[#E5E5E5] border-b-[4px] border-b-[#ff5474] bg-[#fdf5f6]'
-                        : 'border border-transparent hover:bg-gray-50'
+                      ? 'border border-[#E5E5E5] border-b-[4px] border-b-[#ff5474] bg-[#fdf5f6]'
+                      : 'border border-transparent hover:bg-gray-50'
                       }`}
                   >
                     <img src={s.img} alt={s.name} className="h-24 w-auto object-contain mix-blend-multiply mb-3 hover:scale-110 transition-transform duration-500" />
@@ -79,7 +79,7 @@ export default function SolitairePage() {
               );
             })}
           </div>
-          <div className="bg-[#2B2728] p-6 h-[160px] flex flex-col justify-center w-[240px] shrink-0 relative overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all">
+          <div className="bg-[#101010] p-6 h-[160px] flex flex-col justify-center w-[240px] shrink-0 relative overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all">
             <div className="relative z-10 flex flex-col items-start">
               <h4 className="font-serif font-bold text-white text-[13px] tracking-widest uppercase mb-2">CUSTOM DESIGN</h4>
               <p className="text-[11px] text-gray-300 leading-snug mb-4">Your dream ring,<br />made just for you.</p>
@@ -101,7 +101,7 @@ export default function SolitairePage() {
         {/* Sidebar */}
         <aside className="w-[280px] hidden lg:block shrink-0">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="font-bold text-[13px] tracking-widest text-[#2B2728]">FILTERS</h3>
+            <h3 className="font-bold text-[13px] tracking-widest text-[#101010]">FILTERS</h3>
             <button className="text-[10px] text-[#999] hover:text-[#ff5474] uppercase tracking-widest">Reset All</button>
           </div>
 
@@ -110,7 +110,7 @@ export default function SolitairePage() {
             {/* Diamond Shape */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-4 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">DIAMOND SHAPE</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">DIAMOND SHAPE</h4>
                 <svg className="w-4 h-4 text-[#666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 9l6 6 6-6" /></svg>
               </div>
               <div className="space-y-3">
@@ -128,7 +128,7 @@ export default function SolitairePage() {
             {/* Carat */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-4 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">CARAT</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">CARAT</h4>
                 <svg className="w-4 h-4 text-[#666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 9l6 6 6-6" /></svg>
               </div>
               <div className="grid grid-cols-2 gap-2 mb-6">
@@ -154,7 +154,7 @@ export default function SolitairePage() {
             {/* Metal */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-4 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">METAL</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">METAL</h4>
                 <svg className="w-4 h-4 text-[#666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 15l-6-6-6 6" /></svg>
               </div>
               <div className="space-y-3">
@@ -180,7 +180,7 @@ export default function SolitairePage() {
             {/* Other sections collapsed */}
             {['PRICE RANGE', 'SETTING STYLE', 'RING SIZE'].map((filter, i) => (
               <div key={i} className="p-6 flex justify-between items-center cursor-pointer hover:bg-gray-50">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">{filter}</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">{filter}</h4>
                 <svg className="w-4 h-4 text-[#666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 9l6 6 6-6" /></svg>
               </div>
             ))}
@@ -198,7 +198,7 @@ export default function SolitairePage() {
             <span className="text-[12px] font-medium text-[#666]">124 RINGS FOUND</span>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
-                <span className="text-[11px] font-bold tracking-widest text-[#2B2728]">SORT BY</span>
+                <span className="text-[11px] font-bold tracking-widest text-[#101010]">SORT BY</span>
                 <select className="border border-[#E5E5E5] bg-white text-[12px] text-[#666] py-1.5 px-3 outline-none cursor-pointer pr-8 focus:border-[#ff5474]">
                   <option>Popular</option>
                   <option>Price: Low to High</option>
@@ -207,7 +207,7 @@ export default function SolitairePage() {
                 </select>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-[11px] font-bold tracking-widest text-[#2B2728]">VIEW</span>
+                <span className="text-[11px] font-bold tracking-widest text-[#101010]">VIEW</span>
                 <div className="flex gap-1">
                   <button className="w-7 h-7 flex items-center justify-center border border-[#ff5474] bg-[#fdf5f6] text-[#ff5474]">
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zM3 14h7v7H3v-7z" /></svg>
@@ -237,9 +237,9 @@ export default function SolitairePage() {
                 <div className="w-full h-56 mb-6 flex items-center justify-center overflow-hidden mix-blend-multiply p-2">
                   <img src={product.img} alt={product.name} className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700" />
                 </div>
-                <h4 className="font-serif text-[15px] font-bold text-[#2B2728] text-center mb-1 leading-snug">{product.name}</h4>
+                <h4 className="font-serif text-[15px] font-bold text-[#101010] text-center mb-1 leading-snug">{product.name}</h4>
                 <p className="text-[11px] text-[#666] mb-4">{product.carat} • {product.metal}</p>
-                <p className="font-bold text-[#2B2728] text-[13px] mb-3">AUD ${product.price}</p>
+                <p className="font-bold text-[#101010] text-[13px] mb-3">AUD ${product.price}</p>
 
                 <div className="flex items-center gap-1 mb-6">
                   <div className="flex text-[#F5C518]">
@@ -269,7 +269,7 @@ export default function SolitairePage() {
           {/* Middle: Text and Button */}
           <div className="w-full lg:w-[30%] px-8 py-10 flex flex-col justify-center items-start relative z-10">
             <p className="text-[9px] text-[#ff5474] font-bold tracking-widest uppercase mb-3">Can't find exactly what you want?</p>
-            <h3 className="text-3xl font-serif text-[#2B2728] mb-3">Create Your Dream Ring</h3>
+            <h3 className="text-3xl font-serif text-[#101010] mb-3">Create Your Dream Ring</h3>
             <p className="text-[#555] text-[13px] max-w-sm mb-6 leading-relaxed">Work with our expert designers to create a ring that's as unique as your love story.</p>
             <button className="bg-[#ff5474] text-white text-[10px] uppercase tracking-widest font-bold px-8 py-3 hover:bg-[#D46278] transition-colors flex items-center gap-2">
               START CUSTOM DESIGN <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
@@ -323,8 +323,8 @@ export default function SolitairePage() {
           <div className="flex items-center justify-center gap-4 pt-6 md:pt-0">
             <svg className="w-8 h-8 text-[#ff5474] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
             <div className="text-left">
-              <div className="text-[11px] uppercase font-bold tracking-widest text-[#333] mb-0.5">LIFETIME CARE</div>
-              <div className="text-[11px] text-[#666] font-medium">Free resizing & cleaning</div>
+              <div className="text-[11px] uppercase font-bold tracking-widest text-[#333] mb-0.5">EXCEPTIONAL VALUE</div>
+              <div className="text-[11px] text-[#666] font-medium">Premium quality, accessible prices</div>
             </div>
           </div>
 

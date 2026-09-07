@@ -14,7 +14,7 @@ export default function AnnouncementBar() {
                 <path d="M9 12l2 2 4-4" />
               </svg>
               <div className="flex flex-col text-left">
-                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#2B2728]">ONLY 30% DEPOSIT</span>
+                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#101010]">ONLY 30% DEPOSIT</span>
                 <span className="text-[#666666] text-[10px]">Pay 30% today, rest later</span>
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function AnnouncementBar() {
                 <circle cx="12" cy="14" r="3" />
               </svg>
               <div className="flex flex-col text-left">
-                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#2B2728]">PERSONAL HAND DELIVERY</span>
+                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#101010]">PERSONAL HAND DELIVERY</span>
                 <span className="text-[#666666] text-[10px]">Gold Coast & Auckland</span>
               </div>
             </div>
@@ -38,7 +38,7 @@ export default function AnnouncementBar() {
                 <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
               </svg>
               <div className="flex flex-col text-left">
-                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#2B2728]">FREE INSURED SHIPPING</span>
+                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#101010]">FREE INSURED SHIPPING</span>
                 <span className="text-[#666666] text-[10px]">Across Australia & New Zealand</span>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function AnnouncementBar() {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
               <div className="flex flex-col text-left">
-                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#2B2728]">NO MIDDLEMEN PRICING</span>
+                <span className="font-semibold text-[9px] uppercase tracking-widest text-[#101010]">NO MIDDLEMEN PRICING</span>
                 <span className="text-[#666666] text-[10px]">Luxury without the markup</span>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function AnnouncementBar() {
 
         <div className="flex items-center gap-1.5 cursor-pointer flex-shrink-0 pl-6 border-l border-[#E5E5E5]">
           <img src="https://flagcdn.com/w20/au.png" alt="Australia" className="w-4 h-auto rounded-full object-cover" style={{ width: '16px', height: '16px' }} />
-          <span className="font-medium text-[10px] hidden sm:inline text-[#2B2728]">Australia (AUD)</span>
+          <span className="font-medium text-[10px] hidden sm:inline text-[#101010]">Australia (AUD)</span>
           <svg className="w-3 h-3 text-[#666666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 9l6 6 6-6" /></svg>
         </div>
       </div>

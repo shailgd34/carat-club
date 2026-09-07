@@ -262,30 +262,30 @@ export default function AccountPage() {
                   <form className="space-y-8 mt-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div className="relative group pt-4">
-                        <input type="text" id="firstName" defaultValue="Sarah" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="First Name" />
+                        <input type="text" id="firstName" defaultValue="Sarah" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="First Name" />
                         <label htmlFor="firstName" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">First Name</label>
                       </div>
 
                       <div className="relative group pt-4">
-                        <input type="text" id="lastName" defaultValue="Jenkins" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Last Name" />
+                        <input type="text" id="lastName" defaultValue="Jenkins" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Last Name" />
                         <label htmlFor="lastName" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">Last Name</label>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div className="relative group pt-4">
-                        <input type="email" id="email" defaultValue="sarah.jenkins@example.com" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Email" />
+                        <input type="email" id="email" defaultValue="sarah.jenkins@example.com" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Email" />
                         <label htmlFor="email" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">Email Address</label>
                       </div>
 
                       <div className="relative group pt-4">
-                        <input type="tel" id="phone" defaultValue="+61 400 123 456" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Phone" />
+                        <input type="tel" id="phone" defaultValue="+61 400 123 456" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Phone" />
                         <label htmlFor="phone" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">Phone Number</label>
                       </div>
                     </div>
 
                     <div className="relative group pt-4 mb-8">
-                      <input type="date" id="dob" defaultValue="1990-05-15" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" />
+                      <input type="date" id="dob" defaultValue="1990-05-15" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" />
                       <label htmlFor="dob" className="absolute left-0 top-0 text-[11px] font-semibold text-[#555] tracking-widest uppercase transition-all peer-focus:text-[#ff5474]">Date of Birth</label>
                     </div>
 
@@ -293,11 +293,11 @@ export default function AccountPage() {
                       <h3 className="font-bold text-sm text-brand-charcoal mb-6">Change Password</h3>
                       <div className="space-y-8">
                         <div className="relative group pt-4">
-                          <input type="password" id="currentPassword" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Current Password" />
+                          <input type="password" id="currentPassword" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="Current Password" />
                           <label htmlFor="currentPassword" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">Current Password</label>
                         </div>
                         <div className="relative group pt-4">
-                          <input type="password" id="newPassword" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#2B2728] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="New Password" />
+                          <input type="password" id="newPassword" required className="w-full bg-transparent border-b border-[#C4C4C4] py-2 text-[15px] text-[#101010] outline-none focus:border-[#ff5474] transition-colors peer placeholder-transparent" placeholder="New Password" />
                           <label htmlFor="newPassword" className="absolute left-0 top-6 text-[13px] text-[#777] tracking-widest uppercase transition-all peer-focus:top-0 peer-focus:text-[11px] peer-focus:font-semibold peer-focus:text-[#ff5474] peer-valid:top-0 peer-valid:text-[11px] peer-valid:font-semibold peer-valid:text-[#555]">New Password</label>
                         </div>
                       </div>

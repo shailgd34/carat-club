@@ -16,7 +16,7 @@ export default function SitemapPage() {
       title: "Services",
       links: [
         { name: "30% Deposit & Delivery", path: "/deposit-delivery" },
-        { name: "Book a Consultation", path: "/customer-care/consultation" },
+        { name: "SHop Diamond", path: "/customer-care/consultation" },
         { name: "Track Your Order", path: "/customer-care/track-order" },
         { name: "Showcase", path: "/showcase" }
       ]

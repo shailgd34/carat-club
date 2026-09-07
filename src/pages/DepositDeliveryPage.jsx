@@ -26,7 +26,7 @@ export default function DepositDeliveryPage() {
 
             {/* Headline */}
             <h1 className="font-serif text-[54px] md:text-[70px] lg:text-[82px] leading-[1.05] mb-6 tracking-tight">
-              <span className="text-[#2B2728]">Luxury Made Easy.</span><br />
+              <span className="text-[#101010]">Luxury Made Easy.</span><br />
               <span className="text-[#ff5474]">Pay Less Today,</span><br />
               <span className="text-[#ff5474]">Love Forever.</span>
             </h1>
@@ -54,7 +54,7 @@ export default function DepositDeliveryPage() {
                   <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-[0_2px_8px_rgba(226,125,144,0.08)]">
                     <svg className="w-5 h-5 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">{f.icon}</svg>
                   </div>
-                  <h4 className="text-[11px] font-serif font-bold tracking-widest text-[#2B2728] uppercase mb-1.5 leading-tight whitespace-nowrap">{f.title}</h4>
+                  <h4 className="text-[11px] font-serif font-bold tracking-widest text-[#101010] uppercase mb-1.5 leading-tight whitespace-nowrap">{f.title}</h4>
                   <p className="text-[11px] text-[#666] leading-snug">{f.desc}</p>
                 </div>
               ))}
@@ -67,7 +67,7 @@ export default function DepositDeliveryPage() {
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
               <Link to="/" className="flex items-center justify-center gap-3 border border-[#ff5474]/30 bg-[#FAF8F5]/50 text-[#ff5474] text-[13px] font-bold tracking-widest uppercase py-4 px-8 text-center hover:bg-[#FDF5F6] transition-colors group shadow-sm">
-                BOOK A CONSULTATION
+                SHop Diamond
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </div>
@@ -79,9 +79,9 @@ export default function DepositDeliveryPage() {
           <div className="w-48 h-48 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex flex-col items-center justify-center text-center p-6 border-[6px] border-[#FAF8F5]/80">
             <div className="w-[150px] h-[150px] rounded-full border border-dashed border-[#ff5474]/50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             <svg className="w-6 h-6 text-[#ff5474] mb-2 relative z-10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" /></svg>
-            <span className="text-[13px] font-bold tracking-widest text-[#2B2728] uppercase mb-1 relative z-10 leading-tight">GOLD COAST<br />&amp; AUCKLAND</span>
+            <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase mb-1 relative z-10 leading-tight">GOLD COAST<br />&amp; AUCKLAND</span>
             <span className="text-[36px] font-serif text-[#ff5474] leading-none mb-1 relative z-10">100KM</span>
-            <span className="text-[11px] font-bold tracking-widest text-[#2B2728] uppercase relative z-10">DELIVERY RADIUS</span>
+            <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase relative z-10">DELIVERY RADIUS</span>
             <div className="flex gap-1 mt-2 relative z-10">
               <div className="w-1 h-[2px] bg-[#ff5474]/40"></div>
               <div className="w-1 h-[2px] bg-[#ff5474]/40"></div>
@@ -97,16 +97,16 @@ export default function DepositDeliveryPage() {
           <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-6">
             {[
               { icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></>, title: "IGI CERTIFIED DIAMONDS", desc: "Authenticity you can trust" },
-              { icon: <><circle cx="12" cy="16" r="6" /><path d="M12 10L10 6h4l-2 4z" /></>, title: "LIFETIME CARE", desc: "Free resizing & cleaning" },
+              { icon: <><circle cx="12" cy="16" r="6" /><path d="M12 10L10 6h4l-2 4z" /></>, title: "EXCEPTIONAL VALUE", desc: "Premium quality, accessible prices" },
               { icon: <><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></>, title: "FREE & INSURED SHIPPING", desc: "Australia Wide & New Zealand" },
-              { icon: <><circle cx="12" cy="12" r="10" /><path d="M9 15l6-6M9 9h.01M15 15h.01" /></>, title: "30% DEPOSIT OPTION", desc: "Pay less today, love forever" },
-              { icon: <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />, title: "PERSONAL HAND DELIVERY", desc: "Within 100km radius" }
+              { icon: <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></>, title: "30% DEPOSIT WITH HAND DELIVERY", desc: "Within 100km Gold Coast & Auckland" },
+              { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />, title: "NO MIDDLE MAN", desc: "Direct from our workshop to you" }
             ].map((feature, i) => (
               <React.Fragment key={i}>
                 <div className="flex items-center gap-4 flex-1">
                   <svg className="w-7 h-7 text-[#ff5474] shrink-0 stroke-[1.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">{feature.icon}</svg>
                   <div>
-                    <h4 className="text-[12px] font-bold tracking-widest text-[#2B2728] uppercase mb-0.5">{feature.title}</h4>
+                    <h4 className="text-[12px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">{feature.title}</h4>
                     <p className="text-[12px] text-[#666]">{feature.desc}</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function DepositDeliveryPage() {
       <section className="py-24 bg-white relative">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="font-serif text-[32px] md:text-[36px] text-[#2B2728] mb-4 uppercase tracking-widest">HOW IT WORKS</h2>
+            <h2 className="font-serif text-[32px] md:text-[36px] text-[#101010] mb-4 uppercase tracking-widest">HOW IT WORKS</h2>
             <div className="w-10 h-[2px] bg-[#ff5474]/50 mx-auto"></div>
           </div>
 
@@ -146,11 +146,11 @@ export default function DepositDeliveryPage() {
                     {item.step}
                   </div>
 
-                  <div className="w-24 h-24 flex items-center justify-center mb-6 text-[#2B2728]">
+                  <div className="w-24 h-24 flex items-center justify-center mb-6 text-[#101010]">
                     <svg className="w-20 h-20 stroke-[0.75]" viewBox="0 0 24 24" fill="none" stroke="currentColor">{item.icon}</svg>
                   </div>
 
-                  <h4 className="text-[15px] font-bold tracking-widest text-[#2B2728] uppercase mb-3 px-1 leading-tight">{item.title}</h4>
+                  <h4 className="text-[15px] font-bold tracking-widest text-[#101010] uppercase mb-3 px-1 leading-tight">{item.title}</h4>
                   <p className="text-[15px] text-[#666] leading-relaxed whitespace-pre-line">{item.desc}</p>
                 </div>
               ))}
@@ -166,7 +166,7 @@ export default function DepositDeliveryPage() {
 
             {/* Left side text */}
             <div className="w-full lg:w-[40%]">
-              <h2 className="font-serif text-[32px] md:text-[38px] lg:text-[42px] text-[#2B2728] mb-6 uppercase tracking-wide leading-[1.2]">
+              <h2 className="font-serif text-[32px] md:text-[38px] lg:text-[42px] text-[#101010] mb-6 uppercase tracking-wide leading-[1.2]">
                 PERSONAL HAND DELIVERY<br />WITHIN 100KM RADIUS
               </h2>
               <p className="text-[15px] md:text-[16px] text-[#4A4A4A] mb-8 leading-relaxed max-w-[500px]">
@@ -187,22 +187,34 @@ export default function DepositDeliveryPage() {
               {/* Gold Coast Map Card */}
               <div className="flex-1 bg-white border border-[#EBEBEB] relative shadow-[0_2px_15px_rgba(0,0,0,0.03)]">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-2.5 z-10 whitespace-nowrap" style={{ clipPath: 'polygon(5% 0, 95% 0, 100% 100%, 0 100%)' }}>
-                  <h4 className="text-[11px] font-bold tracking-widest text-[#2B2728] uppercase mt-1">GOLD COAST, AUSTRALIA</h4>
+                  <h4 className="text-[11px] font-bold tracking-widest text-[#101010] uppercase mt-1">GOLD COAST, AUSTRALIA</h4>
                 </div>
 
-                <div className="w-full aspect-[4/3] bg-[#F0F4F8] relative overflow-hidden flex items-center justify-center p-6 border-b border-[#EBEBEB]">
-                  {/* Faint map background using SVG pattern */}
-                  <div className="absolute inset-0 opacity-40 mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M54.627 0l.83.83v58.34l-.83.83H.83l-.83-.83V.83L.83 0h53.797zm-52.967 1.66v56.68h52.137V1.66H1.66z\' fill=\'%23d1d5db\' fill-opacity=\'1\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")', backgroundSize: '30px' }}></div>
+                <a href="https://maps.google.com/?q=26+Olivia+Dr,+Helensvale+QLD+4212,+Australia" target="_blank" rel="noopener noreferrer" className="block w-full aspect-[4/3] bg-[#E5E9F0] relative overflow-hidden border-b border-[#EBEBEB] group cursor-pointer flex items-center justify-center">
+                  {/* Real map as background, non-interactive */}
+                  <div className="absolute inset-0 z-0 pointer-events-none opacity-50 group-hover:opacity-70 transition-opacity duration-300">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.8675765799757!2d153.33614131505342!3d-27.905953082710185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91103c805eb55d%3A0xc3f631165a88c227!2s26%20Olivia%20Dr%2C%20Helensvale%20QLD%204212%2C%20Australia!5e0!3m2!1sen!2sus!4v1714500000000!5m2!1sen!2sus"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Gold Coast Studio Map Background"
+                    ></iframe>
+                  </div>
 
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full border border-[#ff5474]/60 flex items-center justify-center relative z-10 bg-white/30 backdrop-blur-sm">
+                  {/* 100km Radius Overlay */}
+                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full border border-[#ff5474] flex items-center justify-center relative z-10 bg-white/40 backdrop-blur-sm group-hover:scale-105 transition-transform duration-500 shadow-sm">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#ff5474]">
                       <svg className="w-8 h-8 md:w-10 md:h-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" /></svg>
                     </div>
-                    <span className="text-[11px] text-[#ff5474] font-bold absolute right-0 top-1/2 translate-x-[110%] -translate-y-1/2">100km</span>
+                    <span className="text-[11px] text-[#ff5474] font-bold absolute right-0 top-1/2 translate-x-[110%] -translate-y-1/2 bg-white/90 px-1.5 py-0.5 rounded shadow-sm">100km</span>
                   </div>
-                </div>
+                </a>
                 <div className="p-6">
-                  <p className="text-[13px] font-bold text-[#2B2728] mb-2">Our Studio</p>
+                  <p className="text-[13px] font-bold text-[#101010] mb-2">Our Studio</p>
                   <p className="text-[13px] text-[#666] leading-relaxed">Suite 3, 26 Olivia Drive,<br />Helensvale QLD 4212, Australia</p>
                 </div>
               </div>
@@ -210,22 +222,34 @@ export default function DepositDeliveryPage() {
               {/* Auckland Map Card */}
               <div className="flex-1 bg-white border border-[#EBEBEB] relative shadow-[0_2px_15px_rgba(0,0,0,0.03)] mt-8 md:mt-0">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-2.5 z-10 whitespace-nowrap" style={{ clipPath: 'polygon(5% 0, 95% 0, 100% 100%, 0 100%)' }}>
-                  <h4 className="text-[11px] font-bold tracking-widest text-[#2B2728] uppercase mt-1">AUCKLAND, NEW ZEALAND</h4>
+                  <h4 className="text-[11px] font-bold tracking-widest text-[#101010] uppercase mt-1">AUCKLAND, NEW ZEALAND</h4>
                 </div>
 
-                <div className="w-full aspect-[4/3] bg-[#F0F4F8] relative overflow-hidden flex items-center justify-center p-6 border-b border-[#EBEBEB]">
-                  {/* Faint map background using SVG pattern */}
-                  <div className="absolute inset-0 opacity-40 mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M54.627 0l.83.83v58.34l-.83.83H.83l-.83-.83V.83L.83 0h53.797zm-52.967 1.66v56.68h52.137V1.66H1.66z\' fill=\'%23d1d5db\' fill-opacity=\'1\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")', backgroundSize: '30px' }}></div>
+                <a href="https://maps.google.com/?q=22+Triton+Drive,+Albany,+Auckland+0632,+New+Zealand" target="_blank" rel="noopener noreferrer" className="block w-full aspect-[4/3] bg-[#E5E9F0] relative overflow-hidden border-b border-[#EBEBEB] group cursor-pointer flex items-center justify-center">
+                  {/* Real map as background, non-interactive */}
+                  <div className="absolute inset-0 z-0 pointer-events-none opacity-50 group-hover:opacity-70 transition-opacity duration-300">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.484931320074!2d174.72146901529124!3d-36.75880498394464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3b6ab76a39d5%3A0x95cf125c15fbdd15!2s22%20Triton%20Drive%2C%20Rosedale%2C%20Auckland%200632%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1714500000000!5m2!1sen!2sus"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Auckland Studio Map Background"
+                    ></iframe>
+                  </div>
 
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full border border-[#ff5474]/60 flex items-center justify-center relative z-10 bg-white/30 backdrop-blur-sm">
+                  {/* 100km Radius Overlay */}
+                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-full border border-[#ff5474] flex items-center justify-center relative z-10 bg-white/40 backdrop-blur-sm group-hover:scale-105 transition-transform duration-500 shadow-sm">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#ff5474]">
                       <svg className="w-8 h-8 md:w-10 md:h-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" /></svg>
                     </div>
-                    <span className="text-[11px] text-[#ff5474] font-bold absolute right-0 top-1/2 translate-x-[110%] -translate-y-1/2">100km</span>
+                    <span className="text-[11px] text-[#ff5474] font-bold absolute right-0 top-1/2 translate-x-[110%] -translate-y-1/2 bg-white/90 px-1.5 py-0.5 rounded shadow-sm">100km</span>
                   </div>
-                </div>
+                </a>
                 <div className="p-6">
-                  <p className="text-[13px] font-bold text-[#2B2728] mb-2">Our Studio</p>
+                  <p className="text-[13px] font-bold text-[#101010] mb-2">Our Studio</p>
                   <p className="text-[13px] text-[#666] leading-relaxed">Level 1, 22 Triton Drive,<br />Albany, Auckland 0632, New Zealand</p>
                 </div>
               </div>
@@ -247,7 +271,7 @@ export default function DepositDeliveryPage() {
 
           {/* Main Text and Icons */}
           <div className="flex-1 flex flex-col justify-center">
-            <h2 className="font-serif text-[38px] md:text-[44px] text-[#2B2728] mb-4 uppercase tracking-wide">
+            <h2 className="font-serif text-[38px] md:text-[44px] text-[#101010] mb-4 uppercase tracking-wide">
               YOUR RING, 100% PROTECTED
             </h2>
             <p className="text-[17px] md:text-[18px] text-[#4A4A4A] mb-12 max-w-[600px] leading-relaxed">
@@ -265,7 +289,7 @@ export default function DepositDeliveryPage() {
                   <div className="w-16 h-16 flex items-center justify-center mb-4 text-[#ff5474]">
                     <svg className="w-14 h-14 stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor">{item.icon}</svg>
                   </div>
-                  <h4 className="text-[15px] font-bold text-[#2B2728] mb-1.5 leading-tight">{item.title}</h4>
+                  <h4 className="text-[15px] font-bold text-[#101010] mb-1.5 leading-tight">{item.title}</h4>
                   <p className="text-[14px] text-[#666] leading-tight">{item.sub}</p>
                 </div>
               ))}
@@ -289,7 +313,7 @@ export default function DepositDeliveryPage() {
       {/* FAQ */}
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-4 lg:px-8">
-          <h2 className="font-serif text-[28px] text-center text-[#2B2728] mb-16 uppercase tracking-widest">FREQUENTLY ASKED QUESTIONS</h2>
+          <h2 className="font-serif text-[28px] text-center text-[#101010] mb-16 uppercase tracking-widest">FREQUENTLY ASKED QUESTIONS</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
             {[
@@ -319,7 +343,7 @@ export default function DepositDeliveryPage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-16">
 
             <div className="text-center md:text-left">
-              <h2 className="font-serif text-[24px] md:text-[26px] text-[#2B2728] uppercase tracking-wide mb-1">
+              <h2 className="font-serif text-[24px] md:text-[26px] text-[#101010] uppercase tracking-wide mb-1">
                 READY TO EXPERIENCE THE CARAT CLUB DIFFERENCE?
               </h2>
               <p className="text-[15px] text-[#4A4A4A] font-sans">

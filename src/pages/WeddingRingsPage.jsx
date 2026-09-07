@@ -39,7 +39,7 @@ export default function WeddingRingsPage() {
             <span className="text-[#ff5474]">Wedding Rings</span>
           </div>
           <div className="max-w-xl">
-            <h1 className="text-[52px] lg:text-[64px] font-serif text-[#2B2728] mb-4 uppercase tracking-tight leading-none">WEDDING RINGS</h1>
+            <h1 className="text-[52px] lg:text-[64px] font-serif text-[#101010] mb-4 uppercase tracking-tight leading-none">WEDDING RINGS</h1>
             <p className="text-[24px] font-serif text-[#ff5474] italic mb-6">A symbol of your forever.</p>
             <p className="text-[15px] text-[#666] leading-relaxed max-w-sm">
               Timeless bands crafted with exceptional quality and designed to be worn, loved and cherished every single day.
@@ -70,7 +70,7 @@ export default function WeddingRingsPage() {
         {/* Sidebar Filters */}
         <aside className="w-[280px] hidden lg:block shrink-0">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="font-bold text-[13px] tracking-widest text-[#2B2728]">FILTERS</h3>
+            <h3 className="font-bold text-[13px] tracking-widest text-[#101010]">FILTERS</h3>
             <button className="text-[10px] text-[#ff5474] hover:text-[#D46278] uppercase tracking-widest font-bold">RESET ALL</button>
           </div>
 
@@ -79,7 +79,7 @@ export default function WeddingRingsPage() {
             {/* Metal */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-5 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">METAL</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">METAL</h4>
                 <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 15l-6-6-6 6" /></svg>
               </div>
               <div className="space-y-4">
@@ -101,7 +101,7 @@ export default function WeddingRingsPage() {
             {/* Style */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-5 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">STYLE</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">STYLE</h4>
                 <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5" /></svg>
               </div>
               <div className="space-y-3">
@@ -117,7 +117,7 @@ export default function WeddingRingsPage() {
             {/* Price Range */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-5 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">PRICE RANGE</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">PRICE RANGE</h4>
                 <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 15l-6-6-6 6" /></svg>
               </div>
               <div className="space-y-3 mb-6">
@@ -146,7 +146,7 @@ export default function WeddingRingsPage() {
             {/* Ring Width */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-5 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">RING WIDTH</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">RING WIDTH</h4>
                 <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5" /></svg>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -159,7 +159,7 @@ export default function WeddingRingsPage() {
             {/* Ring Size */}
             <div className="p-6">
               <div className="flex justify-between items-center mb-5 cursor-pointer">
-                <h4 className="font-bold text-[11px] tracking-widest text-[#2B2728]">RING SIZE</h4>
+                <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">RING SIZE</h4>
                 <svg className="w-4 h-4 text-[#666]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 9l6 6 6-6" /></svg>
               </div>
               <select className="w-full border border-[#EBEBEB] bg-white p-2.5 text-[12px] text-[#666] outline-none hover:border-[#ff5474]">
@@ -185,7 +185,7 @@ export default function WeddingRingsPage() {
             <span className="text-[12px] font-medium text-[#666]">Showing 1-12 of 48 results</span>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-3">
-                <span className="text-[10px] font-bold tracking-widest text-[#2B2728] uppercase">SORT BY:</span>
+                <span className="text-[10px] font-bold tracking-widest text-[#101010] uppercase">SORT BY:</span>
                 <select className="border border-[#EBEBEB] bg-white text-[12px] text-[#666] py-1.5 px-3 outline-none cursor-pointer pr-6 hover:border-[#ff5474]">
                   <option>Featured</option>
                   <option>Price: Low to High</option>
@@ -226,7 +226,7 @@ export default function WeddingRingsPage() {
             <div className="w-full md:w-[60%] flex justify-between items-center px-4 md:px-12">
               <div className="flex-1 max-w-[300px]">
                 <h5 className="text-[10px] font-bold tracking-[0.2em] text-[#ff5474] uppercase mb-2">COMPLETE YOUR SET</h5>
-                <h2 className="font-serif text-[32px] text-[#2B2728] mb-3">The Perfect Pair</h2>
+                <h2 className="font-serif text-[32px] text-[#101010] mb-3">The Perfect Pair</h2>
                 <p className="text-[13px] text-[#666] leading-relaxed mb-6">Find the perfect wedding band to complement her engagement ring beautifully.</p>
                 <button className="bg-[#ff5474] text-white text-[10px] font-bold tracking-widest uppercase py-3.5 px-8 hover:bg-[#D46278] transition-colors">
                   BROWSE MATCHING BANDS →
@@ -239,21 +239,21 @@ export default function WeddingRingsPage() {
                   <div className="w-12 h-12 rounded-full border border-[#ff5474]/30 flex items-center justify-center mb-3 text-[#ff5474]">
                     <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
                   </div>
-                  <h6 className="text-[11px] font-bold text-[#2B2728] mb-1">Expert Craftsmanship</h6>
+                  <h6 className="text-[11px] font-bold text-[#101010] mb-1">Expert Craftsmanship</h6>
                   <p className="text-[10px] text-[#666] leading-tight">Made to last a lifetime.</p>
                 </div>
                 <div className="flex flex-col items-center text-center max-w-[100px]">
                   <div className="w-12 h-12 rounded-full border border-[#ff5474]/30 flex items-center justify-center mb-3 text-[#ff5474]">
                     <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 3h12l4 6-10 13L2 9Z" /><path d="M12 22V9M2 9h20M6 3l6 6 6-6" /></svg>
                   </div>
-                  <h6 className="text-[11px] font-bold text-[#2B2728] mb-1">Premium Materials</h6>
+                  <h6 className="text-[11px] font-bold text-[#101010] mb-1">Premium Materials</h6>
                   <p className="text-[10px] text-[#666] leading-tight">Only the finest gold &amp; diamonds.</p>
                 </div>
                 <div className="flex flex-col items-center text-center max-w-[100px]">
                   <div className="w-12 h-12 rounded-full border border-[#ff5474]/30 flex items-center justify-center mb-3 text-[#ff5474]">
                     <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /></svg>
                   </div>
-                  <h6 className="text-[11px] font-bold text-[#2B2728] mb-1">Comfort Fit</h6>
+                  <h6 className="text-[11px] font-bold text-[#101010] mb-1">Comfort Fit</h6>
                   <p className="text-[10px] text-[#666] leading-tight">Designed for everyday wear.</p>
                 </div>
               </div>
@@ -267,19 +267,19 @@ export default function WeddingRingsPage() {
       <section className="bg-white border-y border-[#E5E5E5] py-8">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8 flex flex-wrap lg:flex-nowrap justify-between gap-6">
           <div className="flex items-center gap-4 flex-1">
-            <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /><path d="M9 15l6-6M9 9h.01M15 15h.01" /></svg>
+            <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
             <div>
-              <h4 className="text-[10px] font-bold tracking-widest text-[#2B2728] uppercase mb-0.5">30% DEPOSIT OPTION</h4>
-              <p className="text-[11px] text-[#666]">Pay less today, love forever</p>
+              <h4 className="text-[10px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">30% DEPOSIT WITH HAND DELIVERY</h4>
+              <p className="text-[11px] text-[#666]">Within 100km Gold Coast &amp; Auckland</p>
             </div>
           </div>
           <div className="w-[1px] bg-[#E5E5E5] hidden lg:block"></div>
 
           <div className="flex items-center gap-4 flex-1">
-            <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+            <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
             <div>
-              <h4 className="text-[10px] font-bold tracking-widest text-[#2B2728] uppercase mb-0.5">PERSONAL HAND DELIVERY</h4>
-              <p className="text-[11px] text-[#666]">Within 100km Gold Coast &amp; Auckland</p>
+              <h4 className="text-[10px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">NO MIDDLE MAN</h4>
+              <p className="text-[11px] text-[#666]">Direct from our workshop to you</p>
             </div>
           </div>
           <div className="w-[1px] bg-[#E5E5E5] hidden lg:block"></div>
@@ -287,7 +287,7 @@ export default function WeddingRingsPage() {
           <div className="flex items-center gap-4 flex-1">
             <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
             <div>
-              <h4 className="text-[10px] font-bold tracking-widest text-[#2B2728] uppercase mb-0.5">FREE &amp; INSURED SHIPPING</h4>
+              <h4 className="text-[10px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">FREE &amp; INSURED SHIPPING</h4>
               <p className="text-[11px] text-[#666]">Australia Wide &amp; New Zealand</p>
             </div>
           </div>
@@ -296,8 +296,8 @@ export default function WeddingRingsPage() {
           <div className="flex items-center gap-4 flex-1">
             <svg className="w-8 h-8 text-[#ff5474] stroke-[1]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="16" r="6" /><path d="M12 10L10 6h4l-2 4z" /></svg>
             <div>
-              <h4 className="text-[10px] font-bold tracking-widest text-[#2B2728] uppercase mb-0.5">LIFETIME CARE</h4>
-              <p className="text-[11px] text-[#666]">Free resizing &amp; maintenance</p>
+              <h4 className="text-[10px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">EXCEPTIONAL VALUE</h4>
+              <p className="text-[11px] text-[#666]">Premium quality, accessible prices</p>
             </div>
           </div>
         </div>
@@ -306,7 +306,7 @@ export default function WeddingRingsPage() {
       {/* Reviews */}
       <section className="bg-[#FAF8F5] py-20 text-center">
         <h5 className="text-[10px] font-bold tracking-widest text-[#666] uppercase mb-2">LOVE, IN THEIR WORDS</h5>
-        <h2 className="font-serif text-[32px] text-[#2B2728] mb-8 uppercase tracking-widest">STORIES OF BRILLIANCE</h2>
+        <h2 className="font-serif text-[32px] text-[#101010] mb-8 uppercase tracking-widest">STORIES OF BRILLIANCE</h2>
 
         <div className="flex items-center justify-center gap-6 mb-12">
           <button className="w-10 h-10 rounded-full border border-[#ff5474] flex items-center justify-center text-[#ff5474] hover:bg-[#FDF5F6]">
@@ -320,7 +320,7 @@ export default function WeddingRingsPage() {
               {[1, 2, 3, 4, 5].map(s => <div key={s} className="w-8 h-8 bg-[#00b67a] flex items-center justify-center"><svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg></div>)}
             </div>
             <p className="text-[13px] text-[#666]">4.9 out of 5 based on 2,456 reviews</p>
-            <p className="font-bold text-[#2B2728] text-[15px] flex items-center gap-1 mt-1">
+            <p className="font-bold text-[#101010] text-[15px] flex items-center gap-1 mt-1">
               <svg className="w-5 h-5 text-[#00b67a]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
               Trustpilot
             </p>
@@ -353,9 +353,9 @@ function ProductCard({ product }) {
       <div className="w-full h-48 mb-6 flex items-center justify-center overflow-hidden mix-blend-multiply p-2">
         <img src={product.img} alt={product.name} className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
       </div>
-      <h4 className="font-serif text-[15px] font-bold text-[#2B2728] text-center mb-1 leading-snug">{product.name}</h4>
+      <h4 className="font-serif text-[15px] font-bold text-[#101010] text-center mb-1 leading-snug">{product.name}</h4>
       <p className="text-[11px] text-[#666] mb-4">{product.metal}</p>
-      <p className="font-bold text-[#2B2728] text-[13px] mb-3">AUD ${product.price}</p>
+      <p className="font-bold text-[#101010] text-[13px] mb-3">AUD ${product.price}</p>
 
       <div className="flex items-center gap-1 mb-6">
         <div className="flex text-[#F5C518]">

@@ -24,7 +24,7 @@ const ShowcasePage = () => {
             {[
               { name: 'Brand Ivory', var: 'bg-brand-ivory', hex: '#FAFAFA' },
               { name: 'Brand Cream', var: 'bg-brand-cream', hex: '#F5F5F5' },
-              { name: 'Brand Charcoal', var: 'bg-brand-charcoal', hex: '#2B2728', text: 'text-white' },
+              { name: 'Brand Charcoal', var: 'bg-brand-charcoal', hex: '#101010', text: 'text-white' },
               { name: 'Brand Gold', var: 'bg-[#ff5474]', hex: '#ff5474', text: 'text-white' }, // custom hex mapped in css but let's use arbitrary for demo if not in tailwind config
               { name: 'Brand Taupe', var: 'bg-[#7A7A7A]', hex: '#7A7A7A', text: 'text-white' },
               { name: 'Brand Dark', var: 'bg-brand-dark', hex: '#121212', text: 'text-white' },

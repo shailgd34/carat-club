@@ -6,7 +6,7 @@ export default function BackToTop() {
 
   const toggleVisibility = () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    
+
     // Toggle visibility
     if (winScroll > 300) {
       setIsVisible(true);
@@ -45,7 +45,7 @@ export default function BackToTop() {
     <div className={`fixed bottom-24 right-8 z-[90] transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12 pointer-events-none'}`}>
       <button
         onClick={scrollToTop}
-        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#2B2728]/80 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(255,84,116,0.5)] hover:-translate-y-1 transition-all duration-300 group outline-none"
+        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#101010]/80 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_25px_rgba(255,84,116,0.5)] hover:-translate-y-1 transition-all duration-300 group outline-none"
         aria-label="Back to top"
       >
         {/* Background track circle */}
@@ -74,11 +74,11 @@ export default function BackToTop() {
         </svg>
 
         {/* Arrow icon */}
-        <svg 
-          className="w-5 h-5 text-white transform group-hover:-translate-y-0.5 transition-transform duration-300 relative z-10" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
+        <svg
+          className="w-5 h-5 text-white transform group-hover:-translate-y-0.5 transition-transform duration-300 relative z-10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
           strokeWidth="2"
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
