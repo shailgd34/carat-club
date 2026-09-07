@@ -125,18 +125,19 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
   const renderMegaMenu = (data, id) => {
     if (activeMenu !== id) return null;
+    const topClass = isScrolled ? 'top-[70px]' : 'top-[156px]';
 
     if (data.layout === 'tabbed-grid') {
       return (
-        <div className="absolute top-full left-1/2 w-screen -translate-x-1/2 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
+        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-8 flex gap-8">
             {/* Sidebar Tabs */}
             <div className="w-[20%] pr-8 border-r border-[#E5E5E5] flex flex-col">
               <h4 className="text-[12px] font-sans font-semibold tracking-[0.2em] capitalize text-[#ff5474] mb-6">{data.sidebarTitle}</h4>
               <ul className="space-y-3 text-[14px] text-[#101010] capitalize tracking-normal font-medium flex-1 relative">
                 {data.tabs.map((tab, i) => (
-                  <li 
-                    key={i} 
+                  <li
+                    key={i}
                     onMouseEnter={() => setActiveMegaTab(i)}
                     className={`flex items-center justify-between group/link cursor-pointer py-3 px-4 rounded transition-colors ${activeMegaTab === i ? 'bg-[#F9F9F9] text-[#ff5474]' : 'hover:bg-[#F9F9F9]'}`}
                   >
@@ -206,7 +207,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'image-overlays') {
       return (
-        <div className="absolute top-full left-1/2 w-screen -translate-x-1/2 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
+        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-10 flex gap-4">
             {data.categories.map((cat, i) => (
               <Link to={cat.link || "#"} key={i} className="flex-1 relative group/card cursor-pointer h-[260px] overflow-hidden rounded-sm block">
@@ -229,7 +230,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'featured-split') {
       return (
-        <div className="absolute top-full left-1/2 w-screen -translate-x-1/2 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
+        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-10 flex gap-8">
             <Link to={data.featured.link} className="w-1/3 relative group/feature h-[320px] overflow-hidden rounded-sm block">
               <img src={data.featured.image} alt="Featured" className="w-full h-full object-cover transition-transform duration-700 group-hover/feature:scale-105" />
@@ -260,7 +261,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'visual-grid') {
       return (
-        <div className="absolute top-full left-1/2 w-screen -translate-x-1/2 bg-[#FAF8F5] border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
+        <div className={`fixed ${topClass} left-0 right-0 bg-[#FAF8F5] border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1200px] mx-auto px-8 py-10 grid grid-cols-6 gap-4">
             {data.categories.map((cat, i) => (
               <Link to="#" key={i} className={`relative group/card overflow-hidden rounded-sm block bg-white ${i === 0 || i === 1 ? 'col-span-3 h-[240px]' : 'col-span-2 h-[180px]'}`}>
@@ -525,31 +526,35 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
             </div>
 
             {/* Center: Main Navigation Links */}
-            <nav className="flex-1 flex justify-center items-center gap-3 lg:gap-6 xl:gap-10 text-[11px] lg:text-[13px] xl:text-[14px] font-bold tracking-widest text-black uppercase h-full z-10 whitespace-nowrap">
-              <div className="h-full flex items-center cursor-pointer" onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 relative inline-block ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+            <nav className="flex-1 flex justify-center items-center gap-3 lg:gap-6 xl:gap-10 text-[11px] lg:text-[13px] xl:text-[14px] font-semibold tracking-widest text-black uppercase h-full z-10 whitespace-nowrap">
+              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
                   ENGAGEMENT
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'engagement' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
                 {renderMegaMenu(engagementLinks, 'engagement')}
               </div>
-              <div className="h-full flex items-center cursor-pointer" onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
-                <Link to="/wedding-rings" className={`transition-colors duration-300 relative inline-block ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
+                <Link to="/wedding-rings" className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
                   WEDDING
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'wedding' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </Link>
                 {renderMegaMenu(weddingLinks, 'wedding')}
               </div>
-              <div className="h-full flex items-center cursor-pointer" onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 relative inline-block ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
                   FINE JEWELLERY
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
                 {renderMegaMenu(fineJewelleryLinks, 'fine-jewellery')}
               </div>
-              <div className="h-full flex items-center cursor-pointer" onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 relative inline-block ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
                   NO-BRAINER DEALS
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'deals' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
                 {renderMegaMenu(dealsLinks, 'deals')}

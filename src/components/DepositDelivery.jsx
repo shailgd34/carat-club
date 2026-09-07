@@ -67,7 +67,7 @@ export default function DepositDelivery() {
 
           </div>
 
-          <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] capitalize tracking-wide font-bold px-12 py-5 hover:bg-[#D46278] hover:shadow-[0_15px_40px_rgba(226,125,144,0.3)] hover:-translate-y-1 transition-all duration-300 w-max shadow-lg">
+          <button className="whitespace-nowrap bg-[#ff5474] text-white text-[14px] capitalize tracking-wide font-bold px-12 py-5 hover:bg-[#D46278] hover:shadow-[0_15px_40px_rgba(226,125,144,0.3)] hover:-translate-y-1 transition-all duration-300 w-max shadow-lg">
             Learn About 30% Deposit
           </button>
 

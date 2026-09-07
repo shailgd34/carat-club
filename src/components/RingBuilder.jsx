@@ -75,10 +75,10 @@ export default function RingBuilder() {
               </ul>
 
               <div className="flex flex-col gap-6 items-start">
-                <button className="whitespace-nowrap bg-[#1a1a1a] text-white text-[11px] tracking-wide capitalize font-semibold px-8 py-5 flex items-center gap-3 hover:bg-[#101010] transition-all hover:-translate-y-0.5 hover:shadow-xl rounded-sm">
+                <button className="whitespace-nowrap bg-[#1a1a1a] text-white text-[14px] tracking-wide capitalize font-semibold px-8 py-5 flex items-center gap-3 hover:bg-[#101010] transition-all hover:-translate-y-0.5 hover:shadow-xl rounded-sm">
                   Start Building Now <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </button>
-                <Link to="/ring-builder-guide" className="whitespace-nowrap text-[11px] text-[#ff5474] tracking-wide capitalize font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
+                <Link to="/ring-builder-guide" className="whitespace-nowrap text-[14px] text-[#ff5474] tracking-wide capitalize font-semibold flex items-center justify-center gap-2 hover:text-[#D46278] transition-colors pl-1">
                   How It Works <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </Link>
               </div>
