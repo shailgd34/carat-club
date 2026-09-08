@@ -8,9 +8,8 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
   const [currentTagline, setCurrentTagline] = useState(0);
 
   const taglines = [
-    "FREE SHIPPING | FREE 30 DAY RETURNS",
-    "ONLY PAY 30% UPFRONT — VIP HAND DELIVERY",
-    "LIFETIME UPGRADE GUARANTEE"
+    "Only Pay 30% Upfront 💍 VIP Hand Delivery Available in Gold Coast & Auckland within 100 km.",
+    "⭐⭐⭐⭐⭐ Excellent 4.9/5 on Trustpilot"
   ];
 
   useEffect(() => {
@@ -35,14 +34,21 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
       subtitle: "1.00 CT • 18K Yellow Gold",
       price: `AUD $${pricePrefix}1,290`,
       rating: 125,
-      image: "/images/style_solitaire.jpg"
+      image: "/images/rings/ring (1).webp"
     },
     {
       name: `${prefix} Ring 2`,
       subtitle: "1.50 CT • 18K White Gold",
       price: `AUD $${pricePrefix}2,450`,
       rating: 88,
-      image: "/images/style_halo.jpg"
+      image: "/images/rings/ring (2).webp"
+    },
+    {
+      name: `${prefix} Ring 3`,
+      subtitle: "2.00 CT • Platinum",
+      price: `AUD $${pricePrefix}3,890`,
+      rating: 64,
+      image: "/images/rings/ring (3).webp"
     }
   ];
 
@@ -76,9 +82,9 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
     layout: 'tabbed-grid',
     sidebarTitle: "SHOP BY CATEGORY",
     tabs: [
-      { name: "Diamond Earrings", products: createMockProducts("Earrings", "") },
-      { name: "Diamond Necklaces", products: createMockProducts("Necklace", "1,") },
-      { name: "Diamond Bracelets", products: createMockProducts("Bracelet", "2,") },
+      { name: "Earrings", products: createMockProducts("Earrings", "") },
+      { name: "Necklaces", products: createMockProducts("Necklace", "1,") },
+      { name: "Bracelets", products: createMockProducts("Bracelet", "2,") },
       { name: "Fashion Rings", products: createMockProducts("Fashion Ring", "") },
       { name: "Tennis Bracelets", products: createMockProducts("Tennis Bracelet", "3,") },
       { name: "Pendants", products: createMockProducts("Pendant", "1,") }
@@ -86,39 +92,31 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
   };
 
   const dealsLinks = {
-    layout: 'product-grid',
-    sidebar: {
-      title: "SPECIAL OFFERS",
-      links: ["Clearance Rings", "Bundle & Save", "Last Chance Items", "Weekly Specials", "Gifts on Sale"]
-    },
-    products: [
+    layout: 'deals-grid',
+    deals: [
       {
-        name: "1.5ct Oval Halo Ring",
-        subtitle: "1.50 CT • 18K White Gold",
-        price: "AUD $1,250",
-        rating: 15,
-        image: "/images/ring1.jpg"
+        name: "Clearance Rings",
+        badge: "UP TO 50% OFF",
+        image: "/images/ring1.jpg",
+        link: "/deals/clearance"
       },
       {
-        name: "2.0ct Round Solitaire",
-        subtitle: "2.00 CT • 18K Yellow Gold",
-        price: "AUD $1,800",
-        rating: 24,
-        image: "/images/ring2.jpg"
+        name: "Bundle & Save",
+        badge: "30% OFF",
+        image: "/images/ring2.jpg",
+        link: "/deals/bundle"
       },
       {
-        name: "Diamond Pavé Band",
-        subtitle: "0.50 CT • Platinum",
-        price: "AUD $990",
-        rating: 41,
-        image: "/images/ring3.jpg"
+        name: "Weekly Specials",
+        badge: "LIMITED TIME",
+        image: "/images/ring3.jpg",
+        link: "/deals/weekly"
       },
       {
-        name: "Vintage Halo Pendant",
-        subtitle: "1.00 CT • 18K Rose Gold",
-        price: "AUD $1,150",
-        rating: 8,
-        image: "/images/style_vintage.jpg"
+        name: "Gifts on Sale",
+        badge: "EXTRA 20% OFF",
+        image: "/images/style_vintage.jpg",
+        link: "/deals/gifts"
       }
     ]
   };
@@ -129,7 +127,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'tabbed-grid') {
       return (
-        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
+        <div className={`absolute top-full left-0 w-full bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-8 flex gap-8">
             {/* Sidebar Tabs */}
             <div className="w-[20%] pr-8 border-r border-[#E5E5E5] flex flex-col">
@@ -207,7 +205,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'image-overlays') {
       return (
-        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
+        <div className={`absolute top-full left-0 w-full bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-10 flex gap-4">
             {data.categories.map((cat, i) => (
               <Link to={cat.link || "#"} key={i} className="flex-1 relative group/card cursor-pointer h-[260px] overflow-hidden rounded-sm block">
@@ -230,7 +228,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
     if (data.layout === 'featured-split') {
       return (
-        <div className={`fixed ${topClass} left-0 right-0 bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
+        <div className={`absolute top-full left-0 w-full bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
           <div className="max-w-[1600px] mx-auto px-8 py-10 flex gap-8">
             <Link to={data.featured.link} className="w-1/3 relative group/feature h-[320px] overflow-hidden rounded-sm block">
               <img src={data.featured.image} alt="Featured" className="w-full h-full object-cover transition-transform duration-700 group-hover/feature:scale-105" />
@@ -365,9 +363,40 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
         </div>
       );
     }
+    if (data.layout === 'deals-grid') {
+      return (
+        <div className={`absolute top-full left-0 w-full bg-white border-t border-[#E5E5E5] shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300`}>
+          <div className="max-w-[1600px] mx-auto px-8 py-10 flex gap-6">
+            {data.deals.map((deal, i) => (
+              <Link to={deal.link || "#"} key={i} className="flex-1 relative group/deal cursor-pointer h-[280px] overflow-hidden rounded block shadow-sm hover:shadow-xl transition-shadow duration-300">
+                {/* Background Image */}
+                <img src={deal.image} alt={deal.name} className="w-full h-full object-cover transition-transform duration-700 group-hover/deal:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                {/* Discount Badge */}
+                <div className="absolute top-4 left-4 bg-[#ff5474] text-white text-[10px] font-bold tracking-widest px-3 py-1.5 shadow-md z-10 rounded-sm">
+                  {deal.badge}
+                </div>
+
+                {/* Overlay Text in Bottom Left */}
+                <div className="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                  <h3 className="text-white text-[18px] font-serif font-bold mb-2 tracking-wide">{deal.name}</h3>
+                  <div className="overflow-hidden">
+                    <span className="text-[11px] tracking-widest text-[#ff5474] font-bold flex items-center gap-1.5 transform translate-y-full opacity-0 group-hover/deal:translate-y-0 group-hover/deal:opacity-100 transition-all duration-300 uppercase">
+                      Shop Deal <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
 
     return (
-      <div className="absolute top-full left-1/2 w-screen -translate-x-1/2 bg-[#FAF8F5] border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
+      <div className="absolute top-full left-0 w-full bg-[#FAF8F5] border-t border-[#E5E5E5] shadow-xl overflow-hidden transition-all duration-300">
         <div className="max-w-[1600px] mx-auto px-8 py-12 flex gap-12">
 
           <div className="flex gap-16 pr-12 border-r border-[#E5E5E5] w-[45%]">
@@ -443,13 +472,24 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
   return (
     <>
       {/* LAYER 1: Top Tagline Bar - Dark Background, hides on scroll */}
-      <div className={`bg-black text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'h-0 opacity-0' : 'h-[36px] opacity-100'}`}>
-        <div className="max-w-[1600px] mx-auto px-4 lg:px-8 h-full flex items-center justify-between text-[12px] font-bold tracking-wide capitalize relative">
-          <div className="w-1/3 hidden lg:block"></div> {/* Spacer for center alignment */}
+      <div className={`bg-black text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'h-0 opacity-0' : 'h-[45px] opacity-100'}`}>
+        <div className="max-w-[1600px] mx-auto px-4 lg:px-8 h-full flex items-center justify-between text-[13px] text-center font-semibold uppercase relative tracking-wide">
+          {/* Left: Phone & WhatsApp */}
+          <div className="w-1/3 hidden lg:flex items-center gap-4 justify-start text-[12px] lg:text-[13px] font-bold tracking-wider">
+            <a href="tel:+3929299999" className="flex items-center gap-1.5 hover:text-[#ff5474] transition-colors">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+3929 299 999</span>
+            </a>
+            <div className="w-[1px] h-3 bg-white/30"></div>
+            <a href="https://wa.me/3929299999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#25D366] hover:opacity-80 transition-opacity">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
 
           <div className="w-full lg:w-1/3 flex justify-center items-center relative h-full">
             {taglines.map((tagline, idx) => (
-              <div key={idx} className={`absolute top-1/2 -translate-y-1/2 transition-opacity duration-1000 whitespace-nowrap ${currentTagline === idx ? 'opacity-100' : 'opacity-0'}`}>
+              <div key={idx} className={`absolute top-1/2 -translate-y-1/2 transition-opacity duration-1000  whitespace-nowrap ${currentTagline === idx ? 'opacity-100' : 'opacity-0'}`}>
                 {tagline}
               </div>
             ))}
@@ -466,28 +506,15 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
       </div>
 
       {/* Main Sticky Header */}
-      <header className={`sticky top-0 z-[100] transition-all duration-500 w-full ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+      <header className={`sticky top-0 z-[100] transition-all duration-500 w-full relative ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
 
-        {/* LAYER 2: Middle Bar (Phone, Logo, Icons) - Collapses when scrolled */}
-        <div className={`max-w-[1600px] mx-auto px-4 lg:px-8 flex items-center justify-between transition-all duration-500 overflow-hidden ${isScrolled ? 'h-0 opacity-0' : 'h-[70px] lg:h-[70px] opacity-100'}`}>
+        {/* Unified Main Header Bar */}
+        <div className={`max-w-[1600px] mx-auto px-4 lg:px-8 flex items-center justify-between relative transition-all duration-500 ${isScrolled ? 'h-[70px]' : 'h-[90px] lg:h-[90px]'}`}>
 
-          {/* Left: Phone & WA (Hidden on mobile) */}
-          <div className="w-1/3 hidden lg:flex items-center gap-6 text-[#101010]">
-            <a href="tel:+3929299999" className="flex items-center gap-2 hover:text-[#ff5474] transition-colors text-[13px] font-bold tracking-wider">
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+3929 299 999</span>
-            </a>
-            <div className="w-[1px] h-4 bg-[#E5E5E5]"></div>
-            <a href="https://wa.me/3929299999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#25D366] hover:opacity-80 transition-opacity font-bold tracking-wider text-[13px]">
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-              <span>WhatsApp</span>
-            </a>
-          </div>
-
-          {/* Mobile Menu Icon */}
+          {/* Mobile Menu Icon (Left) */}
           <div className="lg:hidden flex-1">
-            <button className="p-2 text-[#101010]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+            <button className="p-2 -ml-2 text-[#101010] hover:text-[#ff5474] transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <line x1="3" y1="12" x2="21" y2="12" />
                 <line x1="3" y1="6" x2="21" y2="6" />
                 <line x1="3" y1="18" x2="21" y2="18" />
@@ -495,89 +522,96 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
             </button>
           </div>
 
-          {/* Center: Main Logo 5 */}
-          <div className="w-1/3 flex justify-center">
-            <Link to="/" className="hover:opacity-80 transition-opacity">
-              <img src="/images/logo5.png" alt="Logo" className="w-[100px] lg:w-[100px] object-contain" />
+          {/* Desktop Left Navigation (Pushed to left edge) */}
+          <nav className="hidden lg:flex flex-1 justify-start items-center text-[15px] font-medium text-black h-full z-10 whitespace-nowrap">
+            <div className="flex items-center gap-4 lg:gap-6 xl:gap-8 h-full">
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Engagement
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'engagement' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
+                <Link to="/wedding-rings" className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Wedding
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'wedding' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </Link>
+              </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Fine Jewellery
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  No-Brainer Deals
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'deals' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+            </div>
+          </nav>
+
+          {/* Absolute Centered Logo (Smooth Crossfade on scroll) */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 pointer-events-none flex items-center justify-center">
+            <Link to="/" className="pointer-events-auto hover:opacity-80 transition-opacity flex items-center justify-center relative w-[120px] h-[40px]">
+              {/* Normal Logo (logo5) */}
+              <img
+                src="/images/logo5.png"
+                alt="Logo"
+                className={`absolute inset-0 m-auto object-contain transition-all duration-500 w-[100px] lg:w-[120px] xl:w-[120px] ${isScrolled ? 'opacity-0 scale-75 rotate-3' : 'opacity-100 scale-100 rotate-0'}`}
+              />
+              {/* Sticky Logo (logo6) */}
+              <img
+                src="/images/logo6.png"
+                alt="Sticky Logo"
+                className={`absolute inset-0 m-auto object-contain transition-all duration-500 w-[40px] lg:w-[45px] ${isScrolled ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-125 -rotate-3'}`}
+              />
             </Link>
           </div>
 
-          {/* Right: Icons (Search, Heart, Auth, Cart) */}
-          <div className="w-1/3 flex justify-end items-center gap-4 lg:gap-6 text-[#101010]">
-            <button className="hover:text-[#ff5474] transition-colors"><svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></button>
-            <button className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg></button>
-            <Link to="/auth" className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></Link>
-            <button className="hover:text-[#ff5474] transition-colors relative flex items-center" onClick={() => setIsCartOpen && setIsCartOpen(true)}>
-              <svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
-              <span className="absolute -top-1.5 -right-2 bg-[#ff5474] text-white text-[9px] lg:text-[10px] w-[18px] h-[18px] lg:w-[20px] lg:h-[20px] rounded-full flex items-center justify-center font-bold">1</span>
-            </button>
-          </div>
-        </div>
+          {/* Desktop Right Navigation & Icons (Pushed to right edge) */}
+          <div className="flex-1 flex justify-end items-center gap-4 lg:gap-8 xl:gap-12 text-[#101010] z-10 whitespace-nowrap h-full">
 
-        {/* LAYER 3 / Sticky Row: Nav Links (Always visible), Logo6 & Icons (Slide in on scroll) */}
-        <div className={`transition-all duration-500 hidden lg:block ${isScrolled ? 'h-[70px] border-transparent' : 'h-[50px] border-t border-[#E5E5E5]'}`}>
-          <div className="max-w-[1600px] mx-auto px-4 lg:px-8 h-full flex items-center justify-between relative">
-
-            {/* Left: Logo 6 (Slides in when scrolled) */}
-            <div className={`w-[20%] flex items-center transition-all duration-500 ${isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'}`}>
-              <Link to="/" className="hover:opacity-80 transition-opacity">
-                <img src="/images/logo6.png" alt="Logo" className="w-[50px] object-contain" />
-              </Link>
+            {/* Right Links (2 items) */}
+            <div className="hidden lg:flex items-center gap-4 lg:gap-6 xl:gap-8 font-medium text-[15px] h-full">
+              <div className="h-full flex items-center cursor-pointer">
+                <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">Shop Diamonds</Link>
+              </div>
+              <div className="h-full flex items-center cursor-pointer">
+                <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% Deposit & Delivery</Link>
+              </div>
             </div>
 
-            {/* Center: Main Navigation Links */}
-            <nav className="flex-1 flex justify-center items-center gap-3 lg:gap-6 xl:gap-10  text-[15px] font-medium  text-black h-full z-10 whitespace-nowrap">
-              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  Engagement
-                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                  {activeMenu === 'engagement' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                </span>
-                {renderMegaMenu(engagementLinks, 'engagement')}
-              </div>
-              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
-                <Link to="/wedding-rings" className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  Wedding
-                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                  {activeMenu === 'wedding' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                </Link>
-                {renderMegaMenu(weddingLinks, 'wedding')}
-              </div>
-              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  Fine Jewellery
-                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                  {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                </span>
-                {renderMegaMenu(fineJewelleryLinks, 'fine-jewellery')}
-              </div>
-              <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
-                <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  No-Brainer Deals
-                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                  {activeMenu === 'deals' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                </span>
-                {renderMegaMenu(dealsLinks, 'deals')}
-              </div>
-              <div className="h-full flex items-center cursor-pointer">
-                <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">Loose Diamonds</Link>
-              </div>
-              <div className="h-full flex items-center cursor-pointer">
-                <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% Deposit &amp; Delivery</Link>
-              </div>
-            </nav>
-
-            {/* Right: Icons (Slides in when scrolled) */}
-            <div className={`w-[20%] flex justify-end items-center gap-6 text-[#101010] transition-all duration-500 ${isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4 pointer-events-none'}`}>
-              <button className="hover:text-[#ff5474] transition-colors"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></button>
-              <button className="hover:text-[#ff5474] transition-colors"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg></button>
-              <Link to="/auth" className="hover:text-[#ff5474] transition-colors"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></Link>
+            {/* Right Icons (Search, Heart, Auth, Cart) */}
+            <div className="flex items-center gap-4 lg:gap-6">
+              <button className="hover:text-[#ff5474] transition-colors"><svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></button>
+              <button className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg></button>
+              <Link to="/auth" className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></Link>
               <button className="hover:text-[#ff5474] transition-colors relative flex items-center" onClick={() => setIsCartOpen && setIsCartOpen(true)}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
-                <span className="absolute -top-1.5 -right-2 bg-[#ff5474] text-white text-[10px] w-[20px] h-[20px] rounded-full flex items-center justify-center font-bold">1</span>
+                <svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+                <span className="absolute -top-1.5 -right-2 bg-[#ff5474] text-white text-[9px] lg:text-[10px] w-[18px] h-[18px] lg:w-[20px] lg:h-[20px] rounded-full flex items-center justify-center font-bold">1</span>
               </button>
             </div>
           </div>
+        </div>
+
+        {/* Render Mega Menus here so they position relative to the full header width */}
+        <div onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
+          {renderMegaMenu(engagementLinks, 'engagement')}
+        </div>
+        <div onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
+          {renderMegaMenu(weddingLinks, 'wedding')}
+        </div>
+        <div onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
+          {renderMegaMenu(fineJewelleryLinks, 'fine-jewellery')}
+        </div>
+        <div onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
+          {renderMegaMenu(dealsLinks, 'deals')}
         </div>
       </header>
     </>

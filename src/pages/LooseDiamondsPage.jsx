@@ -58,7 +58,7 @@ export default function LooseDiamondsPage() {
   const [width, setWidth] = useState([0.14, 55.23]);
   const [height, setHeight] = useState([0, 80.8]);
   const [polishRange, setPolishRange] = useState([0, 2]); // Good, Very Good, Excellent
-  const [symmetryRange, setSymmetryRange] = useState([0, 2]); 
+  const [symmetryRange, setSymmetryRange] = useState([0, 2]);
   const [fluorescenceRange, setFluorescenceRange] = useState([0, 2]); // None, Faint/Medium, Strong/Very Strong
   const [crownAngle, setCrownAngle] = useState([0, 47.4]);
   const [girdleThickness, setGirdleThickness] = useState([0, 2]); // Thin-Medium, Very Thin, Thick-Very Thick
@@ -68,7 +68,7 @@ export default function LooseDiamondsPage() {
       <div className="max-w-[1600px] mx-auto px-4 md:px-8">
         {/* Breadcrumb */}
         <div className="text-[11px] uppercase tracking-wider text-brand-taupe mb-8">
-          <Link to="/" className="hover:text-brand-charcoal">Home</Link> / Loose Diamonds
+          <Link to="/" className="hover:text-brand-charcoal">Home</Link> / Shop Diamonds
         </div>
 
         {/* Header */}
@@ -124,29 +124,29 @@ export default function LooseDiamondsPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-8">
-            <AdvancedSlider 
-              label="Color" 
-              options={['K', 'J', 'I', 'H', 'G', 'F', 'E', 'D']} 
-              value={colorRange} 
-              onChange={setColorRange} 
+            <AdvancedSlider
+              label="Color"
+              options={['K', 'J', 'I', 'H', 'G', 'F', 'E', 'D']}
+              value={colorRange}
+              onChange={setColorRange}
             />
-            <AdvancedSlider 
-              label="Clarity" 
-              options={['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL']} 
-              value={clarityRange} 
-              onChange={setClarityRange} 
+            <AdvancedSlider
+              label="Clarity"
+              options={['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL']}
+              value={clarityRange}
+              onChange={setClarityRange}
             />
-            <AdvancedSlider 
-              label="Carat" 
-              min={0.14} max={55.23} step={0.01} 
-              value={caratRange} 
-              onChange={setCaratRange} 
+            <AdvancedSlider
+              label="Carat"
+              min={0.14} max={55.23} step={0.01}
+              value={caratRange}
+              onChange={setCaratRange}
             />
-            <AdvancedSlider 
-              label="Price" 
+            <AdvancedSlider
+              label="Price"
               min={41} max={635333} step={1} unit="$"
-              value={priceRange} 
-              onChange={setPriceRange} 
+              value={priceRange}
+              onChange={setPriceRange}
             />
 
             <div>
@@ -164,16 +164,16 @@ export default function LooseDiamondsPage() {
               </div>
             </div>
 
-            <AdvancedSlider 
-              label="Cut" 
-              options={['Fair', 'Good', 'Very Good', 'Excellent', 'Ideal']} 
-              value={cutRange} 
-              onChange={setCutRange} 
+            <AdvancedSlider
+              label="Cut"
+              options={['Fair', 'Good', 'Very Good', 'Excellent', 'Ideal']}
+              value={cutRange}
+              onChange={setCutRange}
             />
           </div>
 
           <div className="border-t border-[#E5E5E5] pt-6 mb-2">
-            <button 
+            <button
               onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
               className="mx-auto flex items-center gap-2 text-[12px] font-bold text-[#1a3b3a] hover:text-[#ff5474] transition-colors"
             >

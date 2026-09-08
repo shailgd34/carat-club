@@ -39,35 +39,35 @@ export default function Hero() {
   return (
     <section className="relative min-h-[500px] lg:h-[80vh] w-full overflow-hidden group">
       {/* Static Hero Banner */}
-        <div className="w-full h-full flex-shrink-0 relative flex items-end justify-start pb-6 lg:pb-8 bg-cover bg-center bg-no-repeat overflow-hidden">
-          {/* Ken Burns Background */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-kenburns"
-            style={{ backgroundImage: "url('/images/bgsliderTwo.png')" }}
-          ></div>
+      <div className="w-full h-full flex-shrink-0 relative flex items-end justify-start pb-6 lg:pb-8 bg-cover bg-center bg-no-repeat overflow-hidden">
+        {/* Ken Burns Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-kenburns"
+          style={{ backgroundImage: "url('/images/bgsliderTwo.png')" }}
+        ></div>
 
-          <div className="max-w-[1600px] mx-auto px-4 lg:px-8 w-full relative z-10">
-            <div className="text-left max-w-3xl">
-              <span className="text-[11px] lg:text-[12px] tracking-[0.2em] capitalize text-[#ff5474] font-semibold block mb-2">
-                Exclusive Limited Time
-              </span>
-              <h2 className="text-3xl lg:text-4xl xl:text-4xl font-serif text-[#101010] mb-6 tracking-wide font-medium leading-tight capitalize">
-                Timeless Beauty
-              </h2>
+        <div className="max-w-[1600px] mx-auto px-4 lg:px-8 w-full relative z-10">
+          <div className="text-left max-w-3xl">
+            <span className="text-[11px] lg:text-[12px] tracking-[0.2em] capitalize text-[#ff5474] font-semibold block mb-2">
+              Exclusive Limited Time
+            </span>
+            <h2 className="text-3xl lg:text-4xl xl:text-4xl font-serif text-[#101010] mb-6 tracking-wide font-medium leading-tight capitalize">
+              Timeless Beauty
+            </h2>
 
-              <CountdownTimer center={false} mbClass="mb-6" />
+            <CountdownTimer center={false} mbClass="mb-6" />
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-start">
-                <button className="whitespace-nowrap bg-[#312D2E] text-white text-[11px] tracking-[0.2em] capitalize font-semibold px-10 py-4 border border-[#ff5474]/40 hover:border-[#ff5474] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
-                  Shop Diamonds
-                </button>
-                <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] tracking-[0.2em] capitalize font-semibold px-10 py-4 hover:shadow-[0_10px_30px_rgba(255,84,116,0.3)] hover:-translate-y-0.5 transition-all duration-300">
-                  No-Brainer Deals
-                </button>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+              <button className="whitespace-nowrap bg-[#101010] text-white text-[14px]  capitalize font-semibold px-10 py-4  hover:-translate-y-0.5 transition-all duration-300">
+                Shop Diamonds
+              </button>
+              <button className="whitespace-nowrap bg-[#ff5474] text-white text-[14px]  capitalize font-semibold px-10 py-4 hover:-translate-y-0.5 transition-all duration-300">
+                No-Brainer Deals
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
     </section>
   );

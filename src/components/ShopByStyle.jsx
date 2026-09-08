@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 export default function ShopByStyle() {
   const styles = [
-    { title: "Solitaire", subtitle: "Classic & timeless design", img: "/images/style_solitaire.jpg" },
-    { title: "Hidden Halo", subtitle: "A secret touch of brilliance", img: "/images/style_halo.jpg" },
-    { title: "Three Stone\n& Side Stones", subtitle: "Symbolic of past, present, future", img: "/images/style_threestone.jpg" },
-    { title: "Vintage\n& Statement", subtitle: "Bold maximalist luxury", img: "/images/style_vintage.jpg" }
+    { title: "Solitaire", subtitle: "Classic & timeless design", img: "/images/rings/ring (1).webp" },
+    { title: "Hidden Halo", subtitle: "A secret touch of brilliance", img: "/images/rings/ring (2).webp" },
+    { title: "Three Stone\n& Side Stones", subtitle: "Symbolic of past, present, future", img: "/images/rings/ring (3).webp" },
+    { title: "Vintage\n& Statement", subtitle: "Bold maximalist luxury", img: "/images/rings/ring (4).webp" }
   ];
 
   return (
@@ -55,12 +55,12 @@ export default function ShopByStyle() {
               <CardWrapper {...linkProps} className="border border-[#E5E5E5] bg-[#FBF9F6] flex flex-col items-center justify-between p-4 relative group cursor-pointer h-[360px] block" key={i}>
                 <div className="w-full flex-1 flex flex-col items-center overflow-hidden">
                   <div className="w-full h-[200px] mb-4 flex items-center justify-center overflow-hidden">
-                    <img src={style.img} alt={style.title} className="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out" />
+                    <img src={style.img} alt={style.title} className="w-[150px] h-[150px] object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out" />
                   </div>
-                  <h4 className="font-serif text-[17px] font-bold tracking-wider text-[#101010] text-center whitespace-pre-line leading-snug mb-2 capitalize">{style.title}</h4>
-                  <p className="text-[11px] text-[#666] font-medium text-center px-2">{style.subtitle}</p>
+                  <h4 className="font-serif text-[18px] font-bold tracking-wider text-[#101010] text-center whitespace-pre-line leading-snug mb-2 capitalize">{style.title}</h4>
+                  <p className="text-[13px] text-[#666]  text-center px-2">{style.subtitle}</p>
                 </div>
-                <div className="mt-4 text-[10px] tracking-widest text-[#ff5474] font-semibold flex items-center justify-center gap-2 mb-4 group-hover:text-[#D46278] transition-colors">
+                <div className="mt-4 text-[14px] tracking-widest text-[#ff5474] font-semibold flex items-center justify-center gap-2 mb-4 group-hover:text-[#D46278] transition-colors">
                   Explore <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </div>
               </CardWrapper>

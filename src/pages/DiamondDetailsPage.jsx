@@ -46,7 +46,7 @@ export default function DiamondDetailsPage() {
       <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-6 flex items-center gap-2 text-[10px] text-brand-taupe tracking-widest font-medium uppercase">
         <Link to="/" className="hover:text-brand-charcoal">Home</Link>
         <span>/</span>
-        <Link to="/loose-diamonds" className="hover:text-brand-charcoal">Loose Diamonds</Link>
+        <Link to="/loose-diamonds" className="hover:text-brand-charcoal">Shop Diamonds</Link>
         <span>/</span>
         <span className="text-brand-charcoal">{diamond.carat} Carat {diamond.shape} Diamond</span>
       </div>

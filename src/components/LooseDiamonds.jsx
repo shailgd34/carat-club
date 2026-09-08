@@ -77,7 +77,7 @@ export default function LooseDiamonds() {
               </div>
 
               <Link to="/loose-diamonds" className="bg-[#101010] text-white px-8 lg:px-10 py-4 text-[16px] font-bold tracking-wide capitalize hover:bg-[#ff5474] transition-colors self-start flex items-center gap-3 max-w-fit mt-4">
-                Shop Loose Diamonds <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                Shop Shop Diamonds <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </div>
           </div>

@@ -30,7 +30,7 @@ export default function DepositDelivery() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
               <div>
-                <div className="text-[12px] font-bold text-white capitalize tracking-wide mb-1.5">Eligibility</div>
+                <div className="text-[16px] font-bold text-white capitalize mb-1.5">Eligibility</div>
                 <div className="text-[13px] text-gray-400 font-medium leading-snug">Orders over $2k AUD / $2.5k NZD</div>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function DepositDelivery() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
               <div>
-                <div className="text-[12px] font-bold text-white capitalize tracking-wide mb-1.5">Flexible Balance</div>
+                <div className="text-[16px] font-bold text-white capitalize mb-1.5">Flexible Balance</div>
                 <div className="text-[13px] text-gray-400 font-medium leading-snug">Pay the remainder right before dispatch.</div>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function DepositDelivery() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
               <div>
-                <div className="text-[12px] font-bold text-white capitalize tracking-wide mb-1.5">VIP Hand Delivery</div>
+                <div className="text-[16px] font-bold text-white capitalize mb-1.5">VIP Hand Delivery</div>
                 <div className="text-[13px] text-gray-400 font-medium leading-snug">Available in Gold Coast & Auckland.</div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function DepositDelivery() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12" /></svg>
               </div>
               <div>
-                <div className="text-[12px] font-bold text-white capitalize tracking-wide mb-1.5">Fully Secured</div>
+                <div className="text-[16px] font-bold text-white capitalize mb-1.5">Fully Secured</div>
                 <div className="text-[13px] text-gray-400 font-medium leading-snug">100% insured transit and protection.</div>
               </div>
             </div>

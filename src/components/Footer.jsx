@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import SizeGuideModal from './SizeGuideModal';
 
 export default function Footer() {
-  const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
   return (
     <footer className="relative bg-black pt-24 pb-12 text-white border-t-4 border-[#ff5474] overflow-hidden">
 
@@ -52,15 +50,12 @@ export default function Footer() {
             </div>
             <ul className="space-y-4 text-[15px] font-medium text-gray-400">
               <li>
-                <button
-                  onClick={(e) => { e.preventDefault(); setIsSizeGuideOpen(true); }}
-                  className="hover:text-white hover:translate-x-1 inline-block transition-all text-left"
-                >
+                <Link to="/ring-size-guide" className="hover:text-white hover:translate-x-1 inline-block transition-all">
                   Ring Size Guide
-                </button>
+                </Link>
               </li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Diamond Buying Guide</a></li>
-              <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Shop Loose Diamonds</Link></li>
+              <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Shop Shop Diamonds</Link></li>
               <li><Link to="/loose-diamonds" className="hover:text-white hover:translate-x-1 inline-block transition-all">Lab-Grown vs Natural</Link></li>
               <li><a href="#" className="hover:text-white hover:translate-x-1 inline-block transition-all">Metal Guide</a></li>
               <li><Link to="/custom-jewellery" className="hover:text-white hover:translate-x-1 inline-block transition-all">Custom Jewellery</Link></li>
@@ -143,7 +138,6 @@ export default function Footer() {
         </div>
 
       </div>
-      <SizeGuideModal isOpen={isSizeGuideOpen} onClose={() => setIsSizeGuideOpen(false)} />
     </footer>
   );
 }

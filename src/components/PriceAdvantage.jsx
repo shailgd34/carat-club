@@ -104,8 +104,8 @@ export default function PriceAdvantage() {
                 <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
               </div>
               <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">Ethical</div>
-                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Better for the entire planet.</div>
+                <div className="text-[14px] lg:text-[15px] font-bold tracking-wide text-[#101010] mb-1">No Middleman</div>
+                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Direct from our workshop to you.</div>
               </div>
             </div>
 

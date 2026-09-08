@@ -8,7 +8,7 @@ export default function SitemapPage() {
       links: [
         { name: "Engagement Rings", path: "/engagement-rings/solitaire" },
         { name: "Wedding Rings", path: "/wedding-rings" },
-        { name: "Loose Diamonds", path: "/loose-diamonds" },
+        { name: "Shop Diamonds", path: "/loose-diamonds" },
         { name: "Custom Jewellery", path: "/custom-jewellery" }
       ]
     },

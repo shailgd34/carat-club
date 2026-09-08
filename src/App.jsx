@@ -34,6 +34,7 @@ import PrivacyPolicyPage from './pages/Legal/PrivacyPolicyPage';
 import SitemapPage from './pages/Legal/SitemapPage';
 import ReviewsPage from './pages/ReviewsPage';
 import RingBuilderInfoPage from './pages/RingBuilderInfoPage';
+import RingSizeGuidePage from './pages/RingSizeGuidePage';
 import WhatsAppWidget from './components/WhatsAppWidget';
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
         
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/ring-builder-guide" element={<RingBuilderInfoPage />} />
+        <Route path="/ring-size-guide" element={<RingSizeGuidePage />} />
       </Routes>
 
       {!hideGlobalUI && <Footer />}
