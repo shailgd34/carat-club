@@ -526,10 +526,10 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
             </div>
 
             {/* Center: Main Navigation Links */}
-            <nav className="flex-1 flex justify-center items-center gap-3 lg:gap-6 xl:gap-10 text-[11px] lg:text-[13px] xl:text-[14px] font-semibold tracking-widest text-black uppercase h-full z-10 whitespace-nowrap">
+            <nav className="flex-1 flex justify-center items-center gap-3 lg:gap-6 xl:gap-10  text-[15px] font-medium  text-black h-full z-10 whitespace-nowrap">
               <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('engagement')} onMouseLeave={() => setActiveMenu(null)}>
                 <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  ENGAGEMENT
+                  Engagement
                   <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'engagement' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
@@ -537,7 +537,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
               </div>
               <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('wedding')} onMouseLeave={() => setActiveMenu(null)}>
                 <Link to="/wedding-rings" className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  WEDDING
+                  Wedding
                   <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'wedding' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </Link>
@@ -545,7 +545,7 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
               </div>
               <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('fine-jewellery')} onMouseLeave={() => setActiveMenu(null)}>
                 <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  FINE JEWELLERY
+                  Fine Jewellery
                   <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
@@ -553,17 +553,17 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
               </div>
               <div className="h-full flex items-center cursor-pointer relative" onMouseEnter={() => setActiveMenu('deals')} onMouseLeave={() => setActiveMenu(null)}>
                 <span className={`transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                  NO-BRAINER DEALS
+                  No-Brainer Deals
                   <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                   {activeMenu === 'deals' && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </span>
                 {renderMegaMenu(dealsLinks, 'deals')}
               </div>
               <div className="h-full flex items-center cursor-pointer">
-                <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">LOOSE DIAMONDS</Link>
+                <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">Loose Diamonds</Link>
               </div>
               <div className="h-full flex items-center cursor-pointer">
-                <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% DEPOSIT &amp; DELIVERY</Link>
+                <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% Deposit &amp; Delivery</Link>
               </div>
             </nav>
 

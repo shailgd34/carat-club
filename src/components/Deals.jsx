@@ -151,7 +151,7 @@ export default function Deals() {
                     <span className="text-[13px] font-bold text-[#ff5474]">{deal.curr}</span>
                   </div>
 
-                  <Link to={`/product/${deal.id}`} className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#101010] text-[11px] tracking-wide capitalize font-bold py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
+                  <Link to={`/product/${deal.id}`} className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#101010] text-[14px] tracking-wide capitalize font-medium py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
                     Shop Now <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                   </Link>
                 </div>
