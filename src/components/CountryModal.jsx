@@ -24,7 +24,7 @@ export default function CountryModal({ isOpen, setIsOpen }) {
         <h2 className="font-serif text-3xl text-center text-[#101010] mb-4">
           Welcome to Carat Club
         </h2>
-        <p className="text-center text-[#666] text-sm mb-10 tracking-wide">
+        <p className="text-center text-[#666] text-sm mb-10 ">
           Please select your region to continue shopping in your local currency.
         </p>
 
@@ -35,9 +35,9 @@ export default function CountryModal({ isOpen, setIsOpen }) {
           >
             <div className="flex items-center gap-4">
               <img src="https://flagcdn.com/w40/au.png" alt="Australia" className="w-6 h-auto shadow-sm" />
-              <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase">Australia</span>
+              <span className="text-[13px] font-bold  text-[#101010] uppercase">Australia</span>
             </div>
-            <span className="text-[#ff5474] text-xs font-bold tracking-widest">AUD</span>
+            <span className="text-[#ff5474] text-xs font-bold ">AUD</span>
           </button>
 
           <button
@@ -46,9 +46,9 @@ export default function CountryModal({ isOpen, setIsOpen }) {
           >
             <div className="flex items-center gap-4">
               <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand" className="w-6 h-auto shadow-sm" />
-              <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase">New Zealand</span>
+              <span className="text-[13px] font-bold  text-[#101010] uppercase">New Zealand</span>
             </div>
-            <span className="text-[#ff5474] text-xs font-bold tracking-widest">NZD</span>
+            <span className="text-[#ff5474] text-xs font-bold ">NZD</span>
           </button>
         </div>
       </div>

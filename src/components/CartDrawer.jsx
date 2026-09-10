@@ -17,7 +17,7 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
 
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-[#E5E5E5]">
-          <h2 className="font-serif text-[20px] text-[#101010] uppercase tracking-widest">Your Cart (1)</h2>
+          <h2 className="font-serif text-[20px] text-[#101010] uppercase ">Your Cart (1)</h2>
           <button
             onClick={() => setIsOpen(false)}
             className="text-[#999] hover:text-[#ff5474] transition-colors"
@@ -57,21 +57,21 @@ export default function CartDrawer({ isOpen, setIsOpen }) {
         {/* Footer */}
         <div className="border-t border-[#E5E5E5] p-6 bg-[#FAF8F5]">
           <div className="flex justify-between items-center mb-4">
-            <span className="text-[14px] font-bold text-[#101010] uppercase tracking-widest">Subtotal</span>
+            <span className="text-[14px] font-bold text-[#101010] uppercase ">Subtotal</span>
             <span className="font-bold text-[18px] text-[#ff5474]">AUD $2,890</span>
           </div>
           <p className="text-[11px] text-[#666] mb-6 text-center">Taxes and shipping calculated at checkout.</p>
           <Link
             to="/checkout"
             onClick={() => setIsOpen(false)}
-            className="w-full bg-[#ff5474] text-white text-[12px] font-bold tracking-widest uppercase py-4 text-center hover:bg-[#D46278] transition-colors mb-3 block"
+            className="w-full bg-[#ff5474] text-white text-[12px] font-bold  uppercase py-4 text-center hover:bg-[#D46278] transition-colors mb-3 block"
           >
             PROCEED TO CHECKOUT
           </Link>
           <Link
             to="/cart"
             onClick={() => setIsOpen(false)}
-            className="w-full bg-white border border-[#EBEBEB] text-[#101010] text-[11px] font-bold tracking-widest uppercase py-3.5 text-center hover:bg-gray-50 transition-colors block"
+            className="w-full bg-white border border-[#EBEBEB] text-[#101010] text-[11px] font-bold  uppercase py-3.5 text-center hover:bg-gray-50 transition-colors block"
           >
             VIEW FULL CART
           </Link>

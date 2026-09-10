@@ -22,17 +22,17 @@ export default function ReturnsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
           <div className="bg-[#FAF8F5] p-10 text-center border border-brand-light-border hover:-translate-y-2 transition-transform duration-300">
             <span className="text-[48px] font-serif text-brand-gold block mb-6">1.</span>
-            <h4 className="text-[14px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">Request</h4>
+            <h4 className="text-[14px] font-bold  uppercase text-brand-charcoal mb-4">Request</h4>
             <p className="text-[14px] text-brand-taupe font-light">Contact our concierge team within 30 days of receiving your item to initiate a return request.</p>
           </div>
           <div className="bg-[#FAF8F5] p-10 text-center border border-brand-light-border hover:-translate-y-2 transition-transform duration-300">
             <span className="text-[48px] font-serif text-brand-gold block mb-6">2.</span>
-            <h4 className="text-[14px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">Pack</h4>
+            <h4 className="text-[14px] font-bold  uppercase text-brand-charcoal mb-4">Pack</h4>
             <p className="text-[14px] text-brand-taupe font-light">We will provide an insured shipping label. Securely pack the item with all original boxes and certificates.</p>
           </div>
           <div className="bg-[#FAF8F5] p-10 text-center border border-brand-light-border hover:-translate-y-2 transition-transform duration-300">
             <span className="text-[48px] font-serif text-brand-gold block mb-6">3.</span>
-            <h4 className="text-[14px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">Refund</h4>
+            <h4 className="text-[14px] font-bold  uppercase text-brand-charcoal mb-4">Refund</h4>
             <p className="text-[14px] text-brand-taupe font-light">Once inspected by our master jewellers, a full refund will be issued to your original payment method within 5-7 days.</p>
           </div>
         </div>
@@ -48,21 +48,21 @@ export default function ReturnsPage() {
             <div className="flex items-start gap-4">
               <svg className="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
               <div>
-                <h4 className="text-[15px] font-bold tracking-wider uppercase mb-1">Bespoke Designs</h4>
+                <h4 className="text-[15px] font-bold  uppercase mb-1">Bespoke Designs</h4>
                 <p className="text-[13px] text-white/60 font-light">Custom-designed pieces created from scratch with our designers.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <svg className="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
               <div>
-                <h4 className="text-[15px] font-bold tracking-wider uppercase mb-1">Engraved Items</h4>
+                <h4 className="text-[15px] font-bold  uppercase mb-1">Engraved Items</h4>
                 <p className="text-[13px] text-white/60 font-light">Any rings or jewellery that have been personalized with engraving.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <svg className="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
               <div>
-                <h4 className="text-[15px] font-bold tracking-wider uppercase mb-1">Altered Pieces</h4>
+                <h4 className="text-[15px] font-bold  uppercase mb-1">Altered Pieces</h4>
                 <p className="text-[13px] text-white/60 font-light">Rings that have been resized or altered by outside third-party jewellers.</p>
               </div>
             </div>

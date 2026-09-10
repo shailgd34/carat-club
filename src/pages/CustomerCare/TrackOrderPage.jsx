@@ -8,7 +8,7 @@ export default function TrackOrderPage() {
       <section className="bg-brand-charcoal py-24 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('/images/about/craft_diamond_1788328509300.jpg')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="max-w-[1000px] mx-auto px-4 relative z-10">
-          <div className="text-[10px] uppercase tracking-widest text-brand-gold mb-6 flex items-center justify-center gap-3">
+          <div className="text-[10px] uppercase  text-brand-gold mb-6 flex items-center justify-center gap-3">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span className="text-white/30">/</span>
             <span className="text-white font-semibold">Track Order</span>
@@ -30,11 +30,11 @@ export default function TrackOrderPage() {
           
           <div className="space-y-6">
             <div>
-              <label className="block text-[11px] font-bold tracking-widest uppercase text-brand-charcoal mb-3">Order ID</label>
+              <label className="block text-[11px] font-bold  uppercase text-brand-charcoal mb-3">Order ID</label>
               <input type="text" placeholder="e.g. #CC-10293" className="w-full border-b border-brand-light-border px-0 py-4 text-[16px] outline-none focus:border-brand-gold transition-colors bg-transparent placeholder-brand-taupe/40" />
             </div>
             <div>
-              <label className="block text-[11px] font-bold tracking-widest uppercase text-brand-charcoal mb-3">Email Address</label>
+              <label className="block text-[11px] font-bold  uppercase text-brand-charcoal mb-3">Email Address</label>
               <input type="email" placeholder="you@example.com" className="w-full border-b border-brand-light-border px-0 py-4 text-[16px] outline-none focus:border-brand-gold transition-colors bg-transparent placeholder-brand-taupe/40" />
             </div>
           </div>
@@ -48,21 +48,21 @@ export default function TrackOrderPage() {
             <div className="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="font-serif text-[20px] text-brand-gold">1</span>
             </div>
-            <h4 className="text-[13px] font-bold tracking-wider uppercase text-brand-charcoal mb-2">Crafting</h4>
+            <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-2">Crafting</h4>
             <p className="text-[13px] text-brand-taupe font-light">Your piece is being handcrafted in our workshop (3-4 weeks).</p>
           </div>
           <div>
             <div className="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="font-serif text-[20px] text-brand-gold">2</span>
             </div>
-            <h4 className="text-[13px] font-bold tracking-wider uppercase text-brand-charcoal mb-2">Quality Check</h4>
+            <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-2">Quality Check</h4>
             <p className="text-[13px] text-brand-taupe font-light">Undergoing strict inspection and diamond certification.</p>
           </div>
           <div>
             <div className="w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="font-serif text-[20px] text-brand-gold">3</span>
             </div>
-            <h4 className="text-[13px] font-bold tracking-wider uppercase text-brand-charcoal mb-2">Dispatched</h4>
+            <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-2">Dispatched</h4>
             <p className="text-[13px] text-brand-taupe font-light">Securely shipped with full insurance and tracking.</p>
           </div>
         </div>

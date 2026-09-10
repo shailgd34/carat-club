@@ -43,7 +43,7 @@ export default function DiamondDetailsPage() {
   return (
     <div className="bg-[#FAF8F5] min-h-screen pb-24">
       {/* Breadcrumbs */}
-      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-6 flex items-center gap-2 text-[10px] text-brand-taupe tracking-widest font-medium uppercase">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-6 flex items-center gap-2 text-[10px] text-brand-taupe  font-medium uppercase">
         <Link to="/" className="hover:text-brand-charcoal">Home</Link>
         <span>/</span>
         <Link to="/loose-diamonds" className="hover:text-brand-charcoal">Shop Diamonds</Link>
@@ -68,7 +68,7 @@ export default function DiamondDetailsPage() {
             ))}
             <button className="w-[80px] h-[80px] bg-white border border-[#EBEBEB] flex flex-col items-center justify-center text-brand-taupe hover:border-[#ff5474] transition-colors mt-auto">
               <RefreshCw className="w-5 h-5 mb-1" />
-              <span className="text-[9px] font-bold tracking-widest">360°</span>
+              <span className="text-[9px] font-bold ">360°</span>
             </button>
           </div>
 
@@ -79,7 +79,7 @@ export default function DiamondDetailsPage() {
 
         {/* Right: Info */}
         <div className="w-full lg:w-1/2 flex flex-col">
-          <div className="text-[11px] text-[#ff5474] font-bold tracking-widest uppercase mb-2">
+          <div className="text-[11px] text-[#ff5474] font-bold  uppercase mb-2">
             {diamond.lab} Certified • Loose Diamond
           </div>
 
@@ -108,17 +108,17 @@ export default function DiamondDetailsPage() {
               <Truck className="w-4 h-4" />
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-widest font-bold text-brand-charcoal">Order within 14 hrs 30 mins</p>
+              <p className="text-[11px] uppercase  font-bold text-brand-charcoal">Order within 14 hrs 30 mins</p>
               <p className="text-xs text-brand-taupe">Free delivery by Thursday, Oct 24th</p>
             </div>
           </div>
 
           {/* Buttons */}
           <div className="flex gap-4 mb-8">
-            <button className="flex-1 border border-brand-charcoal text-brand-charcoal text-[11px] font-bold tracking-widest uppercase py-4 hover:bg-brand-charcoal hover:text-white transition-colors text-center">
+            <button className="flex-1 border border-brand-charcoal text-brand-charcoal text-[11px] font-bold  uppercase py-4 hover:bg-brand-charcoal hover:text-white transition-colors text-center">
               ADD TO RING
             </button>
-            <button className="flex-1 bg-brand-charcoal text-white text-[11px] font-bold tracking-widest uppercase py-4 hover:bg-black transition-colors text-center shadow-lg">
+            <button className="flex-1 bg-brand-charcoal text-white text-[11px] font-bold  uppercase py-4 hover:bg-black transition-colors text-center shadow-lg">
               ADD TO CART
             </button>
           </div>
@@ -154,7 +154,7 @@ export default function DiamondDetailsPage() {
 
       {/* Similar Diamonds */}
       <section className="max-w-[1600px] mx-auto px-4 lg:px-8 mt-24">
-        <h2 className="font-serif text-2xl md:text-3xl text-brand-charcoal mb-8 text-center uppercase tracking-widest">
+        <h2 className="font-serif text-2xl md:text-3xl text-brand-charcoal mb-8 text-center uppercase ">
           SIMILAR DIAMONDS YOU WOULD LOVE
         </h2>
 
@@ -190,14 +190,14 @@ export default function DiamondDetailsPage() {
               </div>
 
               <div className="mt-auto flex gap-1 mb-1">
-                <button className="flex-1 bg-brand-charcoal text-white text-[9px] font-bold uppercase tracking-wider py-2 hover:bg-black transition-colors">
+                <button className="flex-1 bg-brand-charcoal text-white text-[9px] font-bold uppercase  py-2 hover:bg-black transition-colors">
                   Choose Setting
                 </button>
                 <button className="bg-brand-charcoal text-white px-2 py-2 hover:bg-black transition-colors flex items-center justify-center">
                   <ShoppingCart className="w-3.5 h-3.5" />
                 </button>
               </div>
-              <button className="w-full border border-[#EBEBEB] text-[9px] font-bold uppercase tracking-wider text-brand-charcoal py-2 hover:bg-gray-50 transition-colors">
+              <button className="w-full border border-[#EBEBEB] text-[9px] font-bold uppercase  text-brand-charcoal py-2 hover:bg-gray-50 transition-colors">
                 View Details
               </button>
             </div>
@@ -216,16 +216,16 @@ export default function DiamondDetailsPage() {
             <img src="/images/diamond/Round.png" alt="Round" className="w-8 h-8 object-contain mix-blend-multiply" />
           </div>
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-widest text-brand-charcoal">{diamond.lab} Certified {diamond.carat} Carat {diamond.shape}</p>
+            <p className="text-[11px] font-bold uppercase  text-brand-charcoal">{diamond.lab} Certified {diamond.carat} Carat {diamond.shape}</p>
             <p className="text-xs text-brand-taupe">{diamond.color} Color • {diamond.clarity} Clarity</p>
           </div>
           <div className="ml-auto flex items-center gap-6">
             <div className="text-xl font-serif font-bold text-brand-charcoal">${diamond.price}</div>
             <div className="flex gap-2">
-              <button className="border border-brand-charcoal text-brand-charcoal text-[10px] font-bold tracking-widest uppercase px-6 py-3 hover:bg-brand-charcoal hover:text-white transition-colors">
+              <button className="border border-brand-charcoal text-brand-charcoal text-[10px] font-bold  uppercase px-6 py-3 hover:bg-brand-charcoal hover:text-white transition-colors">
                 ADD TO RING
               </button>
-              <button className="bg-brand-charcoal text-white text-[10px] font-bold tracking-widest uppercase px-6 py-3 hover:bg-black transition-colors shadow-lg">
+              <button className="bg-brand-charcoal text-white text-[10px] font-bold  uppercase px-6 py-3 hover:bg-black transition-colors shadow-lg">
                 ADD TO CART
               </button>
             </div>

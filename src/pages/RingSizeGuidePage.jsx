@@ -77,7 +77,7 @@ export default function RingSizeGuidePage() {
               <p className="text-[16px] text-[#666] leading-relaxed mb-8 max-w-[500px] mx-auto lg:mx-0">
                 Determine your exact ring size from the comfort of your home using our digital sizer or our comprehensive conversion chart.
               </p>
-              <button className="bg-[#101010] text-white px-10 py-4 text-[13px] font-bold tracking-widest uppercase hover:bg-[#ff5474] transition-colors shadow-xl shadow-black/5">
+              <button className="bg-[#101010] text-white px-10 py-4 text-[13px] font-bold  uppercase hover:bg-[#ff5474] transition-colors shadow-xl shadow-black/5">
                 START SIZING
               </button>
             </div>
@@ -141,7 +141,7 @@ export default function RingSizeGuidePage() {
           <div className="bg-white border border-[#E5E5E5] overflow-x-auto shadow-sm">
             <table className="w-full text-left text-[14px]">
               <thead>
-                <tr className="bg-[#FAF8F5] border-b border-[#E5E5E5] text-[#101010] uppercase tracking-widest text-[11px] font-bold">
+                <tr className="bg-[#FAF8F5] border-b border-[#E5E5E5] text-[#101010] uppercase  text-[11px] font-bold">
                   <th className="py-5 px-6 font-semibold whitespace-nowrap">Inside Circumference <span className="text-[9px] text-[#888] font-normal tracking-normal">(MM)</span></th>
                   <th className="py-5 px-6 font-semibold whitespace-nowrap">UK, AU, NZ <span className="text-[9px] text-[#888] font-normal tracking-normal">& ZA</span></th>
                   <th className="py-5 px-6 font-semibold whitespace-nowrap">US, CA <span className="text-[9px] text-[#888] font-normal tracking-normal">& MX</span></th>

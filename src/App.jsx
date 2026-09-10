@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -41,6 +41,13 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCountryModalOpen, setIsCountryModalOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 0);
+  }, [location.pathname]);
   const isAuthPage = location.pathname === '/auth';
   const isCheckoutPage = location.pathname === '/checkout';
   const isShowcasePage = location.pathname === '/showcase';

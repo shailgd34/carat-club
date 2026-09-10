@@ -64,10 +64,10 @@ export default function Deals() {
             <div className="flex-1 h-[1px] bg-[#E5E5E5]"></div>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] mb-4 tracking-wide font-medium capitalize">
+          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] mb-4  font-medium capitalize">
             No-Brainer Deals
           </h2>
-          <p className="text-sm text-[#666] font-medium tracking-wide">Limited pieces. Exceptional prices.</p>
+          <p className="text-sm text-[#666] font-medium ">Limited pieces. Exceptional prices.</p>
 
           {/* Dynamic Sale Timer */}
           <div className="absolute left-0 bottom-0 hidden lg:flex flex-col items-start">
@@ -75,24 +75,24 @@ export default function Deals() {
             <div className="flex gap-2 text-center">
               <div className="bg-white border border-[#E5E5E5] shadow-[0_4px_10px_rgba(0,0,0,0.03)] text-[#101010] rounded-sm w-12 h-12 flex flex-col items-center justify-center">
                 <span className="text-[16px] font-bold leading-none font-serif">{String(timeLeft.days).padStart(2, '0')}</span>
-                <span className="text-[7px] capitalize tracking-wide text-gray-400 mt-1">Days</span>
+                <span className="text-[7px] capitalize  text-gray-400 mt-1">Days</span>
               </div>
               <div className="bg-white border border-[#E5E5E5] shadow-[0_4px_10px_rgba(0,0,0,0.03)] text-[#101010] rounded-sm w-12 h-12 flex flex-col items-center justify-center">
                 <span className="text-[16px] font-bold leading-none font-serif">{String(timeLeft.hours).padStart(2, '0')}</span>
-                <span className="text-[7px] capitalize tracking-wide text-gray-400 mt-1">Hrs</span>
+                <span className="text-[7px] capitalize  text-gray-400 mt-1">Hrs</span>
               </div>
               <div className="bg-white border border-[#E5E5E5] shadow-[0_4px_10px_rgba(0,0,0,0.03)] text-[#101010] rounded-sm w-12 h-12 flex flex-col items-center justify-center">
                 <span className="text-[16px] font-bold leading-none font-serif">{String(timeLeft.mins).padStart(2, '0')}</span>
-                <span className="text-[7px] capitalize tracking-wide text-gray-400 mt-1">Mins</span>
+                <span className="text-[7px] capitalize  text-gray-400 mt-1">Mins</span>
               </div>
               <div className="bg-white border border-[#E5E5E5] shadow-[0_4px_10px_rgba(0,0,0,0.03)] text-[#101010] rounded-sm w-12 h-12 flex flex-col items-center justify-center">
                 <span className="text-[16px] font-bold leading-none font-serif text-[#ff5474]">{String(timeLeft.secs).padStart(2, '0')}</span>
-                <span className="text-[7px] capitalize tracking-wide text-gray-400 mt-1">Secs</span>
+                <span className="text-[7px] capitalize  text-gray-400 mt-1">Secs</span>
               </div>
             </div>
           </div>
 
-          <a href="#" className="absolute right-0 bottom-0 mb-3 hidden lg:flex text-[11px] capitalize font-semibold tracking-wide text-[#ff5474] hover:text-[#D46278] items-center gap-2 transition-colors">
+          <a href="#" className="absolute right-0 bottom-0 mb-3 hidden lg:flex text-[11px] capitalize font-semibold  text-[#ff5474] hover:text-[#D46278] items-center gap-2 transition-colors">
             View All Deals <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </a>
         </div>
@@ -124,7 +124,7 @@ export default function Deals() {
 
                 {/* Badges & Actions */}
                 <div className="flex justify-between items-start w-full absolute top-5 left-0 px-5 z-10">
-                  <div className="bg-[#ff5474] text-white text-[10px] tracking-widest font-bold px-3 py-1.5 rounded-sm shadow-md">
+                  <div className="bg-[#ff5474] text-white text-[10px]  font-bold px-3 py-1.5 rounded-sm shadow-md">
                     {deal.discount}
                   </div>
                   <button className="text-[#A0A0A0] hover:text-[#ff5474] transition-colors">
@@ -151,7 +151,7 @@ export default function Deals() {
                     <span className="text-[13px] font-bold text-[#ff5474]">{deal.curr}</span>
                   </div>
 
-                  <Link to={`/product/${deal.id}`} className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#101010] text-[14px] tracking-wide capitalize font-medium py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
+                  <Link to={`/product/${deal.id}`} className="whitespace-nowrap w-full border border-[#E5E5E5] text-[#101010] text-[14px]  capitalize font-medium py-4 hover:border-[#ff5474] hover:bg-[#ff5474] hover:text-white transition-all duration-300 rounded-sm flex items-center justify-center gap-2 mt-auto">
                     Shop Now <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                   </Link>
                 </div>
@@ -160,7 +160,7 @@ export default function Deals() {
           </div>
         </div>
 
-        <a href="#" className="md:hidden mt-4 inline-flex text-[11px] capitalize font-semibold tracking-wide text-[#ff5474] items-center gap-2">
+        <a href="#" className="md:hidden mt-4 inline-flex text-[11px] capitalize font-semibold  text-[#ff5474] items-center gap-2">
           View All Deals <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
         </a>
 

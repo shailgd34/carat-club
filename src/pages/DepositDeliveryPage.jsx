@@ -21,7 +21,7 @@ export default function DepositDeliveryPage() {
             {/* Pill Badge */}
             <div className="inline-flex items-center gap-2 bg-[#FDF5F6] px-4 py-2 rounded-full mb-8 shadow-sm">
               <svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l2.4 7.6H22l-6 4.8 2.4 7.6-6-4.8-6 4.8 2.4-7.6-6-4.8h7.6z" /></svg>
-              <span className="text-[#ff5474] text-[12px] font-bold tracking-widest uppercase mt-0.5">ONLY PAY 30% UPFRONT</span>
+              <span className="text-[#ff5474] text-[12px] font-bold  uppercase mt-0.5">ONLY PAY 30% UPFRONT</span>
             </div>
 
             {/* Headline */}
@@ -54,7 +54,7 @@ export default function DepositDeliveryPage() {
                   <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-[0_2px_8px_rgba(226,125,144,0.08)]">
                     <svg className="w-5 h-5 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">{f.icon}</svg>
                   </div>
-                  <h4 className="text-[11px] font-serif font-bold tracking-widest text-[#101010] uppercase mb-1.5 leading-tight whitespace-nowrap">{f.title}</h4>
+                  <h4 className="text-[11px] font-serif font-bold  text-[#101010] uppercase mb-1.5 leading-tight whitespace-nowrap">{f.title}</h4>
                   <p className="text-[11px] text-[#666] leading-snug">{f.desc}</p>
                 </div>
               ))}
@@ -62,11 +62,11 @@ export default function DepositDeliveryPage() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/" className="flex items-center justify-center gap-3 bg-[#ff5474] text-white text-[13px] font-bold tracking-widest uppercase py-4 px-8 text-center hover:bg-[#D46278] transition-colors group shadow-sm">
+              <Link to="/" className="flex items-center justify-center gap-3 bg-[#ff5474] text-white text-[13px] font-bold  uppercase py-4 px-8 text-center hover:bg-[#D46278] transition-colors group shadow-sm">
                 SHOP ENGAGEMENT RINGS
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
-              <Link to="/" className="flex items-center justify-center gap-3 border border-[#ff5474]/30 bg-[#FAF8F5]/50 text-[#ff5474] text-[13px] font-bold tracking-widest uppercase py-4 px-8 text-center hover:bg-[#FDF5F6] transition-colors group shadow-sm">
+              <Link to="/" className="flex items-center justify-center gap-3 border border-[#ff5474]/30 bg-[#FAF8F5]/50 text-[#ff5474] text-[13px] font-bold  uppercase py-4 px-8 text-center hover:bg-[#FDF5F6] transition-colors group shadow-sm">
                 SHop Diamond
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
@@ -79,9 +79,9 @@ export default function DepositDeliveryPage() {
           <div className="w-48 h-48 bg-white/95 backdrop-blur-md rounded-full shadow-2xl flex flex-col items-center justify-center text-center p-6 border-[6px] border-[#FAF8F5]/80">
             <div className="w-[150px] h-[150px] rounded-full border border-dashed border-[#ff5474]/50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             <svg className="w-6 h-6 text-[#ff5474] mb-2 relative z-10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" /></svg>
-            <span className="text-[13px] font-bold tracking-widest text-[#101010] uppercase mb-1 relative z-10 leading-tight">GOLD COAST<br />&amp; AUCKLAND</span>
+            <span className="text-[13px] font-bold  text-[#101010] uppercase mb-1 relative z-10 leading-tight">GOLD COAST<br />&amp; AUCKLAND</span>
             <span className="text-[36px] font-serif text-[#ff5474] leading-none mb-1 relative z-10">100KM</span>
-            <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase relative z-10">DELIVERY RADIUS</span>
+            <span className="text-[11px] font-bold  text-[#101010] uppercase relative z-10">DELIVERY RADIUS</span>
             <div className="flex gap-1 mt-2 relative z-10">
               <div className="w-1 h-[2px] bg-[#ff5474]/40"></div>
               <div className="w-1 h-[2px] bg-[#ff5474]/40"></div>
@@ -106,7 +106,7 @@ export default function DepositDeliveryPage() {
                 <div className="flex items-center gap-4 flex-1">
                   <svg className="w-7 h-7 text-[#ff5474] shrink-0 stroke-[1.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor">{feature.icon}</svg>
                   <div>
-                    <h4 className="text-[12px] font-bold tracking-widest text-[#101010] uppercase mb-0.5">{feature.title}</h4>
+                    <h4 className="text-[12px] font-bold  text-[#101010] uppercase mb-0.5">{feature.title}</h4>
                     <p className="text-[12px] text-[#666]">{feature.desc}</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function DepositDeliveryPage() {
       <section className="py-24 bg-white relative">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="font-serif text-[32px] md:text-[36px] text-[#101010] mb-4 uppercase tracking-widest">HOW IT WORKS</h2>
+            <h2 className="font-serif text-[32px] md:text-[36px] text-[#101010] mb-4 uppercase ">HOW IT WORKS</h2>
             <div className="w-10 h-[2px] bg-[#ff5474]/50 mx-auto"></div>
           </div>
 
@@ -150,7 +150,7 @@ export default function DepositDeliveryPage() {
                     <svg className="w-20 h-20 stroke-[0.75]" viewBox="0 0 24 24" fill="none" stroke="currentColor">{item.icon}</svg>
                   </div>
 
-                  <h4 className="text-[15px] font-bold tracking-widest text-[#101010] uppercase mb-3 px-1 leading-tight">{item.title}</h4>
+                  <h4 className="text-[15px] font-bold  text-[#101010] uppercase mb-3 px-1 leading-tight">{item.title}</h4>
                   <p className="text-[15px] text-[#666] leading-relaxed whitespace-pre-line">{item.desc}</p>
                 </div>
               ))}
@@ -166,7 +166,7 @@ export default function DepositDeliveryPage() {
 
             {/* Left side text */}
             <div className="w-full lg:w-[40%]">
-              <h2 className="font-serif text-[32px] md:text-[38px] lg:text-[42px] text-[#101010] mb-6 uppercase tracking-wide leading-[1.2]">
+              <h2 className="font-serif text-[32px] md:text-[38px] lg:text-[42px] text-[#101010] mb-6 uppercase  leading-[1.2]">
                 PERSONAL HAND DELIVERY<br />WITHIN 100KM RADIUS
               </h2>
               <p className="text-[15px] md:text-[16px] text-[#4A4A4A] mb-8 leading-relaxed max-w-[500px]">
@@ -187,7 +187,7 @@ export default function DepositDeliveryPage() {
               {/* Gold Coast Map Card */}
               <div className="flex-1 bg-white border border-[#EBEBEB] relative shadow-[0_2px_15px_rgba(0,0,0,0.03)]">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-2.5 z-10 whitespace-nowrap" style={{ clipPath: 'polygon(5% 0, 95% 0, 100% 100%, 0 100%)' }}>
-                  <h4 className="text-[11px] font-bold tracking-widest text-[#101010] uppercase mt-1">GOLD COAST, AUSTRALIA</h4>
+                  <h4 className="text-[11px] font-bold  text-[#101010] uppercase mt-1">GOLD COAST, AUSTRALIA</h4>
                 </div>
 
                 <a href="https://maps.google.com/?q=26+Olivia+Dr,+Helensvale+QLD+4212,+Australia" target="_blank" rel="noopener noreferrer" className="block w-full aspect-[4/3] bg-[#E5E9F0] relative overflow-hidden border-b border-[#EBEBEB] group cursor-pointer flex items-center justify-center">
@@ -222,7 +222,7 @@ export default function DepositDeliveryPage() {
               {/* Auckland Map Card */}
               <div className="flex-1 bg-white border border-[#EBEBEB] relative shadow-[0_2px_15px_rgba(0,0,0,0.03)] mt-8 md:mt-0">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-2.5 z-10 whitespace-nowrap" style={{ clipPath: 'polygon(5% 0, 95% 0, 100% 100%, 0 100%)' }}>
-                  <h4 className="text-[11px] font-bold tracking-widest text-[#101010] uppercase mt-1">AUCKLAND, NEW ZEALAND</h4>
+                  <h4 className="text-[11px] font-bold  text-[#101010] uppercase mt-1">AUCKLAND, NEW ZEALAND</h4>
                 </div>
 
                 <a href="https://maps.google.com/?q=22+Triton+Drive,+Albany,+Auckland+0632,+New+Zealand" target="_blank" rel="noopener noreferrer" className="block w-full aspect-[4/3] bg-[#E5E9F0] relative overflow-hidden border-b border-[#EBEBEB] group cursor-pointer flex items-center justify-center">
@@ -271,7 +271,7 @@ export default function DepositDeliveryPage() {
 
           {/* Main Text and Icons */}
           <div className="flex-1 flex flex-col justify-center">
-            <h2 className="font-serif text-[38px] md:text-[44px] text-[#101010] mb-4 uppercase tracking-wide">
+            <h2 className="font-serif text-[38px] md:text-[44px] text-[#101010] mb-4 uppercase ">
               YOUR RING, 100% PROTECTED
             </h2>
             <p className="text-[17px] md:text-[18px] text-[#4A4A4A] mb-12 max-w-[600px] leading-relaxed">
@@ -313,7 +313,7 @@ export default function DepositDeliveryPage() {
       {/* FAQ */}
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-4 lg:px-8">
-          <h2 className="font-serif text-[28px] text-center text-[#101010] mb-16 uppercase tracking-widest">FREQUENTLY ASKED QUESTIONS</h2>
+          <h2 className="font-serif text-[28px] text-center text-[#101010] mb-16 uppercase ">FREQUENTLY ASKED QUESTIONS</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
             {[
@@ -343,7 +343,7 @@ export default function DepositDeliveryPage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-16">
 
             <div className="text-center md:text-left">
-              <h2 className="font-serif text-[24px] md:text-[26px] text-[#101010] uppercase tracking-wide mb-1">
+              <h2 className="font-serif text-[24px] md:text-[26px] text-[#101010] uppercase  mb-1">
                 READY TO EXPERIENCE THE CARAT CLUB DIFFERENCE?
               </h2>
               <p className="text-[15px] text-[#4A4A4A] font-sans">
@@ -352,10 +352,10 @@ export default function DepositDeliveryPage() {
             </div>
 
             <div className="flex gap-4 shrink-0">
-              <Link to="/" className="bg-[#ff5474] text-white text-[12px] font-bold tracking-widest uppercase py-3.5 px-8 text-center hover:bg-[#D46278] transition-colors shadow-sm">
+              <Link to="/" className="bg-[#ff5474] text-white text-[12px] font-bold  uppercase py-3.5 px-8 text-center hover:bg-[#D46278] transition-colors shadow-sm">
                 SHOP NOW
               </Link>
-              <Link to="/" className="border-[1.5px] border-[#ff5474]/50 text-[#ff5474] bg-white text-[12px] font-bold tracking-widest uppercase py-3.5 px-8 text-center hover:bg-[#FDF5F6] transition-colors shadow-sm">
+              <Link to="/" className="border-[1.5px] border-[#ff5474]/50 text-[#ff5474] bg-white text-[12px] font-bold  uppercase py-3.5 px-8 text-center hover:bg-[#FDF5F6] transition-colors shadow-sm">
                 BOOK CONSULTATION
               </Link>
             </div>

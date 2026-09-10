@@ -21,7 +21,7 @@ export default function ProductDetailsPage() {
     <div className="bg-[#FAF8F5] min-h-screen">
 
       {/* Breadcrumbs */}
-      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-4 flex items-center gap-2 text-[10px] text-[#666] tracking-widest font-medium">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-6 flex items-center gap-2 text-[13px] text-[#666] font-medium">
         <Link to="/" className="hover:text-[#ff5474]">Home</Link>
         <span>/</span>
         <Link to="#" className="hover:text-[#ff5474]">Engagement Rings</Link>
@@ -49,7 +49,7 @@ export default function ProductDetailsPage() {
             ))}
             <button className="w-[80px] h-[80px] bg-[#EBEBEB] flex flex-col items-center justify-center text-[#666] hover:bg-[#E5E5E5] transition-colors mt-auto">
               <svg className="w-6 h-6 mb-1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" /></svg>
-              <span className="text-[9px] font-bold tracking-widest">360° VIEW</span>
+              <span className="text-[9px] font-bold ">360° VIEW</span>
             </button>
           </div>
 
@@ -67,8 +67,8 @@ export default function ProductDetailsPage() {
         <div className="w-full lg:w-[45%] flex flex-col">
           {/* Tags */}
           <div className="flex items-center gap-3 mb-4">
-            <span className="bg-[#FDF5F6] text-[#ff5474] text-[9px] font-bold tracking-widest uppercase px-3 py-1">BEST SELLER</span>
-            <span className="flex items-center gap-1 text-[9px] font-bold tracking-widest uppercase text-[#666]">
+            <span className="bg-[#FDF5F6] text-[#ff5474] text-[9px] font-bold  uppercase px-3 py-1">BEST SELLER</span>
+            <span className="flex items-center gap-1 text-[9px] font-bold  uppercase text-[#666]">
               <svg className="w-3 h-3 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M6 3h12l4 6-10 13L2 9Z" />
                 <path d="M12 22V9M2 9h20M6 3l6 6 6-6" />
@@ -77,8 +77,8 @@ export default function ProductDetailsPage() {
             </span>
           </div>
 
-          <div className="flex justify-between items-start mb-2">
-            <h1 className="font-serif text-[42px] text-[#101010] leading-[1.1]">Classic Solitaire<br />Round Brilliant</h1>
+          <div className="flex justify-between items-start mb-4">
+            <h1 className="font-serif text-5xl lg:text-[54px] text-[#101010] leading-[1.1]">Classic Solitaire<br />Round Brilliant</h1>
             <div className="flex gap-2 mt-2">
               <button className="w-9 h-9 rounded-full border border-[#EBEBEB] flex items-center justify-center text-[#666] hover:border-[#ff5474] hover:text-[#ff5474] transition-colors bg-white shadow-sm">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" /></svg>
@@ -89,36 +89,36 @@ export default function ProductDetailsPage() {
             </div>
           </div>
 
-          <p className="text-[13px] text-[#666] mb-6 font-medium">Timeless beauty. Iconic brilliance.</p>
+          <p className="text-base text-[#666] mb-8 font-medium">Timeless beauty. Iconic brilliance.</p>
 
           <div className="mb-2">
-            <span className="font-bold text-[#101010] text-xl">AUD $2,890</span>
+            <span className="font-bold text-[#101010] text-3xl">AUD $2,890</span>
           </div>
 
-          <div className="flex items-center gap-2 mb-6">
-            <span className="text-[11px] text-[#666]">or 4 payments of $722.50 with</span>
-            <div className="bg-[#B2FCE4] px-2 py-0.5 rounded-full flex items-center text-[10px] font-bold">
+          <div className="flex items-center gap-2 mb-8">
+            <span className="text-[13px] text-[#666]">or 4 payments of $722.50 with</span>
+            <div className="bg-[#B2FCE4] px-2.5 py-1 rounded-full flex items-center text-[12px] font-bold">
               afterpay
             </div>
           </div>
 
-          <div className="flex items-center gap-3 mb-8 pb-8 border-b border-[#EBEBEB]">
+          <div className="flex items-center gap-3 mb-10 pb-10 border-b border-[#EBEBEB]">
             <div className="flex text-[#ff5474]">
-              {[1, 2, 3, 4, 5].map(s => <svg key={s} className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
+              {[1, 2, 3, 4, 5].map(s => <svg key={s} className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
             </div>
-            <span className="text-[11px] text-[#101010] font-bold">4.9 <a href="#" className="underline font-normal text-[#666] hover:text-[#ff5474]">(128 reviews)</a></span>
-            <span className="text-[11px] text-[#EBEBEB]">|</span>
-            <a href="#" className="text-[11px] text-[#666] underline hover:text-[#ff5474]">Write a review</a>
+            <span className="text-[14px] text-[#101010] font-bold">4.9 <a href="#" className="underline font-normal text-[#666] hover:text-[#ff5474]">(128 reviews)</a></span>
+            <span className="text-[14px] text-[#EBEBEB]">|</span>
+            <a href="#" className="text-[14px] text-[#666] underline hover:text-[#ff5474]">Write a review</a>
           </div>
 
           {/* Configuration - Diamond */}
           <div className="mb-8">
             <div className="flex justify-between items-end mb-3">
               <div>
-                <h4 className="text-[12px] font-bold tracking-widest text-[#101010] mb-1">1. DIAMOND</h4>
-                <p className="text-[13px] text-[#666]"><span className="text-[#ff5474]">1.20 CT</span> | Round | Excellent Cut | F Color | VS1 Clarity</p>
+                <h4 className="text-[16px] font-bold text-[#101010] mb-2">1. DIAMOND</h4>
+                <p className="text-[15px] text-[#666]"><span className="text-[#ff5474]">1.20 CT</span> | Round | Excellent Cut | F Color | VS1 Clarity</p>
               </div>
-              <a href="#" className="text-[11px] font-bold tracking-widest text-[#ff5474] underline hover:text-[#D46278]">Change</a>
+              <a href="#" className="text-[14px] font-bold text-[#ff5474] underline hover:text-[#D46278]">Change</a>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -126,7 +126,7 @@ export default function ProductDetailsPage() {
                 <button
                   key={ct}
                   onClick={() => setActiveCarat(ct)}
-                  className={`w-[60px] py-2 text-[11px] font-bold tracking-widest border transition-colors ${activeCarat === ct
+                  className={`w-[68px] py-2.5 text-[14px] font-bold border transition-colors ${activeCarat === ct
                     ? 'border-[#ff5474] text-[#ff5474] bg-white'
                     : 'border-[#EBEBEB] text-[#666] hover:border-[#CCC] bg-white'
                     }`}
@@ -155,10 +155,10 @@ export default function ProductDetailsPage() {
           <div className="mb-8">
             <div className="flex justify-between items-end mb-3">
               <div>
-                <h4 className="text-[12px] font-bold tracking-widest text-[#101010] mb-1">2. METAL</h4>
-                <p className="text-[13px] text-[#666]">{activeMetal}</p>
+                <h4 className="text-[16px] font-bold text-[#101010] mb-2">2. METAL</h4>
+                <p className="text-[15px] text-[#666]">{activeMetal}</p>
               </div>
-              <a href="#" className="text-[11px] font-bold tracking-widest text-[#ff5474] underline hover:text-[#D46278]">Change</a>
+              <a href="#" className="text-[14px] font-bold text-[#ff5474] underline hover:text-[#D46278]">Change</a>
             </div>
 
             <div className="flex gap-4">
@@ -171,7 +171,7 @@ export default function ProductDetailsPage() {
                 <button
                   key={metal.name}
                   onClick={() => setActiveMetal(metal.name)}
-                  className={`w-8 h-8 rounded-full bg-gradient-to-br ${metal.gradient} shadow-inner transition-transform ${activeMetal === metal.name ? 'ring-2 ring-offset-2 ring-[#ff5474] scale-110' : 'hover:scale-110'
+                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${metal.gradient} shadow-inner transition-transform ${activeMetal === metal.name ? 'ring-2 ring-offset-2 ring-[#ff5474] scale-110' : 'hover:scale-110'
                     }`}
                   title={metal.name}
                 ></button>
@@ -186,28 +186,28 @@ export default function ProductDetailsPage() {
               <svg className="w-6 h-6 text-[#999]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><circle cx="12" cy="12" r="8" /><path d="M12 4v2" /></svg>
             </div>
             <div className="flex-1 relative">
-              <select className="w-full border-b border-[#EBEBEB] py-3 text-[14px] font-bold text-[#101010] outline-none appearance-none cursor-pointer">
+              <select className="w-full border-b border-[#EBEBEB] py-3 text-[16px] font-bold text-[#101010] outline-none appearance-none cursor-pointer">
                 <option>AU / UK - M 1/2</option>
                 <option>AU / UK - N</option>
                 <option>AU / UK - N 1/2</option>
               </select>
-              <svg className="w-4 h-4 absolute right-0 top-1/2 -translate-y-1/2 text-[#999] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+              <svg className="w-5 h-5 absolute right-0 top-1/2 -translate-y-1/2 text-[#999] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
             </div>
             <Link
               to="/ring-size-guide"
               target="_blank"
-              className="text-[11px] font-bold tracking-widest text-[#ff5474] underline flex items-center gap-1 whitespace-nowrap hover:text-[#D46278]"
+              className="text-[14px] font-bold text-[#ff5474] underline flex items-center gap-1 whitespace-nowrap hover:text-[#D46278]"
             >
               Find Your Size <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 8h.01" /></svg>
             </Link>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex gap-4 mb-8">
-            <button className="flex-1 bg-[#ff5474] text-white text-[12px] font-bold tracking-widest uppercase py-4 shadow-[0_4px_15px_rgba(226,125,144,0.3)] hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-shadow">
+          <div className="flex gap-4 mb-10">
+            <button className="flex-1 bg-[#ff5474] text-white text-[14px] font-bold uppercase py-5 shadow-[0_4px_15px_rgba(226,125,144,0.3)] hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-shadow">
               ADD TO CART
             </button>
-            <button className="flex-1 border border-[#ff5474] text-[#ff5474] bg-white text-[12px] font-bold tracking-widest uppercase py-4 hover:bg-[#FDF5F6] transition-colors">
+            <button className="flex-1 border border-[#ff5474] text-[#ff5474] bg-white text-[14px] font-bold uppercase py-5 hover:bg-[#FDF5F6] transition-colors">
               BOOK APPOINTMENT
             </button>
           </div>
@@ -238,7 +238,7 @@ export default function ProductDetailsPage() {
       <section className="border-t border-[#EBEBEB] bg-[#FAFAFA]">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
           {/* Tab headers */}
-          <div className="flex gap-12 border-b border-[#EBEBEB] text-[12px] font-bold tracking-widest uppercase text-[#666]">
+          <div className="flex gap-12 border-b border-[#EBEBEB] text-[12px] font-bold  uppercase text-[#666]">
             {['RING DETAILS', 'DIAMOND DETAILS', 'SETTING DETAILS', 'DELIVERY & RETURNS', 'PAYMENT OPTIONS'].map((tab, i) => (
               <button
                 key={tab}
@@ -280,7 +280,7 @@ export default function ProductDetailsPage() {
 
             {/* Why Carat Club */}
             <div className="w-full lg:w-1/3 bg-[#FDF5F6] p-8 relative overflow-hidden">
-              <h4 className="font-bold text-[13px] tracking-widest text-[#101010] mb-8">WHY CARAT CLUB?</h4>
+              <h4 className="font-bold text-[13px]  text-[#101010] mb-8">WHY CARAT CLUB?</h4>
               <ul className="flex flex-col gap-6 text-[13px] text-[#666] relative z-10 font-medium">
                 {['Direct from our trusted network', 'Handcrafted with precision', 'IGI Certified Diamonds', 'Lifetime Care & Warranty', '30% Deposit & Hand Delivery'].map(item => (
                   <li key={item} className="flex items-center gap-3">
@@ -302,7 +302,7 @@ export default function ProductDetailsPage() {
       {/* Complete The Look */}
       <section className="bg-white py-16 border-t border-[#EBEBEB]">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
-          <h2 className="font-serif text-2xl text-center text-[#101010] mb-10 uppercase tracking-widest">COMPLETE THE LOOK</h2>
+          <h2 className="font-serif text-2xl text-center text-[#101010] mb-10 uppercase ">COMPLETE THE LOOK</h2>
 
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -341,7 +341,7 @@ export default function ProductDetailsPage() {
 
           {/* Customer Reviews */}
           <div className="w-full lg:w-[60%] flex flex-col gap-6">
-            <h4 className="font-bold text-[11px] tracking-widest text-[#101010]">CUSTOMER REVIEWS</h4>
+            <h4 className="font-bold text-[11px]  text-[#101010]">CUSTOMER REVIEWS</h4>
             <div className="bg-white p-8 border border-[#EBEBEB] flex flex-col md:flex-row gap-12 items-center">
 
               {/* Aggregate */}
@@ -351,7 +351,7 @@ export default function ProductDetailsPage() {
                   {[1, 2, 3, 4, 5].map(s => <svg key={s} className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>)}
                 </div>
                 <span className="text-[9px] font-bold text-[#666]">Based on 128 reviews</span>
-                <button className="mt-6 border border-[#ff5474] text-[#ff5474] text-[10px] font-bold tracking-widest py-3 px-8 uppercase hover:bg-[#FDF5F6] transition-colors w-full">WRITE A REVIEW</button>
+                <button className="mt-6 border border-[#ff5474] text-[#ff5474] text-[10px] font-bold  py-3 px-8 uppercase hover:bg-[#FDF5F6] transition-colors w-full">WRITE A REVIEW</button>
               </div>
 
               {/* Bars */}
@@ -392,14 +392,14 @@ export default function ProductDetailsPage() {
 
           {/* Need Help Choosing */}
           <div className="w-full lg:w-[40%] bg-[#FDF5F6] p-10 relative overflow-hidden flex flex-col justify-center">
-            <h4 className="font-bold text-[14px] tracking-widest text-[#101010] mb-4 relative z-10">NEED HELP CHOOSING?</h4>
+            <h4 className="font-bold text-[14px]  text-[#101010] mb-4 relative z-10">NEED HELP CHOOSING?</h4>
             <p className="text-[14px] text-[#666] mb-6 relative z-10 max-w-[220px] leading-relaxed">Our diamond experts are here to help you find the perfect ring.</p>
             <ul className="flex flex-col gap-4 text-[13px] text-[#333] font-medium relative z-10 mb-8">
               <li className="flex items-center gap-3"><svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg> Free expert consultation</li>
               <li className="flex items-center gap-3"><svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg> Virtual or in-store appointments</li>
               <li className="flex items-center gap-3"><svg className="w-4 h-4 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg> No obligation, just honest advice</li>
             </ul>
-            <button className="bg-[#ff5474] text-white text-[12px] font-bold tracking-widest py-4 px-8 uppercase w-max relative z-10 hover:bg-[#D46278] transition-colors shadow-md">
+            <button className="bg-[#ff5474] text-white text-[12px] font-bold  py-4 px-8 uppercase w-max relative z-10 hover:bg-[#D46278] transition-colors shadow-md">
               BOOK CONSULTATION
             </button>
             <div className="absolute right-0 bottom-0 w-[55%] h-[80%]">

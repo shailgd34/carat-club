@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="flex flex-col items-center mb-0">
               <img src="/images/logo5.png" alt="Logo" className="h-[140px] lg:h-[140px] object-cover mb-1" />
               {/* <div className="flex flex-col items-center">
-                <span className="font-serif text-[28px] lg:text-[32px] leading-none text-white tracking-widest">CARAT CLUB</span>
+                <span className="font-serif text-[28px] lg:text-[32px] leading-none text-white ">CARAT CLUB</span>
                 <span className="text-[8px] tracking-[0.3em] text-[#ff5474] uppercase mt-2 font-bold">DIAMONDS &amp; FINE JEWELLERY</span>
               </div> */}
             </div>
@@ -116,16 +116,16 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <svg className="w-5 h-5 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
               <div className="text-left">
-                <div className="font-bold text-white mb-0.5 text-sm">100% SECURE CHECKOUT</div>
-                <div className="text-gray-500 font-medium">SSL Encrypted</div>
+                <div className="font-bold text-white mb-1 text-sm">100% SECURE CHECKOUT</div>
+                <div className="text-gray-500 font-medium text-sm">SSL Encrypted</div>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
               <svg className="w-5 h-5 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
               <div className="text-left">
-                <div className="font-bold text-white mb-0.5 text-sm">IGI CERTIFIED DIAMONDS</div>
-                <div className="text-gray-500 font-medium">Authenticity Guaranteed</div>
+                <div className="font-bold text-white mb-1 text-sm">IGI CERTIFIED DIAMONDS</div>
+                <div className="text-gray-500 font-medium text-sm">Authenticity Guaranteed</div>
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ export default function LooseDiamonds() {
                 className="w-[60%] lg:w-[50%] h-auto object-contain transition-all duration-700 animate-[fadeIn_0.5s_ease-out] drop-shadow-2xl"
               />
               <div className="mt-8 text-center animate-[fadeIn_0.5s_ease-out_0.2s_both]">
-                <h3 className="text-2xl font-serif text-[#101010] tracking-wider capitalize">{selectedShape.name}</h3>
+                <h3 className="text-2xl font-serif text-[#101010]  capitalize">{selectedShape.name}</h3>
                 <p className="text-[10px] tracking-[0.2em] text-[#ff5474] font-bold mt-2 capitalize">Selected Shape</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function LooseDiamonds() {
                 <div className="w-12 h-[1px] bg-[#ff5474]"></div>
               </div>
 
-              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-serif text-[#101010] mb-6 tracking-wide leading-[1.1] capitalize">
+              <h2 className="text-4xl lg:text-5xl xl:text-6xl font-serif text-[#101010] mb-6  leading-[1.1] capitalize">
                 Find Your <br /><span className="italic font-light text-[#ff5474]">Perfect</span> Stone
               </h2>
 
@@ -76,7 +76,7 @@ export default function LooseDiamonds() {
                 </div>
               </div>
 
-              <Link to="/loose-diamonds" className="bg-[#101010] text-white px-8 lg:px-10 py-4 text-[16px] font-bold tracking-wide capitalize hover:bg-[#ff5474] transition-colors self-start flex items-center gap-3 max-w-fit mt-4">
+              <Link to="/loose-diamonds" className="bg-[#101010] text-white px-8 lg:px-10 py-4 text-[16px] font-bold  capitalize hover:bg-[#ff5474] transition-colors self-start flex items-center gap-3 max-w-fit mt-4">
                 Shop Shop Diamonds <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
               </Link>
             </div>

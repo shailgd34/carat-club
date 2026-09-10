@@ -59,7 +59,7 @@ const ShowcasePage = () => {
               <p className="text-lg text-brand-charcoal mb-4"><strong>Large Body:</strong> The quick brown fox jumps over the lazy dog. Designed for readability and modern elegance.</p>
               <p className="text-base text-brand-charcoal mb-4"><strong>Regular Body:</strong> The quick brown fox jumps over the lazy dog. Designed for readability and modern elegance.</p>
               <p className="text-sm text-brand-charcoal mb-4"><strong>Small Body:</strong> The quick brown fox jumps over the lazy dog. Designed for readability and modern elegance.</p>
-              <p className="text-xs text-brand-charcoal font-semibold tracking-widest uppercase">Caption / Eyebrow Text</p>
+              <p className="text-xs text-brand-charcoal font-semibold  uppercase">Caption / Eyebrow Text</p>
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@ const ShowcasePage = () => {
                     className={`flex flex-col items-center justify-center p-3 border cursor-pointer transition-colors ${i === 0 ? 'border-brand-charcoal bg-gray-50' : 'border-brand-light-border hover:border-gray-400'}`}
                   >
                     <div className="w-8 h-8 bg-gray-200 rounded-sm mb-2 rotate-45"></div> {/* Placeholder icon */}
-                    <span className="text-[10px] uppercase tracking-wider text-brand-charcoal">{shape}</span>
+                    <span className="text-[10px] uppercase  text-brand-charcoal">{shape}</span>
                   </div>
                 ))}
               </div>

@@ -47,7 +47,7 @@ export default function AdvancedSlider({ label, min = 0, max = 100, step = 1, un
     <div className="w-full flex flex-col gap-2">
       {/* Label & Info */}
       <div className="flex items-center gap-1.5 mb-1">
-        <span className="text-[12px] font-bold text-[#1a3b3a] capitalize tracking-wide">{label}</span>
+        <span className="text-[12px] font-bold text-[#1a3b3a] capitalize ">{label}</span>
         <Info className="w-3.5 h-3.5 text-gray-400" />
       </div>
 

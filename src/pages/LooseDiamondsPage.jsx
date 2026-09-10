@@ -45,9 +45,9 @@ export default function LooseDiamondsPage() {
   // Filter States
   const [caratRange, setCaratRange] = useState([0.14, 55.23]);
   const [priceRange, setPriceRange] = useState([41, 635333]);
-  const [colorRange, setColorRange] = useState([0, 7]); // K to D
-  const [clarityRange, setClarityRange] = useState([0, 7]); // SI2 to FL
-  const [cutRange, setCutRange] = useState([0, 4]); // Fair to Ideal
+  const [activeColors, setActiveColors] = useState([]);
+  const [activeClarities, setActiveClarities] = useState([]);
+  const [activeCuts, setActiveCuts] = useState([]);
   const [labCert, setLabCert] = useState('IGI');
 
   // Advanced Filter States
@@ -57,17 +57,17 @@ export default function LooseDiamondsPage() {
   const [length, setLength] = useState([0, 33.54]);
   const [width, setWidth] = useState([0.14, 55.23]);
   const [height, setHeight] = useState([0, 80.8]);
-  const [polishRange, setPolishRange] = useState([0, 2]); // Good, Very Good, Excellent
-  const [symmetryRange, setSymmetryRange] = useState([0, 2]);
-  const [fluorescenceRange, setFluorescenceRange] = useState([0, 2]); // None, Faint/Medium, Strong/Very Strong
+  const [activePolishes, setActivePolishes] = useState([]);
+  const [activeSymmetries, setActiveSymmetries] = useState([]);
+  const [activeFluorescences, setActiveFluorescences] = useState([]);
   const [crownAngle, setCrownAngle] = useState([0, 47.4]);
-  const [girdleThickness, setGirdleThickness] = useState([0, 2]); // Thin-Medium, Very Thin, Thick-Very Thick
+  const [activeGirdleThicknesses, setActiveGirdleThicknesses] = useState([]);
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] pt-8 pb-8 font-sans">
       <div className="max-w-[1600px] mx-auto px-4 md:px-8">
         {/* Breadcrumb */}
-        <div className="text-[11px] uppercase tracking-wider text-brand-taupe mb-8">
+        <div className="text-[11px] uppercase  text-brand-taupe mb-8">
           <Link to="/" className="hover:text-brand-charcoal">Home</Link> / Shop Diamonds
         </div>
 
@@ -80,7 +80,7 @@ export default function LooseDiamondsPage() {
         {/* Lab/Natural Toggle & Search */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
           <div className="flex bg-white rounded shadow-sm overflow-hidden">
-            <button className="px-8 py-3 bg-[#ff5474] text-white text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
+            <button className="px-8 py-3 bg-[#ff5474] text-white text-[11px] font-bold  uppercase flex items-center gap-2">
               LAB GROWN DIAMONDS
             </button>
             {/* The user requested NOT to have natural diamond tab, so we can hide it or disable it. We'll leave it as non-active text to match the image structure but it won't be a selectable tab if they don't want it. */}
@@ -96,7 +96,7 @@ export default function LooseDiamondsPage() {
               />
               <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
             </div>
-            <button className="bg-brand-charcoal text-white px-6 py-2.5 text-[11px] font-bold tracking-widest uppercase whitespace-nowrap rounded">
+            <button className="bg-brand-charcoal text-white px-6 py-2.5 text-[11px] font-bold  uppercase whitespace-nowrap rounded">
               MAGIC SEARCH
             </button>
           </div>
@@ -108,7 +108,7 @@ export default function LooseDiamondsPage() {
         <div className="bg-white p-6 rounded shadow-sm border border-brand-light-border mb-6">
           {/* Shape */}
           <div className="mb-8">
-            <div className="text-[11px] uppercase tracking-wider font-bold mb-3">SHAPE</div>
+            <div className="text-[11px] uppercase  font-bold mb-3">SHAPE</div>
             <div className="flex flex-wrap gap-4">
               {diamondShapes.map(shape => (
                 <button
@@ -124,18 +124,63 @@ export default function LooseDiamondsPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-8">
-            <AdvancedSlider
-              label="Color"
-              options={['K', 'J', 'I', 'H', 'G', 'F', 'E', 'D']}
-              value={colorRange}
-              onChange={setColorRange}
-            />
-            <AdvancedSlider
-              label="Clarity"
-              options={['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL']}
-              value={clarityRange}
-              onChange={setClarityRange}
-            />
+            <div>
+              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Color <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                {['K', 'J', 'I', 'H', 'G', 'F', 'E', 'D'].map(col => (
+                  <button
+                    key={col}
+                    onClick={() => setActiveColors(prev => prev.includes(col) ? prev.filter(c => c !== col) : [...prev, col])}
+                    className={`flex-1 text-[10px] sm:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors ${activeColors.includes(col) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
+                  >
+                    {col}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Clarity <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                {['SI2', 'SI1', 'VS2', 'VS1', 'VVS2', 'VVS1', 'IF', 'FL'].map(clar => (
+                  <button
+                    key={clar}
+                    onClick={() => setActiveClarities(prev => prev.includes(clar) ? prev.filter(c => c !== clar) : [...prev, clar])}
+                    className={`flex-1 text-[10px] sm:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors ${activeClarities.includes(clar) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
+                  >
+                    {clar}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Cut <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                {['Fair', 'Good', 'Very Good', 'Excellent', 'Ideal'].map(cut => (
+                  <button
+                    key={cut}
+                    onClick={() => setActiveCuts(prev => prev.includes(cut) ? prev.filter(c => c !== cut) : [...prev, cut])}
+                    className={`flex-1 text-[10px] sm:text-[10px] md:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors whitespace-nowrap overflow-hidden text-ellipsis ${activeCuts.includes(cut) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
+                  >
+                    {cut}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Lab Certifications <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                {['IGI', 'GIA', 'GCAL', 'GSI', 'HRD'].map(cert => (
+                  <button
+                    key={cert}
+                    onClick={() => setLabCert(cert)}
+                    className={`flex-1 text-[10px] sm:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors ${labCert === cert ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
+                  >
+                    {cert}
+                  </button>
+                ))}
+              </div>
+            </div>
             <AdvancedSlider
               label="Carat"
               min={0.14} max={55.23} step={0.01}
@@ -147,28 +192,6 @@ export default function LooseDiamondsPage() {
               min={41} max={635333} step={1} unit="$"
               value={priceRange}
               onChange={setPriceRange}
-            />
-
-            <div>
-              <div className="text-[12px] font-bold text-[#1a3b3a] capitalize tracking-wide mb-3 flex items-center gap-1.5">Lab Certifications <Info className="w-3.5 h-3.5 text-gray-400" /></div>
-              <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
-                {['IGI', 'GIA', 'GCAL', 'GSI', 'HRD'].map(cert => (
-                  <button
-                    key={cert}
-                    onClick={() => setLabCert(cert)}
-                    className={`flex-1 text-[10px] sm:text-[11px] font-bold tracking-wide uppercase border-r border-[#E5E5E5] last:border-0 transition-colors ${labCert === cert ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}
-                  >
-                    {cert}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <AdvancedSlider
-              label="Cut"
-              options={['Fair', 'Good', 'Very Good', 'Excellent', 'Ideal']}
-              value={cutRange}
-              onChange={setCutRange}
             />
           </div>
 
@@ -189,11 +212,39 @@ export default function LooseDiamondsPage() {
               <AdvancedSlider label="Length" min={0} max={33.54} step={0.01} unit=" mm" value={length} onChange={setLength} />
               <AdvancedSlider label="Width" min={0.14} max={55.23} step={0.01} unit=" mm" value={width} onChange={setWidth} />
               <AdvancedSlider label="Height" min={0} max={80.8} step={0.1} unit=" mm" value={height} onChange={setHeight} />
-              <AdvancedSlider label="Polish" options={['Good', 'Very Good', 'Excellent']} value={polishRange} onChange={setPolishRange} />
-              <AdvancedSlider label="Symmetry" options={['Good', 'Very Good', 'Excellent']} value={symmetryRange} onChange={setSymmetryRange} />
-              <AdvancedSlider label="Fluorescence" options={['None', 'Faint/Medium', 'Strong/Very Strong']} value={fluorescenceRange} onChange={setFluorescenceRange} />
+              <div>
+                <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Polish <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+                <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                  {['Good', 'Very Good', 'Excellent'].map(item => (
+                    <button key={item} onClick={() => setActivePolishes(prev => prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item])} className={`flex-1 text-[10px] sm:text-[10px] md:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors whitespace-nowrap overflow-hidden text-ellipsis ${activePolishes.includes(item) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}>{item}</button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Symmetry <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+                <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                  {['Good', 'Very Good', 'Excellent'].map(item => (
+                    <button key={item} onClick={() => setActiveSymmetries(prev => prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item])} className={`flex-1 text-[10px] sm:text-[10px] md:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors whitespace-nowrap overflow-hidden text-ellipsis ${activeSymmetries.includes(item) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}>{item}</button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Fluorescence <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+                <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                  {['None', 'Faint/Medium', 'Strong/Very Strong'].map(item => (
+                    <button key={item} onClick={() => setActiveFluorescences(prev => prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item])} className={`flex-1 text-[10px] sm:text-[10px] md:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors whitespace-nowrap overflow-hidden text-ellipsis ${activeFluorescences.includes(item) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}>{item}</button>
+                  ))}
+                </div>
+              </div>
               <AdvancedSlider label="Crown Angle" min={0} max={47.4} step={0.1} unit="°" value={crownAngle} onChange={setCrownAngle} />
-              <AdvancedSlider label="Girdle Thickness" options={['Thin-Medium', 'Very Thin', 'Thick-Very Thick']} value={girdleThickness} onChange={setGirdleThickness} />
+              <div>
+                <div className="text-[12px] font-bold text-[#1a3b3a] capitalize  mb-3 flex items-center gap-1.5">Girdle Thickness <Info className="w-3.5 h-3.5 text-gray-400" /></div>
+                <div className="flex border border-[#E5E5E5] rounded overflow-hidden h-[34px]">
+                  {['Thin-Medium', 'Very Thin', 'Thick-Very Thick'].map(item => (
+                    <button key={item} onClick={() => setActiveGirdleThicknesses(prev => prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item])} className={`flex-1 text-[10px] sm:text-[10px] md:text-[11px] font-bold  uppercase border-r border-[#E5E5E5] last:border-0 transition-colors whitespace-nowrap overflow-hidden text-ellipsis ${activeGirdleThicknesses.includes(item) ? 'text-[#ff5474] bg-[#ff5474]/5' : 'text-gray-500 hover:bg-gray-50'}`}>{item}</button>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 
@@ -202,24 +253,24 @@ export default function LooseDiamondsPage() {
         {/* Active Filters & Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-xs">
+            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-sm">
               <span>Shape: {activeShape}</span>
               <X className="w-3 h-3 cursor-pointer text-gray-400 hover:text-brand-charcoal" />
             </div>
-            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-xs">
+            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-sm">
               <span>Lab: IGI</span>
               <X className="w-3 h-3 cursor-pointer text-gray-400 hover:text-brand-charcoal" />
             </div>
-            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-xs">
+            <div className="flex items-center gap-2 border border-brand-light-border rounded-full px-3 py-1 bg-white text-sm">
               <span>Cut: {activeCut.charAt(0).toUpperCase() + activeCut.slice(1).toLowerCase()}</span>
               <X className="w-3 h-3 cursor-pointer text-gray-400 hover:text-brand-charcoal" />
             </div>
-            <button className="text-[11px] text-[#ff5474] uppercase tracking-wider font-bold ml-2">Clear All</button>
+            <button className="text-[14px] text-[#ff5474] uppercase  font-bold ml-2">Clear All</button>
           </div>
 
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <span className="text-[10px] uppercase font-bold tracking-wider">VIEW</span>
+              <span className="text-[14px] uppercase font-bold ">VIEW</span>
               <div className="flex border border-brand-light-border rounded overflow-hidden">
                 <button onClick={() => setViewMode('list')} className={`p-2 ${viewMode === 'list' ? 'bg-pink-50 text-[#ff5474]' : 'bg-white text-gray-400'}`}>
                   <List className="w-4 h-4" />
@@ -230,8 +281,8 @@ export default function LooseDiamondsPage() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[10px] uppercase font-bold tracking-wider">SORT BY</span>
-              <div className="border border-brand-light-border rounded px-3 py-1.5 flex justify-between items-center cursor-pointer text-xs bg-white min-w-[140px]">
+              <span className="text-[10px] uppercase font-bold ">SORT BY</span>
+              <div className="border border-brand-light-border rounded px-3 py-1.5 flex justify-between items-center cursor-pointer text-sm bg-white min-w-[140px]">
                 <span>Price: Low to High</span>
                 <ChevronDown className="w-4 h-4 text-gray-400 ml-2" />
               </div>
@@ -244,7 +295,7 @@ export default function LooseDiamondsPage() {
           <div className="bg-white border border-brand-light-border rounded overflow-hidden shadow-sm">
             <div className="overflow-x-auto">
               <table className="w-full text-sm text-left">
-                <thead className="text-[10px] uppercase tracking-wider text-white bg-brand-charcoal">
+                <thead className="text-[10px] uppercase  text-white bg-brand-charcoal">
                   <tr>
                     <th className="px-4 py-4 font-normal">SHAPE</th>
                     <th className="px-4 py-4 font-normal">CARAT <ChevronDown className="inline w-3 h-3" /></th>
@@ -282,7 +333,7 @@ export default function LooseDiamondsPage() {
                         <Heart className="w-4 h-4 text-[#ff5474] cursor-pointer hover:fill-[#ff5474]" />
                       </td>
                       <td className="px-4 py-3">
-                        <Link to={`/diamond/${diamond.id}`} className="inline-block border border-brand-charcoal text-[10px] font-bold tracking-wider px-4 py-1.5 rounded hover:bg-brand-charcoal hover:text-white transition-colors">
+                        <Link to={`/diamond/${diamond.id}`} className="inline-block border border-brand-charcoal text-[10px] font-bold  px-4 py-1.5 rounded hover:bg-brand-charcoal hover:text-white transition-colors">
                           VIEW
                         </Link>
                       </td>
@@ -321,14 +372,14 @@ export default function LooseDiamondsPage() {
                 </div>
 
                 <div className="mt-auto flex gap-1 mb-1">
-                  <button className="flex-1 bg-brand-charcoal text-white text-[10px] font-bold uppercase tracking-wider py-2.5 hover:bg-black transition-colors">
+                  <button className="flex-1 bg-brand-charcoal text-white text-[10px] font-bold uppercase  py-2.5 hover:bg-black transition-colors">
                     Choose Your Setting
                   </button>
                   <button className="bg-brand-charcoal text-white px-3 py-2.5 hover:bg-black transition-colors flex items-center justify-center">
                     <ShoppingCart className="w-4 h-4" />
                   </button>
                 </div>
-                <Link to={`/diamond/${diamond.id}`} className="w-full text-center border border-brand-light-border text-[10px] font-bold uppercase tracking-wider text-brand-charcoal py-2.5 hover:bg-gray-50 transition-colors">
+                <Link to={`/diamond/${diamond.id}`} className="w-full text-center border border-brand-light-border text-[10px] font-bold uppercase  text-brand-charcoal py-2.5 hover:bg-gray-50 transition-colors">
                   View Diamond Details
                 </Link>
               </div>
@@ -339,7 +390,7 @@ export default function LooseDiamondsPage() {
         {/* Pagination / Load More */}
         <div className="mt-8 text-center flex flex-col items-center">
           <p className="text-xs text-brand-taupe mb-4">Showing 1 to 15 of 1,523 diamonds</p>
-          <button className="border border-[#ff5474] text-[#ff5474] bg-white px-8 py-2.5 text-[11px] font-bold tracking-widest uppercase hover:bg-pink-50 transition-colors">
+          <button className="border border-[#ff5474] text-[#ff5474] bg-white px-8 py-2.5 text-[11px] font-bold  uppercase hover:bg-pink-50 transition-colors">
             LOAD MORE
           </button>
         </div>

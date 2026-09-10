@@ -31,7 +31,7 @@ export default function CustomJewellery() {
             Send us a photo or sketch of your dream ring, and our master jewelers will bring it to life with unparalleled craftsmanship.
           </p>
 
-          <Link to="/custom-jewellery" className="whitespace-nowrap bg-[#101010] text-white text-[13px] capitalize tracking-wide font-semibold px-12 py-6 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
+          <Link to="/custom-jewellery" className="whitespace-nowrap bg-[#101010] text-white text-[13px] capitalize  font-semibold px-12 py-6 hover:shadow-[0_10px_30px_rgba(43,39,40,0.3)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-3">
             Submit Your Design <svg className="w-5 h-5 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>
         </div>
@@ -47,7 +47,7 @@ export default function CustomJewellery() {
                 <polyline points="21 15 16 10 5 21" />
               </svg>
             </div>
-            <div className="text-[16px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">Upload A Photo<br />Or Sketch</div>
+            <div className="text-[16px] font-bold text-[#101010]  mb-2 capitalize leading-snug">Upload A Photo<br />Or Sketch</div>
             <div className="text-[13px] text-[#A0A0A0] font-medium">Share your vision with us.</div>
           </div>
 
@@ -57,7 +57,7 @@ export default function CustomJewellery() {
                 <path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
               </svg>
             </div>
-            <div className="text-[16px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">Experts Design<br />For You</div>
+            <div className="text-[16px] font-bold text-[#101010]  mb-2 capitalize leading-snug">Experts Design<br />For You</div>
             <div className="text-[13px] text-[#A0A0A0] font-medium">We create a precise 3D model.</div>
           </div>
 
@@ -67,7 +67,7 @@ export default function CustomJewellery() {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
             </div>
-            <div className="text-[16px] font-bold text-[#101010] tracking-wide mb-2 capitalize leading-snug">We Craft Your<br />Dream Piece</div>
+            <div className="text-[16px] font-bold text-[#101010]  mb-2 capitalize leading-snug">We Craft Your<br />Dream Piece</div>
             <div className="text-[13px] text-[#A0A0A0] font-medium">Delivered securely to your door.</div>
           </div>
 

@@ -10,8 +10,10 @@
   --color-brand-dark: #121212;
   --color-brand-black: #101010;
 
-  --font-serif: 'Lora', serif;
-  --font-sans: 'Figtree', sans-serif;
+  /* --font-serif: 'Lora', serif; */
+  --font-serif: 'Fraunces', serif;
+  /* --font-sans: 'Figtree', sans-serif; */
+  --font-sans: 'Manrope', sans-serif;
 
   --animate-marquee: marquee 15s linear infinite;
   --animate-kenburns: kenburns 20s ease-out infinite alternate;

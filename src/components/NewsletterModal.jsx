@@ -82,13 +82,13 @@ export default function NewsletterModal() {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#101010] hover:bg-[#ff5474] text-white px-6 py-4 transition-colors font-sans tracking-widest text-xs uppercase font-bold"
+              className="w-full bg-[#101010] hover:bg-[#ff5474] text-white px-6 py-4 transition-colors font-sans  text-xs uppercase font-bold"
             >
               Subscribe Now
             </button>
           </form>
 
-          <p className="text-[10px] text-gray-400 mt-6 text-center uppercase tracking-wider">
+          <p className="text-[10px] text-gray-400 mt-6 text-center uppercase ">
             You can unsubscribe at any time.
           </p>
         </div>

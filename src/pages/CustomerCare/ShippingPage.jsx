@@ -23,7 +23,7 @@ export default function ShippingPage() {
               <svg className="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
             <h3 className="font-serif text-[28px] text-brand-charcoal mb-4">Domestic Shipping</h3>
-            <p className="text-[13px] font-bold tracking-widest uppercase text-brand-gold mb-6">Australia & New Zealand</p>
+            <p className="text-[13px] font-bold  uppercase text-brand-gold mb-6">Australia & New Zealand</p>
             
             <ul className="space-y-4">
               <li className="flex justify-between items-center border-b border-brand-light-border pb-4">
@@ -42,7 +42,7 @@ export default function ShippingPage() {
               <svg className="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
             </div>
             <h3 className="font-serif text-[28px] text-brand-charcoal mb-4">International</h3>
-            <p className="text-[13px] font-bold tracking-widest uppercase text-brand-gold mb-6">Global Destinations</p>
+            <p className="text-[13px] font-bold  uppercase text-brand-gold mb-6">Global Destinations</p>
             
             <ul className="space-y-4">
               <li className="flex justify-between items-center border-b border-brand-light-border pb-4">
@@ -63,11 +63,11 @@ export default function ShippingPage() {
           <h3 className="font-serif text-[24px] text-brand-charcoal mb-4">Production & Security Policies</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h4 className="text-[13px] font-bold tracking-widest uppercase text-brand-charcoal mb-2">Production Times</h4>
+              <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-2">Production Times</h4>
               <p className="text-[15px] text-brand-taupe font-light leading-relaxed">As most of our pieces are handcrafted to order, please allow 3-4 weeks for production before your item ships. Bespoke custom designs may require 6-8 weeks.</p>
             </div>
             <div>
-              <h4 className="text-[13px] font-bold tracking-widest uppercase text-brand-charcoal mb-2">Security & Signatures</h4>
+              <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-2">Security & Signatures</h4>
               <p className="text-[15px] text-brand-taupe font-light leading-relaxed">All Carat Club shipments are fully insured during transit. A signature is required upon delivery for all orders. We do not ship to P.O. Boxes under any circumstances.</p>
             </div>
           </div>

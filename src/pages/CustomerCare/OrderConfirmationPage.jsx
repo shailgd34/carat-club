@@ -26,9 +26,9 @@ export default function OrderConfirmationPage() {
             </div>
             
             <div className="bg-[#FAF8F5] p-8 border-l-4 border-brand-gold">
-              <h4 className="text-[13px] font-bold tracking-widest uppercase text-brand-charcoal mb-3">Haven't received your confirmation?</h4>
+              <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-3">Haven't received your confirmation?</h4>
               <p className="text-[14px] text-brand-taupe font-light mb-4">Please check your spam or promotions folder. If you still cannot locate it after 24 hours, contact our support team.</p>
-              <Link to="/customer-care/contact" className="text-[12px] font-bold tracking-widest uppercase text-brand-gold hover:text-brand-charcoal transition-colors border-b border-brand-gold pb-1 inline-block">Contact Support</Link>
+              <Link to="/customer-care/contact" className="text-[12px] font-bold  uppercase text-brand-gold hover:text-brand-charcoal transition-colors border-b border-brand-gold pb-1 inline-block">Contact Support</Link>
             </div>
 
             <div className="space-y-4">

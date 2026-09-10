@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="w-full lg:w-1/2 flex items-center justify-center lg:justify-start px-6 lg:pl-[max(1rem,(100vw-1600px)/2+2rem)] relative z-10 pt-20 lg:pt-0">
           <div className="max-w-[600px] w-full lg:pr-12">
             {/* Breadcrumb */}
-            <div className="text-[10px] uppercase tracking-widest text-brand-taupe mb-12 flex items-center gap-3">
+            <div className="text-[10px] uppercase  text-brand-taupe mb-12 flex items-center gap-3">
               <Link to="/" className="hover:text-brand-charcoal transition-colors">Home</Link>
               <span className="text-brand-light-border">/</span>
               <span className="text-brand-charcoal font-semibold">About Carat Club</span>
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
 
             {/* Added "More Info" Badges */}
-            <div className="flex flex-wrap items-center gap-6 text-[10px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">
+            <div className="flex flex-wrap items-center gap-6 text-[10px] font-bold  uppercase text-brand-charcoal mb-4">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-brand-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                 IGI Certified
@@ -108,7 +108,7 @@ export default function AboutPage() {
             ].map((pillar, i) => (
               <div key={i} className="flex flex-col border-t border-brand-light-border pt-8 group">
                 <span className="text-brand-gold font-serif italic text-xl mb-4">0{i + 1}.</span>
-                <h4 className="text-[13px] font-bold tracking-widest uppercase text-brand-charcoal mb-4">{pillar.title}</h4>
+                <h4 className="text-[13px] font-bold  uppercase text-brand-charcoal mb-4">{pillar.title}</h4>
                 <p className="text-[14px] text-brand-charcoal/70 leading-relaxed font-light">{pillar.desc}</p>
               </div>
             ))}
@@ -132,9 +132,9 @@ export default function AboutPage() {
               ].map((award, i) => (
                 <div key={i} className="flex flex-col items-center text-center max-w-[200px] group">
                   <svg className="w-12 h-12 text-brand-gold/60 mb-4 group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1"><path d="M12 15c-3.866 0-7-3.134-7-7V3h14v5c0 3.866-3.134 7-7 7z" /><path d="M12 15v7" /><path d="M8 22h8" /><path d="M5 5c-1.657 0-3 1.343-3 3s1.343 3 3 3h2" /><path d="M19 5c1.657 0 3 1.343 3 3s-1.343 3-3 3h-2" /></svg>
-                  <span className="text-[10px] font-bold tracking-widest text-brand-charcoal mb-2">{award.year}</span>
+                  <span className="text-[10px] font-bold  text-brand-charcoal mb-2">{award.year}</span>
                   <h5 className="font-serif italic text-[16px] text-brand-charcoal mb-1">{award.title}</h5>
-                  <p className="text-[11px] uppercase tracking-widest text-brand-taupe">{award.org}</p>
+                  <p className="text-[11px] uppercase  text-brand-taupe">{award.org}</p>
                 </div>
               ))}
             </div>
@@ -218,7 +218,7 @@ export default function AboutPage() {
               <div key={i} className="flex flex-col relative group">
                 <div className="absolute -left-4 top-4 w-[1px] h-0 bg-brand-gold group-hover:h-12 transition-all duration-500"></div>
                 <div className="font-serif text-[48px] lg:text-[64px] text-white mb-4 leading-none">{item.stat}</div>
-                <div className="text-[12px] uppercase tracking-widest text-brand-gold font-bold mb-3">{item.text}</div>
+                <div className="text-[12px] uppercase  text-brand-gold font-bold mb-3">{item.text}</div>
                 <div className="text-[14px] text-white/50 font-serif italic font-light">{item.sub}</div>
               </div>
             ))}
@@ -261,14 +261,14 @@ export default function AboutPage() {
                 <div className="flex gap-4">
                   <div className="w-[1px] h-full bg-brand-gold"></div>
                   <div>
-                    <h4 className="text-[11px] font-bold tracking-widest uppercase mb-2 text-brand-charcoal">Expert Advice</h4>
+                    <h4 className="text-[11px] font-bold  uppercase mb-2 text-brand-charcoal">Expert Advice</h4>
                     <p className="text-[13px] text-brand-taupe italic font-serif">Speak directly with our gemologists.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="w-[1px] h-full bg-brand-gold"></div>
                   <div>
-                    <h4 className="text-[11px] font-bold tracking-widest uppercase mb-2 text-brand-charcoal">Lifetime Support</h4>
+                    <h4 className="text-[11px] font-bold  uppercase mb-2 text-brand-charcoal">Lifetime Support</h4>
                     <p className="text-[13px] text-brand-taupe italic font-serif">Here long after the proposal.</p>
                   </div>
                 </div>

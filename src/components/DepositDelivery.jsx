@@ -15,7 +15,7 @@ export default function DepositDelivery() {
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl xl:text-[56px] font-serif text-white mb-8 leading-[1.1] tracking-wide">
+          <h2 className="text-4xl lg:text-5xl xl:text-[56px] font-serif text-white mb-8 leading-[1.1] ">
             Pay only <span className="italic font-light text-[#ff5474]">30% upfront</span> <br className="hidden md:block" /> on eligible orders.
           </h2>
 
@@ -67,7 +67,7 @@ export default function DepositDelivery() {
 
           </div>
 
-          <button className="whitespace-nowrap bg-[#ff5474] text-white text-[14px] capitalize tracking-wide font-bold px-12 py-5 hover:bg-[#D46278] hover:shadow-[0_15px_40px_rgba(226,125,144,0.3)] hover:-translate-y-1 transition-all duration-300 w-max shadow-lg">
+          <button className="whitespace-nowrap bg-[#ff5474] text-white text-[14px] capitalize  font-bold px-12 py-5 hover:bg-[#D46278] hover:shadow-[0_15px_40px_rgba(226,125,144,0.3)] hover:-translate-y-1 transition-all duration-300 w-max shadow-lg">
             Learn About 30% Deposit
           </button>
 
@@ -94,7 +94,7 @@ export default function DepositDelivery() {
                 <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" fill="#101010" className="group-hover/pin:fill-white transition-colors" /></svg>
               </div>
               <div className="bg-white/10 backdrop-blur-md px-5 py-3 rounded-sm shadow-2xl border border-white/20 text-left relative z-20 group-hover/pin:bg-[#ff5474]/90 group-hover/pin:border-[#ff5474] transition-all duration-300">
-                <div className="text-[13px] font-bold text-white tracking-wide capitalize">Gold Coast</div>
+                <div className="text-[13px] font-bold text-white  capitalize">Gold Coast</div>
                 <div className="text-[11px] text-gray-200 group-hover/pin:text-white font-medium mt-0.5 transition-colors">Personal Hand Delivery (100km)</div>
               </div>
 
@@ -114,7 +114,7 @@ export default function DepositDelivery() {
                     <div className="absolute inset-0 z-10"></div>
                   </div>
                   <div className="p-4 bg-white text-center border-t border-gray-100 relative">
-                    <div className="text-[10px] uppercase tracking-widest font-bold text-[#ff5474] mb-1 flex items-center justify-center gap-1.5">
+                    <div className="text-[10px] uppercase  font-bold text-[#ff5474] mb-1 flex items-center justify-center gap-1.5">
                       <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg> FREE DELIVERY ZONE
                     </div>
                     <div className="text-[12px] text-gray-500 font-medium leading-snug">Enjoy VIP Hand Delivery directly to your door in this area.</div>
@@ -132,7 +132,7 @@ export default function DepositDelivery() {
                 <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" fill="#101010" className="group-hover/pin:fill-white transition-colors" /></svg>
               </div>
               <div className="bg-white/10 backdrop-blur-md px-5 py-3 rounded-sm shadow-2xl border border-white/20 text-left relative z-20 group-hover/pin:bg-[#ff5474]/90 group-hover/pin:border-[#ff5474] transition-all duration-300">
-                <div className="text-[13px] font-bold text-white tracking-wide capitalize">Auckland</div>
+                <div className="text-[13px] font-bold text-white  capitalize">Auckland</div>
                 <div className="text-[11px] text-gray-200 group-hover/pin:text-white font-medium mt-0.5 transition-colors">Personal Hand Delivery (100km)</div>
               </div>
 
@@ -152,7 +152,7 @@ export default function DepositDelivery() {
                     <div className="absolute inset-0 z-10"></div>
                   </div>
                   <div className="p-4 bg-white text-center border-t border-gray-100 relative">
-                    <div className="text-[10px] uppercase tracking-widest font-bold text-[#ff5474] mb-1 flex items-center justify-center gap-1.5">
+                    <div className="text-[10px] uppercase  font-bold text-[#ff5474] mb-1 flex items-center justify-center gap-1.5">
                       <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg> FREE DELIVERY ZONE
                     </div>
                     <div className="text-[12px] text-gray-500 font-medium leading-snug">Enjoy VIP Hand Delivery directly to your door in this area.</div>

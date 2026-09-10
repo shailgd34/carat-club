@@ -20,7 +20,7 @@ export default function Reviews() {
             <span className="text-[10px] capitalize tracking-[0.2em] text-[#ff5474] font-bold">Client Testimonials</span>
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010] tracking-wide capitalize">
+          <h2 className="text-4xl lg:text-5xl font-serif text-[#101010]  capitalize">
             Stories Of <span className="italic font-light">Brilliance</span>
           </h2>
         </div>
@@ -28,9 +28,9 @@ export default function Reviews() {
         <div className="flex justify-center mb-16 w-full">
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 bg-[#FAF8F5] px-6 sm:px-8 py-3.5 rounded-full border border-[#E5E5E5]">
             <div className="flex items-center gap-3">
-              <div className="flex text-[#ff5474] text-[13px] tracking-widest">★★★★★</div>
+              <div className="flex text-[#ff5474] text-[13px] ">★★★★★</div>
               <span className="text-sm font-bold text-[#101010]">4.9</span>
-              <span className="hidden sm:inline text-xs text-[#A0A0A0] font-medium tracking-wide capitalize">From 2,300+ Reviews</span>
+              <span className="hidden sm:inline text-xs text-[#A0A0A0] font-medium  capitalize">From 2,300+ Reviews</span>
             </div>
 
             <div className="hidden sm:block w-[1px] h-4 bg-[#E5E5E5]"></div>
@@ -47,7 +47,7 @@ export default function Reviews() {
               </div>
               <div className="w-[1px] h-4 bg-[#E5E5E5]"></div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#00b67a] tracking-wider">★ Trustpilot</span>
+                <span className="text-xs font-bold text-[#00b67a] ">★ Trustpilot</span>
                 <span className="text-xs font-bold text-[#101010]">4.9</span>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Reviews() {
                 <p className="text-sm lg:text-[15px] text-[#101010] font-medium leading-relaxed mb-8 italic">"{r.text}"</p>
                 <div className="flex items-center gap-3 mt-auto">
                   <div className="w-8 h-[1px] bg-[#ff5474]"></div>
-                  <div className="text-[11px] font-bold tracking-wide capitalize text-[#101010]">{r.name}</div>
+                  <div className="text-[11px] font-bold  capitalize text-[#101010]">{r.name}</div>
                   <svg className="w-4 h-4 text-green-500 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
                 </div>
               </div>

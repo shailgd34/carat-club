@@ -20,7 +20,7 @@ export default function CustomJewelleryPage() {
     <div className="bg-[#FAF8F5] min-h-screen font-sans text-[#101010]">
 
       {/* 2. BREADCRUMB */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-6 text-[10px] uppercase tracking-widest text-[#666]">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-6 text-[10px] uppercase  text-[#666]">
         <Link to="/" className="hover:text-[#ff5474] transition-colors">Home</Link>
         <span className="mx-2">/</span>
         <span className="text-[#101010] font-semibold">Custom Jewellery</span>
@@ -52,19 +52,19 @@ export default function CustomJewelleryPage() {
             {/* Trust Points */}
             <div className="grid grid-cols-2 gap-y-6 gap-x-8 pt-8 border-t border-[#EBEBEB]">
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Expert Designers</h4>
+                <h4 className="text-[10px] font-bold uppercase  mb-1 text-[#101010]">Expert Designers</h4>
                 <p className="text-[12px] text-[#666]">One-on-one guidance</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Premium Quality</h4>
+                <h4 className="text-[10px] font-bold uppercase  mb-1 text-[#101010]">Premium Quality</h4>
                 <p className="text-[12px] text-[#666]">IGI Certified Diamonds</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Made Just For You</h4>
+                <h4 className="text-[10px] font-bold uppercase  mb-1 text-[#101010]">Made Just For You</h4>
                 <p className="text-[12px] text-[#666]">A unique piece</p>
               </div>
               <div>
-                <h4 className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#101010]">Delivered With Care</h4>
+                <h4 className="text-[10px] font-bold uppercase  mb-1 text-[#101010]">Delivered With Care</h4>
                 <p className="text-[12px] text-[#666]">Personal hand delivery</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">PERSONALISED</h3>
+              <h3 className="text-[13px] font-bold uppercase  mb-3 text-[#101010]">PERSONALISED</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Designed around you</p>
             </div>
             {/* Card 2 */}
@@ -106,7 +106,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M6 3h12l4 6-10 13L2 9Z" /><path d="M11 3v21" /><path d="M22 9L2 9" /><path d="M6 3L11 9" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">EXPERT CRAFTSMANSHIP</h3>
+              <h3 className="text-[13px] font-bold uppercase  mb-3 text-[#101010]">EXPERT CRAFTSMANSHIP</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Made with precision</p>
             </div>
             {/* Card 3 */}
@@ -114,7 +114,7 @@ export default function CustomJewelleryPage() {
               <svg className="mb-6 text-[#ff5474] transform group-hover:scale-110 transition-transform duration-500" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
                 <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" />
               </svg>
-              <h3 className="text-[13px] font-bold uppercase tracking-widest mb-3 text-[#101010]">COMPLETELY UNIQUE</h3>
+              <h3 className="text-[13px] font-bold uppercase  mb-3 text-[#101010]">COMPLETELY UNIQUE</h3>
               <p className="text-[15px] text-[#666] font-serif italic">Created exclusively for you</p>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function CustomJewelleryPage() {
                 </div>
                 <div className="flex flex-col items-center">
                   <span className="text-[10px] font-bold text-[#ff5474] tracking-[0.2em] mb-3 opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">STEP {step.num}</span>
-                  <h4 className="text-[13px] font-bold uppercase tracking-widest text-[#101010] mb-3 transition-colors duration-300 group-hover/step:text-[#ff5474]">{step.title}</h4>
+                  <h4 className="text-[13px] font-bold uppercase  text-[#101010] mb-3 transition-colors duration-300 group-hover/step:text-[#ff5474]">{step.title}</h4>
                   <p className="text-[13px] text-[#666] leading-relaxed max-w-[200px]">{step.text}</p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function CustomJewelleryPage() {
               {/* Upload Box */}
               <div className="border-2 border-dashed border-[#DCDCDC] hover:border-[#ff5474] transition-colors bg-[#FAF8F5] p-10 text-center flex flex-col items-center justify-center cursor-pointer mb-6 group">
                 <svg className="text-[#999] group-hover:text-[#ff5474] mb-4 transition-colors" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 16l-4-4-4 4" /><path d="M12 12v9" /><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3" /><path d="M16 16l-4-4-4 4" /></svg>
-                <p className="text-[13px] font-bold uppercase tracking-widest text-[#101010] mb-2">Drag & Drop Your Image Here</p>
+                <p className="text-[13px] font-bold uppercase  text-[#101010] mb-2">Drag & Drop Your Image Here</p>
                 <p className="text-[12px] text-[#ff5474] font-semibold mb-3">or Browse Files</p>
                 <p className="text-[11px] text-[#999]">JPG, PNG or PDF — Max 10MB</p>
               </div>
@@ -257,19 +257,19 @@ export default function CustomJewelleryPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center divide-y sm:divide-y-0 sm:divide-x divide-[#EBEBEB]">
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">ONE-ON-ONE GUIDANCE</h3>
+              <h3 className="text-[12px] font-bold uppercase  text-[#101010] mb-3">ONE-ON-ONE GUIDANCE</h3>
               <p className="text-[13px] text-[#666]">Work directly with jewellery experts.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">TRANSPARENT PRICING</h3>
+              <h3 className="text-[12px] font-bold uppercase  text-[#101010] mb-3">TRANSPARENT PRICING</h3>
               <p className="text-[13px] text-[#666]">Clear pricing throughout your journey.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">IGI CERTIFIED DIAMONDS</h3>
+              <h3 className="text-[12px] font-bold uppercase  text-[#101010] mb-3">IGI CERTIFIED DIAMONDS</h3>
               <p className="text-[13px] text-[#666]">Quality and authenticity you can trust.</p>
             </div>
             <div className="pt-8 sm:pt-0 sm:px-6">
-              <h3 className="text-[12px] font-bold uppercase tracking-widest text-[#101010] mb-3">PERSONAL HAND DELIVERY</h3>
+              <h3 className="text-[12px] font-bold uppercase  text-[#101010] mb-3">PERSONAL HAND DELIVERY</h3>
               <p className="text-[13px] text-[#666]">Available within 100km of Gold Coast & Auckland.</p>
             </div>
           </div>
@@ -324,7 +324,7 @@ export default function CustomJewelleryPage() {
 
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <span className="bg-white/90 text-[#101010] text-[10px] font-bold uppercase tracking-widest py-3 px-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="bg-white/90 text-[#101010] text-[10px] font-bold uppercase  py-3 px-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                       View Details
                     </span>
                   </div>
@@ -377,7 +377,7 @@ export default function CustomJewelleryPage() {
               <span className="w-2 h-2 rounded-full bg-[#ff5474] animate-pulse"></span>
               <span className="text-[9px] lg:text-[10px] font-bold tracking-[0.2em] uppercase text-white">4K Cinematic</span>
               <span className="text-[10px] text-white/50">|</span>
-              <span className="text-[9px] lg:text-[10px] text-white/80 font-mono tracking-widest">02:45</span>
+              <span className="text-[9px] lg:text-[10px] text-white/80 font-mono ">02:45</span>
             </div>
           </div>
 

@@ -37,12 +37,12 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative min-h-[500px] lg:h-[80vh] w-full overflow-hidden group">
+    <section className="relative min-h-[500px] lg:h-[85vh] w-full overflow-hidden group">
       {/* Static Hero Banner */}
       <div className="w-full h-full flex-shrink-0 relative flex items-end justify-start pb-6 lg:pb-8 bg-cover bg-center bg-no-repeat overflow-hidden">
         {/* Ken Burns Background */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-kenburns"
+          className="absolute inset-0 bg-cover bg-bottom bg-no-repeat animate-kenburns"
           style={{ backgroundImage: "url('/images/bgsliderTwo.png')" }}
         ></div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
             <span className="text-[11px] lg:text-[12px] tracking-[0.2em] capitalize text-[#ff5474] font-semibold block mb-2">
               Exclusive Limited Time
             </span>
-            <h2 className="text-3xl lg:text-4xl xl:text-4xl font-serif text-[#101010] mb-6 tracking-wide font-medium leading-tight capitalize">
+            <h2 className="text-3xl lg:text-4xl xl:text-4xl font-serif text-[#101010] mb-6  font-medium leading-tight capitalize">
               Timeless Beauty
             </h2>
 
