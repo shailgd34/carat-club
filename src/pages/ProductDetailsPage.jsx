@@ -16,6 +16,7 @@ export default function ProductDetailsPage() {
 
   const [activeCarat, setActiveCarat] = useState('1.20 CT');
   const [activeMetal, setActiveMetal] = useState('18K Yellow Gold');
+  const [activeTab, setActiveTab] = useState('RING DETAILS');
 
   return (
     <div className="bg-[#FAF8F5] min-h-screen">
@@ -238,11 +239,12 @@ export default function ProductDetailsPage() {
       <section className="border-t border-[#EBEBEB] bg-[#FAFAFA]">
         <div className="max-w-[1600px] mx-auto px-4 lg:px-8">
           {/* Tab headers */}
-          <div className="flex gap-12 border-b border-[#EBEBEB] text-[12px] font-bold  uppercase text-[#666]">
-            {['RING DETAILS', 'DIAMOND DETAILS', 'SETTING DETAILS', 'DELIVERY & RETURNS', 'PAYMENT OPTIONS'].map((tab, i) => (
+          <div className="flex gap-12 border-b border-[#EBEBEB] text-[12px] font-bold uppercase text-[#666]">
+            {['RING DETAILS', 'DIAMOND DETAILS', 'SETTING DETAILS', 'DELIVERY & RETURNS', 'PAYMENT OPTIONS'].map((tab) => (
               <button
                 key={tab}
-                className={`py-6 border-b-[3px] transition-colors ${i === 0 ? 'border-[#ff5474] text-[#ff5474]' : 'border-transparent hover:text-[#101010]'}`}
+                onClick={() => setActiveTab(tab)}
+                className={`py-6 border-b-[3px] transition-colors ${activeTab === tab ? 'border-[#ff5474] text-[#ff5474]' : 'border-transparent hover:text-[#101010]'}`}
               >
                 {tab}
               </button>
@@ -250,51 +252,159 @@ export default function ProductDetailsPage() {
           </div>
 
           {/* Tab Content */}
-          <div className="py-12 flex flex-col lg:flex-row gap-12">
+          <div className="py-12 min-h-[400px]">
+            {activeTab === 'RING DETAILS' && (
+              <div className="flex flex-col lg:flex-row gap-12 animate-in fade-in duration-500">
+                {/* Specs Table */}
+                <div className="w-full lg:w-1/3">
+                  <p className="text-[14px] text-[#101010] mb-6 leading-relaxed">A <strong className="font-bold">timeless</strong> solitaire designed to let your diamond shine.</p>
+                  <div className="flex flex-col text-[13px]">
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Style</span><span className="w-1/2 text-[#666]">Solitaire</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Setting</span><span className="w-1/2 text-[#666]">6 Prong</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Metal</span><span className="w-1/2 text-[#666]">{activeMetal}</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Band Width</span><span className="w-1/2 text-[#666]">1.8mm</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Average Weight</span><span className="w-1/2 text-[#666]">2.60g</span></div>
+                    <div className="flex py-4"><span className="w-1/2 font-bold text-[#333]">SKU</span><span className="w-1/2 text-[#666]">CC-SOL-RB-120-YG</span></div>
+                  </div>
+                </div>
 
-            {/* Specs Table */}
-            <div className="w-full lg:w-1/3">
-              <p className="text-[14px] text-[#101010] mb-6 leading-relaxed">A <strong className="font-bold">timeless</strong> solitaire designed to let your diamond shine.</p>
-              <div className="flex flex-col text-[13px]">
-                <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Style</span><span className="w-1/2 text-[#666]">Solitaire</span></div>
-                <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Setting</span><span className="w-1/2 text-[#666]">6 Prong</span></div>
-                <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Metal</span><span className="w-1/2 text-[#666]">18K Yellow Gold</span></div>
-                <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Band Width</span><span className="w-1/2 text-[#666]">1.8mm</span></div>
-                <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Average Weight</span><span className="w-1/2 text-[#666]">2.60g</span></div>
-                <div className="flex py-4"><span className="w-1/2 font-bold text-[#333]">SKU</span><span className="w-1/2 text-[#666]">CC-SOL-RB-120-YG</span></div>
+                {/* Sketches */}
+                <div className="w-full lg:w-1/3 flex items-center justify-center gap-12 relative">
+                  <div className="flex flex-col items-center">
+                    <span className="text-[11px] text-[#666] mb-4 font-medium">6.50mm</span>
+                    <img src="/images/rings/ring (1).webp" alt="Front Profile" className="h-[180px] object-contain mix-blend-multiply" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[11px] text-[#666] mb-4 font-medium">6.20mm</span>
+                    <img src="/images/rings/ring (14).webp" alt="Side Profile" className="h-[180px] object-contain mix-blend-multiply" />
+                    <span className="text-[11px] text-[#666] mt-4 font-medium">1.80mm</span>
+                  </div>
+                </div>
+
+                {/* Why Carat Club */}
+                <div className="w-full lg:w-1/3 bg-[#FDF5F6] p-8 relative overflow-hidden">
+                  <h4 className="font-bold text-[13px] text-[#101010] mb-8">WHY CARAT CLUB?</h4>
+                  <ul className="flex flex-col gap-6 text-[13px] text-[#666] relative z-10 font-medium">
+                    {['Direct from our trusted network', 'Handcrafted with precision', 'IGI Certified Diamonds', 'Lifetime Care & Warranty', '30% Deposit & Hand Delivery'].map(item => (
+                      <li key={item} className="flex items-center gap-3">
+                        <svg className="w-4 h-4 text-[#ff5474] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <svg className="absolute -right-8 -bottom-8 w-48 h-48 text-[#ff5474] opacity-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                    <path d="M6 3h12l4 6-10 13L2 9Z" />
+                    <path d="M12 22V9M2 9h20M6 3l6 6 6-6" />
+                  </svg>
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Sketches */}
-            <div className="w-full lg:w-1/3 flex items-center justify-center gap-12 relative">
-              <div className="flex flex-col items-center">
-                <span className="text-[11px] text-[#666] mb-4 font-medium">6.50mm</span>
-                <img src="/images/rings/ring (1).webp" alt="Front Profile" className="h-[180px] object-contain mix-blend-multiply" />
+            {activeTab === 'DIAMOND DETAILS' && (
+              <div className="flex flex-col lg:flex-row gap-12 animate-in fade-in duration-500">
+                <div className="w-full lg:w-1/2">
+                  <p className="text-[14px] text-[#101010] mb-6 leading-relaxed">Each diamond is meticulously selected for maximum brilliance and fire. Every ring comes with an independent IGI certification for complete transparency and peace of mind.</p>
+                  <div className="flex flex-col text-[13px]">
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Shape</span><span className="w-1/2 text-[#666]">Round Brilliant</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Carat Weight</span><span className="w-1/2 text-[#666]">{activeCarat}</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Color</span><span className="w-1/2 text-[#666]">F (Colorless)</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Clarity</span><span className="w-1/2 text-[#666]">VS1 (Very Slightly Included)</span></div>
+                    <div className="flex py-4"><span className="w-1/2 font-bold text-[#333]">Cut</span><span className="w-1/2 text-[#666]">Excellent / Ideal</span></div>
+                  </div>
+                </div>
+                <div className="w-full lg:w-1/2 bg-white border border-[#EBEBEB] p-12 flex flex-col items-center justify-center text-center">
+                  <svg className="w-16 h-16 text-[#ff5474] mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                    <path d="M6 3h12l4 6-10 13L2 9Z" />
+                    <path d="M12 22V9M2 9h20M6 3l6 6 6-6" />
+                  </svg>
+                  <h4 className="text-[16px] font-serif font-bold text-[#101010] mb-2">IGI Certified Excellence</h4>
+                  <p className="text-[13px] text-[#666] max-w-sm mx-auto">Your diamond has been graded by the International Gemological Institute, ensuring strict standards of quality.</p>
+                  <a href="#" className="mt-6 text-[12px] font-bold text-[#ff5474] underline hover:text-[#D46278]">VIEW SAMPLE CERTIFICATE</a>
+                </div>
               </div>
-              <div className="flex flex-col items-center">
-                <span className="text-[11px] text-[#666] mb-4 font-medium">6.20mm</span>
-                <img src="/images/rings/ring (14).webp" alt="Side Profile" className="h-[180px] object-contain mix-blend-multiply" />
-                <span className="text-[11px] text-[#666] mt-4 font-medium">1.80mm</span>
+            )}
+
+            {activeTab === 'SETTING DETAILS' && (
+              <div className="flex flex-col lg:flex-row gap-12 animate-in fade-in duration-500">
+                <div className="w-full lg:w-1/2">
+                  <p className="text-[14px] text-[#101010] mb-6 leading-relaxed">Our master jewelers handcraft each setting to securely hold your diamond while allowing maximum light performance. We use only solid, premium metals.</p>
+                  <div className="flex flex-col text-[13px]">
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Prongs</span><span className="w-1/2 text-[#666]">6 Elegant Prongs</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Profile</span><span className="w-1/2 text-[#666]">Classic High Profile</span></div>
+                    <div className="flex border-b border-[#EBEBEB] py-4"><span className="w-1/2 font-bold text-[#333]">Band Design</span><span className="w-1/2 text-[#666]">Tapered solid band</span></div>
+                    <div className="flex py-4"><span className="w-1/2 font-bold text-[#333]">Engraving</span><span className="w-1/2 text-[#666]">Complimentary inside engraving available</span></div>
+                  </div>
+                </div>
+                <div className="w-full lg:w-1/2 bg-[#FBF9F6] p-8 flex items-center justify-center">
+                  <div className="text-center">
+                     <div className="w-20 h-20 bg-white rounded-full mx-auto flex items-center justify-center shadow-sm mb-6 border border-[#EBEBEB]">
+                        <svg className="w-10 h-10 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                     </div>
+                     <h4 className="font-bold text-[14px] text-[#101010] mb-2">Lifetime Warranty</h4>
+                     <p className="text-[13px] text-[#666]">We stand behind our craftsmanship forever. Free prong tightening and cleaning included.</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
 
-            {/* Why Carat Club */}
-            <div className="w-full lg:w-1/3 bg-[#FDF5F6] p-8 relative overflow-hidden">
-              <h4 className="font-bold text-[13px]  text-[#101010] mb-8">WHY CARAT CLUB?</h4>
-              <ul className="flex flex-col gap-6 text-[13px] text-[#666] relative z-10 font-medium">
-                {['Direct from our trusted network', 'Handcrafted with precision', 'IGI Certified Diamonds', 'Lifetime Care & Warranty', '30% Deposit & Hand Delivery'].map(item => (
-                  <li key={item} className="flex items-center gap-3">
-                    <svg className="w-4 h-4 text-[#ff5474] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M20 6L9 17l-5-5" /></svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <svg className="absolute -right-8 -bottom-8 w-48 h-48 text-[#ff5474] opacity-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                <path d="M6 3h12l4 6-10 13L2 9Z" />
-                <path d="M12 22V9M2 9h20M6 3l6 6 6-6" />
-              </svg>
-            </div>
+            {activeTab === 'DELIVERY & RETURNS' && (
+              <div className="flex flex-col lg:flex-row gap-12 animate-in fade-in duration-500">
+                <div className="w-full lg:w-1/2">
+                  <h4 className="text-[16px] font-bold text-[#101010] mb-4">Insured & Secure Shipping</h4>
+                  <p className="text-[14px] text-[#666] mb-8 leading-relaxed">All Carat Club pieces are made to order. Please allow 3-4 weeks for crafting. Once completed, your ring is shipped via overnight insured courier. A signature is required upon delivery.</p>
+                  
+                  <h4 className="text-[16px] font-bold text-[#101010] mb-4">30-Day Free Returns</h4>
+                  <p className="text-[14px] text-[#666] leading-relaxed">We want you to be absolutely thrilled with your purchase. If for any reason you are not satisfied, you may return your unworn ring in its original condition and packaging within 30 days for a full refund or exchange.</p>
+                </div>
+                <div className="w-full lg:w-1/2">
+                  <div className="bg-white border border-[#EBEBEB] p-8 mb-6">
+                    <div className="flex items-center gap-4 mb-2">
+                       <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
+                       <h5 className="font-bold text-[14px] text-[#101010]">Free Global Shipping</h5>
+                    </div>
+                    <p className="text-[13px] text-[#666] ml-10">Fully insured door-to-door delivery worldwide.</p>
+                  </div>
+                  <div className="bg-white border border-[#EBEBEB] p-8">
+                    <div className="flex items-center gap-4 mb-2">
+                       <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
+                       <h5 className="font-bold text-[14px] text-[#101010]">Premium Packaging</h5>
+                    </div>
+                    <p className="text-[13px] text-[#666] ml-10">Arrives in discreet outer packaging. Inside, your ring sits beautifully in our signature Carat Club box.</p>
+                  </div>
+                </div>
+              </div>
+            )}
 
+            {activeTab === 'PAYMENT OPTIONS' && (
+              <div className="flex flex-col lg:flex-row gap-12 animate-in fade-in duration-500">
+                <div className="w-full lg:w-1/2">
+                  <h4 className="text-[16px] font-bold text-[#101010] mb-4">Flexible Ways To Pay</h4>
+                  <p className="text-[14px] text-[#666] mb-8 leading-relaxed">We accept all major credit cards, PayPal, and Apple Pay. All transactions are securely encrypted for your protection.</p>
+                  
+                  <h4 className="text-[16px] font-bold text-[#101010] mb-4">30% Deposit Option</h4>
+                  <p className="text-[14px] text-[#666] mb-2 leading-relaxed">Pay just 30% upfront to begin the crafting process of your bespoke ring. The remaining balance is due prior to shipping.</p>
+                  <a href="/deposit-delivery" className="text-[13px] font-bold text-[#ff5474] underline hover:text-[#D46278]">Learn more about our deposit system</a>
+                </div>
+                <div className="w-full lg:w-1/2 flex flex-col gap-4">
+                  <div className="flex items-center gap-4 bg-white border border-[#EBEBEB] p-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard" className="h-6 object-contain" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa" className="h-4 object-contain" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" alt="PayPal" className="h-4 object-contain ml-2" />
+                    <span className="text-[13px] font-bold text-[#333] ml-auto">Pay in full</span>
+                  </div>
+                  <div className="flex items-center gap-4 bg-[#B2FCE4]/20 border border-[#B2FCE4] p-6">
+                    <div className="bg-[#B2FCE4] px-3 py-1 rounded-full flex items-center text-[12px] font-bold">
+                      afterpay
+                    </div>
+                    <span className="text-[13px] text-[#333] ml-auto">Pay in 4 interest-free installments</span>
+                  </div>
+                  <div className="flex items-center gap-4 bg-[#FDF5F6] border border-[#ff5474]/30 p-6">
+                    <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="5" width="20" height="14" rx="2" /><line x1="2" y1="10" x2="22" y2="10" /></svg>
+                    <span className="text-[13px] font-bold text-[#ff5474] ml-auto">30% Upfront, 70% Later</span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
