@@ -9,6 +9,7 @@ import DepositDelivery from '../components/DepositDelivery';
 import CustomJewellery from '../components/CustomJewellery';
 import Reviews from '../components/Reviews';
 import LooseDiamonds from '../components/LooseDiamonds';
+import CTASection from '../components/CTASection';
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       <DepositDelivery />
       <CustomJewellery />
       <Reviews />
+      <CTASection />
     </main>
   );
 }

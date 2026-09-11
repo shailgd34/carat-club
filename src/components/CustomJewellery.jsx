@@ -15,12 +15,12 @@ export default function CustomJewellery() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FAF8F5]/80 to-[#FAF8F5]"></div>
       </div>
 
-      <div className="relative z-10 max-w-[1600px] mx-auto px-4 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <div className="relative z-10 max-w-[1600px] mx-auto px-4 lg:px-8 py-10 lg:py-12 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
 
         {/* Left Content */}
         <div className="text-center lg:text-left flex flex-col items-center lg:items-start lg:pl-12 xl:pl-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-[12px] capitalize tracking-[0.2em] text-[#ff5474] font-bold">Bespoke Design</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#ff5474] font-bold">Bespoke Design</span>
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
 

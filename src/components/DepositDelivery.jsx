@@ -11,7 +11,7 @@ export default function DepositDelivery() {
         <div className="lg:w-1/2 bg-[#101010] p-10 lg:p-24 xl:p-32 flex flex-col justify-center relative z-10">
 
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-[10px] capitalize tracking-[0.3em] text-[#ff5474] font-bold">Buy With Confidence</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-[#ff5474] font-bold">Buy With Confidence</span>
             <div className="w-12 h-[1px] bg-[#ff5474]"></div>
           </div>
 

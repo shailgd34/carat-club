@@ -153,7 +153,7 @@ export default function DiamondDetailsPage() {
       </section>
 
       {/* Similar Diamonds */}
-      <section className="max-w-[1600px] mx-auto px-4 lg:px-8 mt-24">
+      <section className="max-w-[1600px] mx-auto px-4 lg:px-8">
         <h2 className="font-serif text-2xl md:text-3xl text-brand-charcoal mb-8 text-center uppercase ">
           SIMILAR DIAMONDS YOU WOULD LOVE
         </h2>

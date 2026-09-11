@@ -2,116 +2,85 @@ import React from 'react';
 
 export default function PriceAdvantage() {
   return (
-    <section className="w-full relative overflow-hidden bg-[#FAF8F5] py-24 lg:py-40 border-y border-[#E5E5E5]">
+    <section className="w-full bg-white">
+      <div className="max-w-[1600px] mx-auto px-4 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-      {/* Light Cinematic Ambient Lighting */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[50%] bg-[#ff5474] rounded-full mix-blend-multiply filter blur-[150px] opacity-10"></div>
-        <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[60%] bg-[#D46278] rounded-full mix-blend-multiply filter blur-[200px] opacity-[0.08]"></div>
-      </div>
-
-      <div className="max-w-[1600px] mx-auto px-4 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-20 lg:gap-32 xl:gap-40">
-
-        {/* Left Image Area with Floating Elements */}
-        <div className="lg:w-[40%] w-full relative h-[600px] lg:h-[750px] order-2 lg:order-1 mt-16 lg:mt-0">
-
-          {/* Offset Aesthetic Border */}
-          <div className="absolute inset-0 border border-[#ff5474]/40 -translate-x-6 translate-y-6 lg:-translate-x-10 lg:translate-y-10 z-0"></div>
-
-          {/* Main Cinematic Image */}
-          <div className="absolute inset-0 overflow-hidden shadow-[0_30px_60px_rgba(43,39,40,0.15)] z-10">
-            <img
-              src="/images/ring3.jpg"
-              alt="Master Jeweler Workbench"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[15s] hover:scale-110"
+          {/* Left: Video */}
+          <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden bg-[#FBF9F6] order-2 lg:order-1 shadow-[0_20px_40px_rgba(0,0,0,0.05)]">
+            <video
+              src="/video/294774_medium.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
             />
-            {/* Soft inner vignette */}
-            <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(43,39,40,0.1)] pointer-events-none"></div>
-          </div>
-
-          {/* Eye-popping floating Glass Badge (Light Mode) */}
-          <div className="absolute -top-10 lg:top-1/4 -right-8 lg:-right-20 bg-white/90 backdrop-blur-xl border border-white p-6 rounded-sm shadow-[0_20px_50px_rgba(43,39,40,0.1)] animate-[float_6s_ease-in-out_infinite] z-20 w-max">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-[#ff5474] rounded-full flex items-center justify-center shadow-lg text-white">
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
-              </div>
-              <div>
-                <div className="text-[#101010] font-bold text-[18px] ">-40%</div>
-                <div className="text-gray-500 text-[10px] font-bold  uppercase">vs Traditional Retail</div>
-              </div>
+            {/* Minimal Badge */}
+            <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-6 py-4 flex flex-col items-start shadow-sm border border-[#E5E5E5]">
+              <span className="text-xl font-serif text-[#101010] mb-1">-40% Off</span>
+              <span className="text-[10px] uppercase tracking-widest text-[#666]">Retail Prices</span>
             </div>
           </div>
 
-        </div>
-
-        {/* Right Typography Area */}
-        <div className="lg:w-[50%] w-full relative z-20 order-1 lg:order-2">
-
-          <div className="flex items-center gap-4 mb-8">
-            <span className="text-[11px] uppercase tracking-[0.2em] text-[#ff5474] font-bold">THE DIRECT ADVANTAGE</span>
-            <div className="w-12 h-[1px] bg-[#ff5474]"></div>
-          </div>
-
-          <h2 className="text-4xl lg:text-5xl xl:text-[52px] leading-[1.1] text-[#101010] font-serif font-medium mb-3">
-            <span className="block">We Cut Out The Middlemen.</span>
-          </h2>
-
-          <div className="relative inline-block mb-10">
-            <span className="text-4xl lg:text-5xl xl:text-[54px] font-serif text-[#ff5474] italic font-light relative z-10">
-              You Keep The Savings.
+          {/* Right: Content */}
+          <div className="order-1 lg:order-2 flex flex-col justify-center">
+            <span className="text-xs uppercase tracking-[0.2em] text-[#ff5474] font-semibold mb-6 block">
+              The Direct Advantage
             </span>
-            <div className="absolute bottom-2 left-0 w-full h-[30%] bg-[#ff5474]/10 -z-10 -skew-x-12"></div>
-          </div>
 
-          <p className="text-[16px] lg:text-[18px] text-[#555] leading-relaxed font-light mb-16 max-w-xl">
-            By sourcing diamonds directly from trusted partners and handcrafting every piece in our own studio, we eliminate all unnecessary markups. You get unparalleled luxury without the traditional retail price tag.
-          </p>
+            <h2 className="text-4xl lg:text-6xl font-serif text-[#101010] leading-[1.15] mb-8">
+              We Cut Out The Middlemen.<br />
+              <span className="text-gray-400 italic">You Keep The Savings.</span>
+            </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-14 max-w-2xl mt-4">
+            <p className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed mb-12 max-w-lg">
+              By sourcing diamonds directly from trusted partners and handcrafting every piece in our own studio, we eliminate all unnecessary markups. You get unparalleled luxury without the traditional retail price tag.
+            </p>
 
-            <div className="group flex items-start gap-5">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-[#ff5474]/40 flex items-center justify-center flex-shrink-0 group-hover:border-[#ff5474] group-hover:bg-[#FAF8F5] transition-all">
-                <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-              </div>
-              <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-bold  text-[#101010] mb-1">Direct Sourcing</div>
-                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Better prices, directly to you.</div>
-              </div>
-            </div>
+            {/* New Design: 2x2 Grid of Elegant Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
 
-            <div className="group flex items-start gap-5">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-[#ff5474]/40 flex items-center justify-center flex-shrink-0 group-hover:border-[#ff5474] group-hover:bg-[#FAF8F5] transition-all">
-                <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>
+              <div className="p-6 bg-[#FAF8F5] border border-[#EBEBEB] hover:border-[#ff5474] transition-colors group cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase">01 / Source</span>
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-[#ff5474] group-hover:translate-x-1 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </div>
+                <h4 className="text-lg font-serif text-[#101010] mb-2">Direct Sourcing</h4>
+                <p className="text-[15px] text-[#666] leading-relaxed">Better prices, directly to you without compromising quality.</p>
               </div>
-              <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-bold  text-[#101010] mb-1">No Markups</div>
-                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">You save up to 40% more.</div>
-              </div>
-            </div>
 
-            <div className="group flex items-start gap-5">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-[#ff5474]/40 flex items-center justify-center flex-shrink-0 group-hover:border-[#ff5474] group-hover:bg-[#FAF8F5] transition-all">
-                <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <div className="p-6 bg-[#FAF8F5] border border-[#EBEBEB] hover:border-[#ff5474] transition-colors group cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase">02 / Price</span>
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-[#ff5474] group-hover:translate-x-1 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </div>
+                <h4 className="text-lg font-serif text-[#101010] mb-2">No Markups</h4>
+                <p className="text-[15px] text-[#666] leading-relaxed">You save up to 40% more compared to traditional retail.</p>
               </div>
-              <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-bold  text-[#101010] mb-1">IGI Certified</div>
-                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Diamonds you can fully trust.</div>
-              </div>
-            </div>
 
-            <div className="group flex items-start gap-5">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-[#ff5474]/40 flex items-center justify-center flex-shrink-0 group-hover:border-[#ff5474] group-hover:bg-[#FAF8F5] transition-all">
-                <svg className="w-6 h-6 lg:w-7 lg:h-7 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+              <div className="p-6 bg-[#FAF8F5] border border-[#EBEBEB] hover:border-[#ff5474] transition-colors group cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase">03 / Trust</span>
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-[#ff5474] group-hover:translate-x-1 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </div>
+                <h4 className="text-lg font-serif text-[#101010] mb-2">IGI Certified</h4>
+                <p className="text-[15px] text-[#666] leading-relaxed">Every diamond comes with a verifiable IGI certificate.</p>
               </div>
-              <div className="flex flex-col mt-2">
-                <div className="text-[14px] lg:text-[15px] font-bold  text-[#101010] mb-1">No Middleman</div>
-                <div className="text-[15px] lg:text-[16px] text-[#666] font-light leading-relaxed">Direct from our workshop to you.</div>
+
+              <div className="p-6 bg-[#FAF8F5] border border-[#EBEBEB] hover:border-[#ff5474] transition-colors group cursor-pointer">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[11px] font-bold tracking-widest text-[#101010] uppercase">04 / Craft</span>
+                  <svg className="w-4 h-4 text-gray-400 group-hover:text-[#ff5474] group-hover:translate-x-1 transition-all" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </div>
+                <h4 className="text-lg font-serif text-[#101010] mb-2">No Middleman</h4>
+                <p className="text-[15px] text-[#666] leading-relaxed">Shipped directly from our workshop straight to your door.</p>
               </div>
+
             </div>
 
           </div>
         </div>
-
       </div>
     </section>
   );
