@@ -148,63 +148,31 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
             {/* Custom Builder Card */}
             <div className="w-[20%] flex flex-col">
-              <Link to="/ring-builder" className="flex-1 bg-[#101010] border border-transparent p-6 flex flex-col items-center justify-center group/builder cursor-pointer hover:shadow-xl transition-all duration-300 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-[#3a3536] to-transparent opacity-0 group-hover/builder:opacity-100 transition-opacity duration-500"></div>
-                <h3 className="text-white font-serif text-[18px] lg:text-[22px]  capitalize mb-10 relative z-10">BUILD YOUR RING</h3>
-                <div className="w-24 h-24 mb-8 mt-2 relative z-10 flex items-center justify-center">
-                  <style>{`
-                    @keyframes scanLaser {
-                      0%, 100% { top: 10%; opacity: 0; }
-                      10%, 90% { opacity: 1; }
-                      50% { top: 90%; }
-                    }
-                    @keyframes floatDiamond {
-                      0%, 100% { transform: translateY(-12px); }
-                      50% { transform: translateY(0px) scale(1.05); }
-                    }
-                    @keyframes pulseGlowRing {
-                      0%, 100% { filter: drop-shadow(0 0 10px rgba(255,84,116,0.3)); }
-                      50% { filter: drop-shadow(0 0 20px rgba(255,84,116,0.8)); }
-                    }
-                  `}</style>
-
-                  {/* Background Hexagon rotating */}
-                  <svg className="absolute inset-0 w-full h-full text-[#ff5474]/30 animate-[spin_10s_linear_infinite]" viewBox="0 0 100 100">
-                    <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-                    <circle cx="50" cy="50" r="28" fill="none" stroke="currentColor" strokeWidth="0.5" className="animate-[spin_6s_linear_infinite_reverse]" strokeDasharray="2 4" />
-                  </svg>
-
-                  {/* Base / Pedestal */}
-                  <div className="absolute bottom-2 w-16 h-4 border-b-2 border-[#ff5474] rounded-[50%] opacity-50 shadow-[0_4px_12px_#ff5474]"></div>
-
-                  {/* The Ring Band */}
-                  <svg className="absolute inset-0 w-full h-full text-white transition-transform duration-500 group-hover/builder:scale-110" style={{ animation: 'pulseGlowRing 3s infinite ease-in-out' }} viewBox="0 0 100 100">
-                    <path d="M 30 65 C 30 82, 70 82, 70 65" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-                    <path d="M 33 65 C 33 58, 42 55, 45 55 L 55 55 C 58 55, 67 58, 67 65" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.8" />
-                  </svg>
-
-                  {/* Floating Diamond that slots in */}
-                  <div className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none" style={{ animation: 'floatDiamond 3s infinite ease-in-out' }}>
-                    <svg className="w-10 h-10 -mt-6 text-[#ff5474] transition-transform duration-500 group-hover/builder:scale-110 drop-shadow-[0_0_12px_rgba(255,84,116,0.8)]" viewBox="0 0 24 24" fill="currentColor">
-                      {/* Diamond Top */}
-                      <polygon points="12,2 4,8 20,8" fill="white" opacity="0.95" />
-                      {/* Diamond Bottom */}
-                      <polygon points="4,8 12,21 20,8" fill="currentColor" opacity="0.8" />
-                      {/* Inner facets */}
-                      <polygon points="12,2 8,8 16,8" fill="white" opacity="0.6" />
-                      <polygon points="8,8 12,21 16,8" fill="white" opacity="0.4" />
-                    </svg>
-                  </div>
-
-                  {/* Holographic Laser Scan Line */}
-                  <div className="absolute left-1/2 -translate-x-1/2 w-14 h-[1px] bg-[#ff5474] shadow-[0_0_8px_2px_#ff5474] pointer-events-none" style={{ animation: 'scanLaser 2.5s infinite ease-in-out' }}></div>
+              <Link to="/ring-builder" className="flex-1 bg-[#101010] relative overflow-hidden group/builder cursor-pointer block" style={{ minHeight: '100%' }}>
+                {/* Full-width landscape video blended into dark background */}
+                <video
+                  src="/video/ringanimation.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                  style={{ mixBlendMode: 'screen' }}
+                />
+                {/* Title pinned to top center */}
+                <div className="absolute top-0 left-0 right-0 z-10 pt-5 px-4 text-center">
+                  <h3 className="text-white font-serif text-[16px] lg:text-[18px] capitalize font-semibold leading-tight">Build Your Ring</h3>
+                  <p className="text-gray-300 text-[11px] font-medium mt-1">Use our 3D Ring Builder</p>
                 </div>
-                <p className="text-gray-300 text-[12px] font-medium mb-12 relative z-10">Use our 3D Ring Builder</p>
-                <button className="bg-[#ff5474] text-white text-[11px] font-bold tracking-[0.2em] capitalize py-3.5 px-6 w-full relative z-10 flex items-center justify-center gap-2 group-hover/builder:shadow-[0_0_15px_rgba(255,84,116,0.4)] transition-all">
-                  START BUILDING <svg className="w-3.5 h-3.5 group-hover/builder:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </button>
+                {/* Start Building button pinned to bottom */}
+                <div className="absolute bottom-0 left-0 right-0 z-10">
+                  <button className="bg-[#ff5474] text-white text-[11px] font-bold tracking-[0.2em] capitalize py-3.5 px-6 w-full flex items-center justify-center gap-2 group-hover/builder:shadow-[0_0_15px_rgba(255,84,116,0.4)] transition-all">
+                    START BUILDING <svg className="w-3.5 h-3.5 group-hover/builder:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                  </button>
+                </div>
               </Link>
             </div>
+
 
             {/* Product Grid Center */}
             <div className="w-[60%] flex gap-4">
@@ -372,31 +340,31 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
               ))}
 
               {/* Ring Builder Card */}
-              <Link to="/ring-builder" className="flex-1 bg-[#101010] border border-transparent p-6 flex flex-col items-center justify-center group/builder cursor-pointer hover:shadow-xl transition-all duration-300 text-center relative overflow-hidden">
-                {/* Subtle background glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#3a3536] to-transparent opacity-0 group-hover/builder:opacity-100 transition-opacity duration-500"></div>
-
-                <h3 className="text-white font-serif text-[18px] lg:text-[22px]  uppercase mb-10 relative z-10">BUILD YOUR RING</h3>
-
-                {/* Animated Ring Icon */}
-                <div className="w-16 h-16 rounded-full border border-[#ff5474]/80 flex items-center justify-center mb-10 relative z-10">
-                  <div className="absolute inset-0 rounded-full border border-[#ff5474] animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite] opacity-40"></div>
-                  <svg className="w-8 h-8 text-[#ff5474] group-hover/builder:scale-110 transition-transform duration-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
-                    <path d="M10 7h4l-2-3-2 3z" />
-                    <circle cx="12" cy="14" r="7" />
-                    <path d="M9 10h6" />
-                    <path d="M10 7l-2 3" />
-                    <path d="M14 7l2 3" />
-                  </svg>
+              <Link to="/ring-builder" className="flex-1 bg-[#101010] relative overflow-hidden group/builder cursor-pointer block">
+                {/* Full-width landscape video blended into dark background */}
+                <video
+                  src="/video/ringanimation.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                  style={{ mixBlendMode: 'screen' }}
+                />
+                {/* Title pinned to top center */}
+                <div className="absolute top-0 left-0 right-0 z-10 pt-5 px-4 text-center">
+                  <h3 className="text-white font-serif text-[16px] lg:text-[18px] uppercase font-semibold leading-tight">Build Your Ring</h3>
+                  <p className="text-gray-300 text-[11px] font-medium mt-1">Use our 3D Ring Builder</p>
                 </div>
-
-                <p className="text-gray-300 text-[12px] font-medium mb-12 relative z-10">Use our 3D Ring Builder</p>
-
-                <button className="bg-[#ff5474] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-3.5 px-6 w-full relative z-10 flex items-center justify-center gap-2 group-hover/builder:shadow-[0_0_15px_rgba(255,84,116,0.4)] transition-all">
-                  START BUILDING <svg className="w-3.5 h-3.5 group-hover/builder:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                </button>
+                {/* Start Building button pinned to bottom */}
+                <div className="absolute bottom-0 left-0 right-0 z-10">
+                  <button className="bg-[#ff5474] text-white text-[11px] font-bold tracking-[0.2em] uppercase py-3.5 px-6 w-full flex items-center justify-center gap-2 group-hover/builder:shadow-[0_0_15px_rgba(255,84,116,0.4)] transition-all">
+                    START BUILDING <svg className="w-3.5 h-3.5 group-hover/builder:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                  </button>
+                </div>
               </Link>
             </div>
+
           </div>
         </div>
       );

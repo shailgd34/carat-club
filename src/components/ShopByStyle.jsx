@@ -28,63 +28,31 @@ export default function ShopByStyle() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 items-stretch">
 
           {/* BUILD YOUR RING Card */}
-          <div className="bg-[#101010] flex flex-col items-center justify-between p-8 text-center h-[360px] relative overflow-hidden group shadow-lg">
-            <div className="flex-1 flex flex-col items-center justify-center relative z-10">
-              <h3 className="font-serif text-lg font-semibold text-white mb-6 capitalize ">Build Your Ring</h3>
-              <div className="w-24 h-24 mb-8 mt-2 mx-auto relative z-10 flex items-center justify-center">
-                <style>{`
-                    @keyframes scanLaser {
-                      0%, 100% { top: 10%; opacity: 0; }
-                      10%, 90% { opacity: 1; }
-                      50% { top: 90%; }
-                    }
-                    @keyframes floatDiamond {
-                      0%, 100% { transform: translateY(-12px); }
-                      50% { transform: translateY(0px) scale(1.05); }
-                    }
-                    @keyframes pulseGlowRing {
-                      0%, 100% { filter: drop-shadow(0 0 10px rgba(255,84,116,0.3)); }
-                      50% { filter: drop-shadow(0 0 20px rgba(255,84,116,0.8)); }
-                    }
-                  `}</style>
-
-                {/* Background Hexagon rotating */}
-                <svg className="absolute inset-0 w-full h-full text-[#ff5474]/30 animate-[spin_10s_linear_infinite]" viewBox="0 0 100 100">
-                  <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-                  <circle cx="50" cy="50" r="28" fill="none" stroke="currentColor" strokeWidth="0.5" className="animate-[spin_6s_linear_infinite_reverse]" strokeDasharray="2 4" />
-                </svg>
-
-                {/* Base / Pedestal */}
-                <div className="absolute bottom-2 w-16 h-4 border-b-2 border-[#ff5474] rounded-[50%] opacity-50 shadow-[0_4px_12px_#ff5474]"></div>
-
-                {/* The Ring Band */}
-                <svg className="absolute inset-0 w-full h-full text-white transition-transform duration-500 group-hover:scale-110" style={{ animation: 'pulseGlowRing 3s infinite ease-in-out' }} viewBox="0 0 100 100">
-                  <path d="M 30 65 C 30 82, 70 82, 70 65" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-                  <path d="M 33 65 C 33 58, 42 55, 45 55 L 55 55 C 58 55, 67 58, 67 65" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.8" />
-                </svg>
-
-                {/* Floating Diamond that slots in */}
-                <div className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none" style={{ animation: 'floatDiamond 3s infinite ease-in-out' }}>
-                  <svg className="w-10 h-10 -mt-6 text-[#ff5474] transition-transform duration-500 group-hover:scale-110 drop-shadow-[0_0_12px_rgba(255,84,116,0.8)]" viewBox="0 0 24 24" fill="currentColor">
-                    {/* Diamond Top */}
-                    <polygon points="12,2 4,8 20,8" fill="white" opacity="0.95" />
-                    {/* Diamond Bottom */}
-                    <polygon points="4,8 12,21 20,8" fill="currentColor" opacity="0.8" />
-                    {/* Inner facets */}
-                    <polygon points="12,2 8,8 16,8" fill="white" opacity="0.6" />
-                    <polygon points="8,8 12,21 16,8" fill="white" opacity="0.4" />
-                  </svg>
-                </div>
-
-                {/* Holographic Laser Scan Line */}
-                <div className="absolute left-1/2 -translate-x-1/2 w-14 h-[1px] bg-[#ff5474] shadow-[0_0_8px_2px_#ff5474] pointer-events-none" style={{ animation: 'scanLaser 2.5s infinite ease-in-out' }}></div>
-              </div>
-              <p className="text-xs text-gray-300 font-medium">Use our 3D Ring Builder</p>
+          <div className="bg-[#101010] relative overflow-hidden group shadow-lg h-[360px]">
+            {/* Full-width landscape video blended into dark background */}
+            <video
+              src="/video/ringanimation.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ mixBlendMode: 'screen' }}
+            />
+            {/* Title pinned to top center */}
+            <div className="absolute top-0 left-0 right-0 z-10 pt-6 px-4 text-center">
+              <h3 className="font-serif text-lg font-semibold text-white capitalize leading-tight">Build Your Ring</h3>
+              <p className="text-xs text-gray-300 font-medium mt-1">Use our 3D Ring Builder</p>
             </div>
-            <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] capitalize  font-semibold px-4 py-4 hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-all w-full flex items-center justify-center gap-2 mt-6 relative z-10">
-              Start Building <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </button>
+            {/* Start Building button pinned to bottom */}
+            <div className="absolute bottom-0 left-0 right-0 z-10">
+              <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] capitalize font-semibold px-4 py-4 w-full flex items-center justify-center gap-2 group-hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-all">
+                Start Building <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </button>
+            </div>
           </div>
+
+
 
           {/* Style Cards */}
           {styles.map((style, i) => {
