@@ -217,19 +217,19 @@ export default function ProductDetailsPage() {
           <div className="grid grid-cols-4 gap-2 pt-6 border-t border-[#EBEBEB]">
             <div className="flex flex-col items-center text-center">
               <svg className="w-6 h-6 text-[#ff5474] mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
-              <span className="text-[11px] text-[#666] leading-tight">Free & Insured<br />Shipping</span>
+              <span className="text-[14px] text-[#666] leading-tight">Free & Insured<br />Shipping</span>
             </div>
             <div className="flex flex-col items-center text-center">
               <svg className="w-6 h-6 text-[#ff5474] mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
-              <span className="text-[11px] text-[#666] leading-tight">30% Deposit &<br />Hand Delivery</span>
+              <span className="text-[14px] text-[#666] leading-tight">30% Deposit &<br />Hand Delivery</span>
             </div>
             <div className="flex flex-col items-center text-center">
               <svg className="w-6 h-6 text-[#ff5474] mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
-              <span className="text-[11px] text-[#666] leading-tight">Lifetime Care &<br />Warranty</span>
+              <span className="text-[14px] text-[#666] leading-tight">Lifetime Care &<br />Warranty</span>
             </div>
             <div className="flex flex-col items-center text-center">
               <svg className="w-6 h-6 text-[#ff5474] mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12h20" /><path d="M12 2v20" /><circle cx="12" cy="12" r="10" /></svg>
-              <span className="text-[11px] text-[#666] leading-tight">Easy Returns &<br />Exchanges</span>
+              <span className="text-[14px] text-[#666] leading-tight">Easy Returns &<br />Exchanges</span>
             </div>
           </div>
         </div>
@@ -337,11 +337,11 @@ export default function ProductDetailsPage() {
                 </div>
                 <div className="w-full lg:w-1/2 bg-[#FBF9F6] p-8 flex items-center justify-center">
                   <div className="text-center">
-                     <div className="w-20 h-20 bg-white rounded-full mx-auto flex items-center justify-center shadow-sm mb-6 border border-[#EBEBEB]">
-                        <svg className="w-10 h-10 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-                     </div>
-                     <h4 className="font-bold text-[14px] text-[#101010] mb-2">Lifetime Warranty</h4>
-                     <p className="text-[13px] text-[#666]">We stand behind our craftsmanship forever. Free prong tightening and cleaning included.</p>
+                    <div className="w-20 h-20 bg-white rounded-full mx-auto flex items-center justify-center shadow-sm mb-6 border border-[#EBEBEB]">
+                      <svg className="w-10 h-10 text-[#D4AF37]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="8" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+                    </div>
+                    <h4 className="font-bold text-[14px] text-[#101010] mb-2">Lifetime Warranty</h4>
+                    <p className="text-[13px] text-[#666]">We stand behind our craftsmanship forever. Free prong tightening and cleaning included.</p>
                   </div>
                 </div>
               </div>
@@ -352,22 +352,22 @@ export default function ProductDetailsPage() {
                 <div className="w-full lg:w-1/2">
                   <h4 className="text-[16px] font-bold text-[#101010] mb-4">Insured & Secure Shipping</h4>
                   <p className="text-[14px] text-[#666] mb-8 leading-relaxed">All Carat Club pieces are made to order. Please allow 3-4 weeks for crafting. Once completed, your ring is shipped via overnight insured courier. A signature is required upon delivery.</p>
-                  
+
                   <h4 className="text-[16px] font-bold text-[#101010] mb-4">30-Day Free Returns</h4>
                   <p className="text-[14px] text-[#666] leading-relaxed">We want you to be absolutely thrilled with your purchase. If for any reason you are not satisfied, you may return your unworn ring in its original condition and packaging within 30 days for a full refund or exchange.</p>
                 </div>
                 <div className="w-full lg:w-1/2">
                   <div className="bg-white border border-[#EBEBEB] p-8 mb-6">
                     <div className="flex items-center gap-4 mb-2">
-                       <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
-                       <h5 className="font-bold text-[14px] text-[#101010]">Free Global Shipping</h5>
+                      <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="3" width="15" height="13" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
+                      <h5 className="font-bold text-[14px] text-[#101010]">Free Global Shipping</h5>
                     </div>
                     <p className="text-[13px] text-[#666] ml-10">Fully insured door-to-door delivery worldwide.</p>
                   </div>
                   <div className="bg-white border border-[#EBEBEB] p-8">
                     <div className="flex items-center gap-4 mb-2">
-                       <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
-                       <h5 className="font-bold text-[14px] text-[#101010]">Premium Packaging</h5>
+                      <svg className="w-6 h-6 text-[#ff5474]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" /></svg>
+                      <h5 className="font-bold text-[14px] text-[#101010]">Premium Packaging</h5>
                     </div>
                     <p className="text-[13px] text-[#666] ml-10">Arrives in discreet outer packaging. Inside, your ring sits beautifully in our signature Carat Club box.</p>
                   </div>
@@ -380,7 +380,7 @@ export default function ProductDetailsPage() {
                 <div className="w-full lg:w-1/2">
                   <h4 className="text-[16px] font-bold text-[#101010] mb-4">Flexible Ways To Pay</h4>
                   <p className="text-[14px] text-[#666] mb-8 leading-relaxed">We accept all major credit cards, PayPal, and Apple Pay. All transactions are securely encrypted for your protection.</p>
-                  
+
                   <h4 className="text-[16px] font-bold text-[#101010] mb-4">30% Deposit Option</h4>
                   <p className="text-[14px] text-[#666] mb-2 leading-relaxed">Pay just 30% upfront to begin the crafting process of your bespoke ring. The remaining balance is due prior to shipping.</p>
                   <a href="/deposit-delivery" className="text-[13px] font-bold text-[#ff5474] underline hover:text-[#D46278]">Learn more about our deposit system</a>

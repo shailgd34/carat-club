@@ -477,148 +477,148 @@ export default function Header({ setIsCartOpen, setIsCountryModalOpen }) {
 
   return (
     <div className="sticky top-0 left-0 w-full z-[100] transition-all duration-500 bg-white">
-          {/* LAYER 1: Top Tagline Bar - Dark Background, hides on scroll */}
-          <div className={`bg-black text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'h-0 opacity-0' : 'h-[45px] opacity-100'}`}>
-            <div className="max-w-[1600px] mx-auto px-4 lg:px-8 h-full flex items-center justify-between text-[13px] text-center font-semibold uppercase relative ">
-              {/* Left: Phone & WhatsApp */}
-              <div className="w-1/3 hidden lg:flex items-center gap-4 justify-start text-[12px] lg:text-[13px] font-bold ">
-                <a href="https://wa.me/3929299999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#25D366] hover:opacity-80 transition-opacity">
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-                </a>
-                <div className="w-[1px] h-3 bg-white/30"></div>
-                <a href="tel:+3929299999" className="flex items-center gap-1.5 hover:text-[#ff5474] transition-colors">
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>+3929 299 999</span>
-                </a>
-              </div>
-
-              <div className="w-full lg:w-1/3 flex justify-center items-center relative h-full">
-                {taglines.map((tagline, idx) => (
-                  <div key={idx} className={`absolute top-1/2 -translate-y-1/2 transition-opacity duration-1000  whitespace-nowrap ${currentTagline === idx ? 'opacity-100' : 'opacity-0'}`}>
-                    {tagline}
-                  </div>
-                ))}
-              </div>
-
-              <div className="w-1/3 hidden lg:flex justify-end">
-                <button onClick={() => setIsCountryModalOpen?.(true)} className="flex items-center gap-2 hover:text-[#ff5474] transition-colors group">
-                  <img src="https://flagcdn.com/w20/au.png" alt="AUD" className="w-3.5 h-3.5 object-cover rounded-full shadow-sm" />
-                  <span>AUD</span>
-                  <svg className="w-3 h-3 text-gray-400 group-hover:text-[#ff5474] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-              </div>
-            </div>
+      {/* LAYER 1: Top Tagline Bar - Dark Background, hides on scroll */}
+      <div className={`bg-black text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'h-0 opacity-0' : 'h-[45px] opacity-100'}`}>
+        <div className="max-w-[1600px] mx-auto px-4 lg:px-8 h-full flex items-center justify-between text-[13px] text-center font-semibold uppercase relative ">
+          {/* Left: Phone & WhatsApp */}
+          <div className="w-1/3 hidden lg:flex items-center gap-4 justify-start text-[12px] lg:text-[13px] font-bold ">
+            <a href="https://wa.me/3929299999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[#25D366] hover:opacity-80 transition-opacity">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+            </a>
+            <div className="w-[1px] h-3 bg-white/30"></div>
+            <a href="tel:+3929299999" className="flex items-center gap-1.5 hover:text-[#ff5474] transition-colors">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+3929 299 999</span>
+            </a>
           </div>
 
-          {/* Main Header */}
-          <header className={`transition-all duration-500 w-full relative ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`} onMouseLeave={() => setActiveMenu(null)}>
-
-            {/* Unified Main Header Bar */}
-            <div className={`max-w-[1600px] mx-auto px-4 lg:px-8 flex items-center justify-between relative transition-all duration-500 ${isScrolled ? 'py-4' : 'py-4 lg:py-4'}`}>
-
-              {/* Mobile Menu Icon (Left) */}
-              <div className="lg:hidden flex-1">
-                <button className="p-2 -ml-2 text-[#101010] hover:text-[#ff5474] transition-colors">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <line x1="3" y1="12" x2="21" y2="12" />
-                    <line x1="3" y1="6" x2="21" y2="6" />
-                    <line x1="3" y1="18" x2="21" y2="18" />
-                  </svg>
-                </button>
+          <div className="w-full lg:w-1/3 flex justify-center items-center relative h-full">
+            {taglines.map((tagline, idx) => (
+              <div key={idx} className={`absolute top-1/2 -translate-y-1/2 transition-opacity duration-1000  whitespace-nowrap font-bold tracking-widest ${currentTagline === idx ? 'opacity-100' : 'opacity-0'}`}>
+                {tagline}
               </div>
+            ))}
+          </div>
 
-              {/* Desktop Left Navigation (Pushed to left edge) */}
-              <nav className="hidden lg:flex flex-1 justify-start items-center text-[16px] font-medium text-black h-full z-10 whitespace-nowrap">
-                <div className="flex items-center gap-3 lg:gap-4 xl:gap-4 h-full">
-                  <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('engagement')}>
-                    <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                      Engagement
-                      <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                      {activeMenu === 'engagement' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                    </span>
-                  </div>
-                  <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('wedding')}>
-                    <Link to="/wedding-rings" className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                      Wedding
-                      <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                      {activeMenu === 'wedding' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                    </Link>
-                  </div>
-                  <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('fine-jewellery')}>
-                    <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                      Fine Jewellery
-                      <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                      {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                    </span>
-                  </div>
-                  <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('deals')}>
-                    <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
-                      No-Brainer Deals
-                      <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
-                      {activeMenu === 'deals' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
-                    </span>
-                  </div>
-                </div>
-              </nav>
+          <div className="w-1/3 hidden lg:flex justify-end">
+            <button onClick={() => setIsCountryModalOpen?.(true)} className="flex items-center gap-2 hover:text-[#ff5474] transition-colors group">
+              <img src="https://flagcdn.com/w20/au.png" alt="AUD" className="w-3.5 h-3.5 object-cover rounded-full shadow-sm" />
+              <span>AUD</span>
+              <svg className="w-3 h-3 text-gray-400 group-hover:text-[#ff5474] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
 
-              {/* Logo (Center - In Flow) */}
-              <div className="z-20 flex items-center justify-center mx-4 lg:mx-8">
-                <Link to="/" className="pointer-events-auto hover:opacity-80 transition-opacity flex items-center justify-center relative w-[160px] lg:w-[180px] h-[40px]">
-                  {/* Normal Logo (Text) */}
-                  <span
-                    className={`absolute inset-0 m-auto flex items-center justify-center whitespace-nowrap font-semibold font-serif text-2xl lg:text-3xl  text-[#2c2c2c] transition-all duration-500 ${isScrolled ? 'opacity-0 scale-75 rotate-3' : 'opacity-100 scale-100 rotate-0'}`}
-                  >
-                    CARAT CLUB
-                  </span>
-                  {/* Sticky Logo (logo6) */}
-                  <img
-                    src="/images/logo6.png"
-                    alt="Sticky Logo"
-                    className={`absolute inset-0 m-auto object-contain transition-all duration-500 w-[40px] lg:w-[45px] ${isScrolled ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-125 -rotate-3'}`}
-                  />
+      {/* Main Header */}
+      <header className={`transition-all duration-500 w-full relative ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`} onMouseLeave={() => setActiveMenu(null)}>
+
+        {/* Unified Main Header Bar */}
+        <div className={`max-w-[1600px] mx-auto px-4 lg:px-8 flex items-center justify-between relative transition-all duration-500 ${isScrolled ? 'py-3' : 'py-3 lg:py-3'}`}>
+
+          {/* Mobile Menu Icon (Left) */}
+          <div className="lg:hidden flex-1">
+            <button className="p-2 -ml-2 text-[#101010] hover:text-[#ff5474] transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Desktop Left Navigation (Pushed to left edge) */}
+          <nav className="hidden lg:flex flex-1 justify-start items-center text-[16px] font-semibold text-black h-full z-10 whitespace-nowrap">
+            <div className="flex items-center gap-3 lg:gap-4 xl:gap-4 h-full">
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('engagement')}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'engagement' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Engagement
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'engagement' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'engagement' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('wedding')}>
+                <Link to="/wedding-rings" className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'wedding' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Wedding
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'wedding' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'wedding' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
                 </Link>
               </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('fine-jewellery')}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'fine-jewellery' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  Fine Jewellery
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'fine-jewellery' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'fine-jewellery' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+              <div className="h-full flex items-center cursor-pointer relative group/nav" onMouseEnter={() => setActiveMenu('deals')}>
+                <span className={`relative transition-colors duration-300 flex items-center gap-1.5 ${activeMenu === 'deals' ? 'text-[#ff5474]' : 'hover:text-[#ff5474]'}`}>
+                  No-Brainer Deals
+                  <svg className={`w-3.5 h-3.5 transition-transform duration-300 ${activeMenu === 'deals' ? 'rotate-180 text-[#ff5474]' : 'text-gray-400'}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
+                  {activeMenu === 'deals' && <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-[2px] bg-[#ff5474]"></span>}
+                </span>
+              </div>
+            </div>
+          </nav>
 
-              {/* Desktop Right Navigation & Icons (Pushed to right edge) */}
-              <div className="flex-1 flex justify-end items-center gap-4 lg:gap-8 xl:gap-12 text-[#101010] z-10 whitespace-nowrap h-full">
+          {/* Logo (Center - In Flow) */}
+          <div className="z-20 flex items-center justify-center mx-4 lg:mx-8">
+            <Link to="/" className="pointer-events-auto hover:opacity-80 transition-opacity flex items-center justify-center relative w-[160px] lg:w-[180px] h-[40px]">
+              {/* Normal Logo (Text) */}
+              <span
+                className={`absolute inset-0 m-auto flex items-center justify-center whitespace-nowrap font-semibold font-serif text-2xl lg:text-3xl  text-[#2c2c2c] transition-all duration-500 ${isScrolled ? 'opacity-0 scale-75 rotate-3' : 'opacity-100 scale-100 rotate-0'}`}
+              >
+                CARAT CLUB
+              </span>
+              {/* Sticky Logo (logo6) */}
+              <img
+                src="/images/logo6.png"
+                alt="Sticky Logo"
+                className={`absolute inset-0 m-auto object-contain transition-all duration-500 w-[40px] lg:w-[45px] ${isScrolled ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-125 -rotate-3'}`}
+              />
+            </Link>
+          </div>
 
-                {/* Right Links (2 items) */}
-                <div className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-6 font-medium text-[16px] h-full">
-                  <div className="h-full flex items-center cursor-pointer">
-                    <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">Shop Diamonds</Link>
-                  </div>
-                  <div className="h-full flex items-center cursor-pointer">
-                    <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% Deposit & Delivery</Link>
-                  </div>
-                </div>
+          {/* Desktop Right Navigation & Icons (Pushed to right edge) */}
+          <div className="flex-1 flex justify-end items-center gap-4 lg:gap-8 xl:gap-12 text-[#101010] z-10 whitespace-nowrap h-full">
 
-                {/* Right Icons (Search, Heart, Auth, Cart) */}
-                <div className="flex items-center gap-3 lg:gap-4">
-                  <button className="hover:text-[#ff5474] transition-colors"><svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></button>
-                  <button className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg></button>
-                  <Link to="/auth" className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></Link>
-                  <button className="hover:text-[#ff5474] transition-colors relative flex items-center" onClick={() => setIsCartOpen && setIsCartOpen(true)}>
-                    <svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
-                    <span className="absolute -top-1.5 -right-2 bg-[#ff5474] text-white text-[9px] lg:text-[10px] w-[18px] h-[18px] lg:w-[20px] lg:h-[20px] rounded-full flex items-center justify-center font-bold">1</span>
-                  </button>
-                </div>
+            {/* Right Links (2 items) */}
+            <div className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-6 font-semibold text-[16px] h-full">
+              <div className="h-full flex items-center cursor-pointer">
+                <Link to="/loose-diamonds" className="hover:text-[#ff5474] transition-colors duration-300">Shop Diamonds</Link>
+              </div>
+              <div className="h-full flex items-center cursor-pointer">
+                <Link to="/deposit-delivery" className="hover:text-[#ff5474] transition-colors duration-300">30% Deposit & Delivery</Link>
               </div>
             </div>
 
-            {/* Render Mega Menus here so they position relative to the full header width */}
-            <div>
-              {renderMegaMenu(engagementLinks, 'engagement')}
+            {/* Right Icons (Search, Heart, Auth, Cart) */}
+            <div className="flex items-center gap-3 lg:gap-4">
+              <button className="hover:text-[#ff5474] transition-colors"><svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg></button>
+              <button className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg></button>
+              <Link to="/auth" className="hidden sm:block hover:text-[#ff5474] transition-colors"><svg className="w-[22px] h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></Link>
+              <button className="hover:text-[#ff5474] transition-colors relative flex items-center" onClick={() => setIsCartOpen && setIsCartOpen(true)}>
+                <svg className="w-5 h-5 lg:w-[22px] lg:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+                <span className="absolute -top-1.5 -right-2 bg-[#ff5474] text-white text-[9px] lg:text-[10px] w-[18px] h-[18px] lg:w-[20px] lg:h-[20px] rounded-full flex items-center justify-center font-bold">1</span>
+              </button>
             </div>
-            <div>
-              {renderMegaMenu(weddingLinks, 'wedding')}
-            </div>
-            <div>
-              {renderMegaMenu(fineJewelleryLinks, 'fine-jewellery')}
-            </div>
-            <div>
-              {renderMegaMenu(dealsLinks, 'deals')}
-            </div>
-          </header>
+          </div>
         </div>
-        );
+
+        {/* Render Mega Menus here so they position relative to the full header width */}
+        <div>
+          {renderMegaMenu(engagementLinks, 'engagement')}
+        </div>
+        <div>
+          {renderMegaMenu(weddingLinks, 'wedding')}
+        </div>
+        <div>
+          {renderMegaMenu(fineJewelleryLinks, 'fine-jewellery')}
+        </div>
+        <div>
+          {renderMegaMenu(dealsLinks, 'deals')}
+        </div>
+      </header>
+    </div>
+  );
 }

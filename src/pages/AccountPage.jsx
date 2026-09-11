@@ -152,7 +152,7 @@ export default function AccountPage() {
                       <p className="text-xs text-brand-taupe mb-2">18K Yellow Gold</p>
                       <div className="font-serif font-bold text-brand-charcoal mb-auto">$2,890</div>
                       <div className="flex gap-2 mt-2">
-                        <button className="flex-1 bg-brand-charcoal text-white text-[9px] font-bold uppercase  py-2 hover:bg-black transition-colors">Move to Cart</button>
+                        <button className="flex-1 bg-brand-charcoal text-white text-[14px] font-bold uppercase  py-2 hover:bg-black transition-colors">Move to Cart</button>
                         <button className="text-xs text-brand-taupe underline hover:text-red-500">Remove</button>
                       </div>
                     </div>
@@ -167,7 +167,7 @@ export default function AccountPage() {
                       <p className="text-xs text-brand-taupe mb-2">E Color • VS2 Clarity</p>
                       <div className="font-serif font-bold text-brand-charcoal mb-auto">$1,250</div>
                       <div className="flex gap-2 mt-2">
-                        <button className="flex-1 bg-brand-charcoal text-white text-[9px] font-bold uppercase  py-2 hover:bg-black transition-colors">Move to Cart</button>
+                        <button className="flex-1 bg-brand-charcoal text-white text-[14px] font-bold uppercase  py-2 hover:bg-black transition-colors">Move to Cart</button>
                         <button className="text-xs text-brand-taupe underline hover:text-red-500">Remove</button>
                       </div>
                     </div>

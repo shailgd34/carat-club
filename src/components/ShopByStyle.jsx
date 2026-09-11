@@ -89,9 +89,11 @@ export default function ShopByStyle() {
               </svg>
               <p className="text-xs text-gray-300 font-medium leading-relaxed">Browse our ethically<br />sourced collection</p>
             </div>
-            <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] capitalize  font-semibold px-4 py-4 group-hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-all w-full flex items-center justify-center gap-2 mt-6 relative z-10">
-              Shop Now <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </button>
+            <div className="absolute bottom-0 left-0 right-0 z-10">
+              <button className="whitespace-nowrap bg-[#ff5474] text-white text-[11px] capitalize font-semibold px-4 py-4 w-full flex items-center justify-center gap-2 group-hover:shadow-[0_8px_25px_rgba(226,125,144,0.4)] transition-all">
+                Shop Now <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </button>
+            </div>
           </Link>
 
         </div>

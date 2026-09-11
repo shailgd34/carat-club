@@ -125,9 +125,9 @@ export default function DiamondDetailsPage() {
 
           {/* Guarantees */}
           <div className="flex flex-col gap-4 text-sm text-brand-charcoal font-medium border-y border-[#EBEBEB] py-6 mb-8">
-            <div className="flex items-center gap-3"><ShieldCheck className="w-5 h-5 text-[#ff5474]" /> Lifetime Manufacturer Warranty</div>
-            <div className="flex items-center gap-3"><RefreshCw className="w-5 h-5 text-[#ff5474]" /> 30-Day Free Returns</div>
-            <div className="flex items-center gap-3"><Award className="w-5 h-5 text-[#ff5474]" /> Certified by {diamond.lab}</div>
+            <div className="flex items-center gap-3"><ShieldCheck className="w-5 h-5 text-[#ff5474]" />IGI certified </div>
+            <div className="flex items-center gap-3"><RefreshCw className="w-5 h-5 text-[#ff5474]" /> 100% Secure Payment</div>
+            <div className="flex items-center gap-3"><Award className="w-5 h-5 text-[#ff5474]" /> We Inspect & Verify authenticity before shipping.</div>
           </div>
 
           {/* Diamond Details Table */}
@@ -173,11 +173,11 @@ export default function DiamondDetailsPage() {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <span className="bg-[#ff5474] text-white text-[10px] font-bold px-1 rounded-sm">{idx % 2 === 0 ? 'F' : 'R'}</span>
+                <span className="bg-[#ff5474] text-white text-[14px] font-bold px-1 rounded-sm">{idx % 2 === 0 ? 'F' : 'R'}</span>
                 <h4 className="text-sm font-semibold text-brand-charcoal">{sim.shape} <span className="text-xs font-normal text-gray-400">({sim.lab} Certified)</span></h4>
               </div>
 
-              <div className="grid grid-cols-2 gap-y-1 gap-x-2 text-[11px] mb-4 text-brand-charcoal">
+              <div className="grid grid-cols-2 gap-y-1 gap-x-2 text-[14px] mb-4 text-brand-charcoal">
                 <div className="flex justify-between"><span className="text-gray-400">Carat</span> <span>{sim.carat}</span></div>
                 <div className="flex justify-between"><span className="text-gray-400">Cut</span> <span>{sim.cut === 'EX' ? 'Ideal' : sim.cut}</span></div>
                 <div className="flex justify-between"><span className="text-gray-400">Color</span> <span>{sim.color}</span></div>
@@ -190,14 +190,14 @@ export default function DiamondDetailsPage() {
               </div>
 
               <div className="mt-auto flex gap-1 mb-1">
-                <button className="flex-1 bg-brand-charcoal text-white text-[9px] font-bold uppercase  py-2 hover:bg-black transition-colors">
+                <button className="flex-1 bg-brand-charcoal text-white text-[14px] font-bold uppercase  py-2 hover:bg-black transition-colors">
                   Choose Setting
                 </button>
                 <button className="bg-brand-charcoal text-white px-2 py-2 hover:bg-black transition-colors flex items-center justify-center">
                   <ShoppingCart className="w-3.5 h-3.5" />
                 </button>
               </div>
-              <button className="w-full border border-[#EBEBEB] text-[9px] font-bold uppercase  text-brand-charcoal py-2 hover:bg-gray-50 transition-colors">
+              <button className="w-full border border-[#EBEBEB] text-[14px] font-bold uppercase  text-brand-charcoal py-2 hover:bg-gray-50 transition-colors">
                 View Details
               </button>
             </div>
@@ -216,16 +216,16 @@ export default function DiamondDetailsPage() {
             <img src="/images/diamond/Round.png" alt="Round" className="w-8 h-8 object-contain mix-blend-multiply" />
           </div>
           <div>
-            <p className="text-[11px] font-bold uppercase  text-brand-charcoal">{diamond.lab} Certified {diamond.carat} Carat {diamond.shape}</p>
-            <p className="text-xs text-brand-taupe">{diamond.color} Color • {diamond.clarity} Clarity</p>
+            <p className="text-sm font-bold uppercase  text-brand-charcoal">{diamond.lab} Certified {diamond.carat} Carat {diamond.shape}</p>
+            <p className="text-sm text-brand-taupe">{diamond.color} Color • {diamond.clarity} Clarity</p>
           </div>
           <div className="ml-auto flex items-center gap-6">
-            <div className="text-xl font-serif font-bold text-brand-charcoal">${diamond.price}</div>
+            <div className="text-2xl font-serif font-bold text-brand-charcoal">${diamond.price}</div>
             <div className="flex gap-2">
-              <button className="border border-brand-charcoal text-brand-charcoal text-[10px] font-bold  uppercase px-6 py-3 hover:bg-brand-charcoal hover:text-white transition-colors">
+              <button className="border border-brand-charcoal text-brand-charcoal text-xs font-bold  uppercase px-6 py-3 hover:bg-brand-charcoal hover:text-white transition-colors">
                 ADD TO RING
               </button>
-              <button className="bg-brand-charcoal text-white text-[10px] font-bold  uppercase px-6 py-3 hover:bg-black transition-colors shadow-lg">
+              <button className="bg-brand-charcoal text-white text-xs font-bold  uppercase px-6 py-3 hover:bg-black transition-colors shadow-lg">
                 ADD TO CART
               </button>
             </div>

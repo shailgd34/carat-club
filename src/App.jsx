@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
 import BackToTop from './components/BackToTop';
 import CountryModal from './components/CountryModal';
 import SlideInCard from './components/SlideInCard';
@@ -96,7 +95,6 @@ function App() {
       </Routes>
 
       {!hideGlobalUI && <Footer />}
-      {!hideGlobalUI && <FloatingWhatsApp />}
       {!hideGlobalUI && <BackToTop />}
       {!hideGlobalUI && <SlideInCard />}
       <CountryModal isOpen={isCountryModalOpen} setIsOpen={setIsCountryModalOpen} />
